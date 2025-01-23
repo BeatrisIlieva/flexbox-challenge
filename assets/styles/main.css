@@ -74,10 +74,10 @@
     order: 1;
 }
 
-/* .property-container > details > summary,
+.property-container > details > summary,
 .property-container > details {
     display: block;
-} */
+}
 
 .property-container > details {
     width: 28em;
