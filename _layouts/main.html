@@ -2,24 +2,38 @@
 
 <main class="section section-main">
     <div class="wrapper">
-        <!-- <pre>{{ site.data | jsonify }}</pre> -->
-        {% for property in site.data.properties %}
-        <section class="property-section">
-            <h3>{{property.name}}</h3>
-            <section>
-                {% for item in property.items %}
-                <h4>{{item.title}}</h4>
-                <div class="{{property.class-name.title}} {{item.class-name}}">
-                    {% for i in (1..item.elements-count) %}
-                    <div class="box">{{ i }}</div>
+        <article>
+            {% for property in site.data.properties %}
+            <section class="property-section">
+                <h3>{{property.name}}</h3>
+                <section>
+                    {% for item in property.items %}
+                    <!-- <h4>{{item.title}}</h4> -->
+                    <div class="boxes-container {{property.class-name.title}} {{item.class-name}}">
+                        {% for i in (1..item.elements-count) %}
+                        <div class="box">{{ i }}</div>
+                        {% endfor %}
+                    </div>
                     {% endfor %}
-                </div>
-                {% endfor %}
+                </section>
+                <h3>{{property.name}}</h3>
+                <section>
+                    {% for item in property.items %}
+                    <!-- <h4>{{item.title}}</h4> -->
+                    <div class="boxes-container {{property.class-name.title}} {{item.class-name}}">
+                        {% for i in (1..item.elements-count) %}
+                        <div class="box">{{ i }}</div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </section>
             </section>
-            <section>ha</section>
-        </section>
-        {% endfor %}
+            {% endfor %}
+        </article>
     </div>
 </main>
 
 {% include footer.html%}
+
+
+        <!-- <pre>{{ site.data | jsonify }}</pre> -->
