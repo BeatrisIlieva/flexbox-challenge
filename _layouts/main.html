@@ -6,7 +6,7 @@
         {% for property in site.data.properties %}
         <section class="property-section">
             <h3>{{property.name}}</h3>
-            <div class="property-container">
+            <section>
                 {% for item in property.items %}
                 <h4>{{item.title}}</h4>
                 <div class="{{property.class-name.title}} {{item.class-name}}">
@@ -15,7 +15,8 @@
                     {% endfor %}
                 </div>
                 {% endfor %}
-            </div>
+            </section>
+            <section>ha</section>
         </section>
         {% endfor %}
     </div>
