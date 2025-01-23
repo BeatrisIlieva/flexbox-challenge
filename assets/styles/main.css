@@ -32,9 +32,6 @@
     height: 16em;
 }
 
-
-
-
 .boxes-container {
     height: 100%;
     background: var(--clr-yellow);
@@ -48,7 +45,6 @@
     padding: 1em;
     gap: 0.5rem;
     align-items: flex-start;
-    /* margin-right: auto !important; */
 }
 
 .boxes-container:not(:first-of-type) {
@@ -74,8 +70,6 @@
     margin-left: auto;
 }
 
-
-
 .property-section:nth-child(even) .boxes-container {
     order: 1;
 }
@@ -89,7 +83,16 @@
     width: 28em;
 }
 
+.property-container > details:not(:last-of-type){
+    margin-bottom: auto;
+}
+
 .accordion details[open] summary:before {
     content: '^';
     transform: rotate(180deg);
+}
+
+
+.black{
+    background: #000;
 }
