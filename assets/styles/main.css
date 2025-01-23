@@ -70,6 +70,14 @@
     flex-direction: column;
 }
 
+.boxes-container.flex-direction.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.boxes-container.flex-direction.column-reverse {
+    flex-direction: column-reverse;
+}
+
 .property-section:nth-child(even) .property-container > .boxes-container {
     margin-left: auto;
 }
