@@ -4,19 +4,18 @@
     <div class="wrapper">
         <!-- <pre>{{ site.data | jsonify }}</pre> -->
         {% for property in site.data.properties %}
-        <section>
-            <div>
-                <h3>{{property.name}}</h3>
-                <div class="container {{property.class-name.title}}">
-                    {%for item in property.items%}
-                    <div class="{{item.class-name}}">
-                        <h2>{{item.title}}</h2>
-                    </div>
-                    {%endfor%}
+        <section class="property-section">
+            <h3>{{property.name}}</h3>
+            <div class="property-container">
+                {% for item in property.items %}
+                <h4>{{item.title}}</h4>
+                <div class="{{property.class-name.title}} {{item.class-name}}">
+                    {% for i in (1..item.elements-count) %}
+                    <div class="box">{{ i }}</div>
+                    {% endfor %}
                 </div>
+                {% endfor %}
             </div>
-            
-
         </section>
         {% endfor %}
     </div>
