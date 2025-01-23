@@ -8,20 +8,17 @@
                 <h3>{{property.name}}</h3>
                 <div class="property-container">
                     {% for item in property.items %}
-                    
                     <div class="boxes-container {{property.class-name.title}} {{item.class-name}}">
                         {% for i in (1..item.elements-count) %}
                         <div class="box">{{ i }}</div>
                         {% endfor %}
                     </div>
-                        <details name="accordion" open>
-                            <summary>desck</summary>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid, molestiae explicabo, laudantium qui beatae distinctio animi debitis voluptatum nihil deleniti ab suscipit magni fuga. Cum quo nulla recusandae nesciunt.</p>
-                        </details>
-                    
+                    <details name="accordion" open>
+                        <summary>{{item.title}}</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid, molestiae explicabo, laudantium qui beatae distinctio animi debitis voluptatum nihil deleniti ab suscipit magni fuga. Cum quo nulla recusandae nesciunt.</p>
+                    </details>
                     {% endfor %}
                 </div>
-                
             </section>
             {% endfor %}
         </article>

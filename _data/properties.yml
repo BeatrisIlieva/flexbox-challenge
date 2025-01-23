@@ -14,3 +14,35 @@
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
+- name: Flex Direction
+  class-name: 
+    title: flex-direction
+  items:
+    - title: Row (Default)
+      elements-count: 3
+      class-name: row
+    - title: Row-Reverse
+      elements-count: 3
+      class-name: row-reverse
+    - title: Column
+      elements-count: 3
+      class-name: column
+    - title: Column-Reverse
+      elements-count: 3
+      class-name: column-reverse
+- name: Flex Direction
+  class-name: 
+    title: flex-direction
+  items:
+    - title: Row (Default)
+      elements-count: 3
+      class-name: row
+    - title: Row-Reverse
+      elements-count: 3
+      class-name: row-reverse
+    - title: Column
+      elements-count: 3
+      class-name: column
+    - title: Column-Reverse
+      elements-count: 3
+      class-name: column-reverse
