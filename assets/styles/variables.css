@@ -1,0 +1,31 @@
+:root {
+    --hdr-gradient: linear-gradient(
+        130deg in oklab,
+        #ffdbdb 0%,
+        #d1d1f9 25%,
+        #cff1fb 50%,
+        #d6fbe4 75%,
+        #fcfdcd 100%
+    );
+    --sdr-gradient: linear-gradient(
+        130deg,
+        #ffdbdb 0%,
+        #d1d1f9 25%,
+        #cff1fb 50%,
+        #d6fbe4 75%,
+        #fcfdcd 100%
+    );
+
+    background: var(--hdr-gradient);
+
+    --clr-white: #fff;
+    --clr-pink: #ffdbdb;
+    --clr-blue: #cff1fb;
+    --clr-violet: #d1d1f9;
+    --clr-dark-violet: #a7a7c7;
+    --clr-green: #d6fbe4;
+    --clr-yellow: #fcfdcd;
+    --clr-black: #000;
+    --clr-red: #FF7779;
+    --clr-dark-red: #e66b6d;
+}

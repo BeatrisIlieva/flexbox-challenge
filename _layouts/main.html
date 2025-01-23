@@ -1,5 +1,25 @@
 {% include header.html%}
 
-    {{ content }}
+<main class="section section-main">
+    <div class="wrapper">
+        <!-- <pre>{{ site.data | jsonify }}</pre> -->
+        {% for property in site.data.properties %}
+        <section>
+            <div>
+                <h3>{{property.name}}</h3>
+                <div class="container {{property.class-name.title}}">
+                    {%for item in property.items%}
+                    <div class="{{item.class-name}}">
+                        <h2>{{item.title}}</h2>
+                    </div>
+                    {%endfor%}
+                </div>
+            </div>
+            
+
+        </section>
+        {% endfor %}
+    </div>
+</main>
 
 {% include footer.html%}

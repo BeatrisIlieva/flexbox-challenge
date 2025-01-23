@@ -1,6 +1,6 @@
 ---
 layout: main
-title: home
+title: Homepage
 ---
 
 hello

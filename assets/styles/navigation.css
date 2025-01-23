@@ -1,0 +1,52 @@
+.main-nav ul {
+    /* display: flex;
+    gap: 1em; */
+}
+
+.main-nav ul ul {
+    display: none;
+}
+
+.main-nav ul li,
+.main-nav ul li a {
+    display: block;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li:hover > ul {
+    min-width: 20ch;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    padding: 0.5em;
+
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    background: #369;
+    color: white;
+    padding: 0.7em 1.2em;
+    border-radius: 0.3em;
+}
+
+.main-nav ul li:hover > a,
+.main-nav ul li a:hover{
+    background: lightblue;
+    color: black;
+}
+
+.main-nav ul ul li:hover > ul {
+    left: initial;
+    right: 100%;
+    top: 0;
+}

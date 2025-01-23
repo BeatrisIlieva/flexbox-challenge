@@ -1,0 +1,389 @@
+.section.section-main .wrapper > article {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-white);
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    gap: 2em;
+}
+
+.section.section-main .wrapper > article > h2 {
+    text-align: center;
+}
+
+.section.section-main .wrapper > article > h2:not(:first-child) {
+    margin-top: 2em;
+}
+
+.section.section-main .wrapper > article > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.section.section-main .wrapper > article > section > h3 {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.section.section-main .wrapper > article > section section {
+    flex: 0 1 25em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.section.section-main .wrapper > article > section section > h4 {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.section.section-main .wrapper > article > section section div.container {
+    width: 18em;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    background: var(--clr-yellow);
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 1em;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.section.section-main .wrapper > article > section section div.container div {
+    padding: 0.5em 1.4em;
+    color: var(--clr-black);
+    background: var(--clr-pink);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.2), 0 0 0.5em 0 rgb(0, 0, 0, 0.2) inset;
+    outline: 0.1em solid var(--clr-white);
+    text-align: center;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.section.section-main .wrapper > article > section section div.container.flex-direction-column {
+    flex-direction: column;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.flex-direction-column-reverse {
+    flex-flow: column-reverse;
+}
+
+.section.section-main .wrapper > article > section section div.container.flex-wrap-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.section.section-main .wrapper > article > section section div.container.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.section.section-main .wrapper > article > section section div.container.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.section.section-main .wrapper > article > section section div.container.justify-content,
+.section.section-main .wrapper > article > section section div.container.justify-content.center {
+    height: 16em;
+    position: relative;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.flex-start {
+    flex-direction: column;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.flex-start::before,
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center::before {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-70%, -60%);
+    width: 0.08em;
+    height: 12em;
+    background: var(--clr-dark-red);
+    content: '  Main Axis';
+    white-space: pre;
+    color: var(--clr-dark-red);
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center::before {
+    content: '  Cross Axis';
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.flex-start::after,
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center::after {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-70%, -60%);
+    width: 12em;
+    height: 0.08em;
+    background: var(--clr-dark-red);
+    content: '  Cross Axis';
+    white-space: pre;
+    color: var(--clr-dark-red);
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center::after {
+    content: '  Main Axis';
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.flex-start
+    div:first-child,
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center
+    div:first-child {
+    position: relative;
+    overflow: visible;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.flex-start
+    div:first-child::before,
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center
+    div:first-child::before {
+    position: absolute;
+    top: 0;
+    left: 4.6em;
+    content: 'Flex-Direction: Column';
+    white-space: pre;
+    font-weight: 700;
+    color: var(--clr-dark-violet);
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.justify-content.center
+    div:first-child::before {
+    content: 'Flex-Direction: Row';
+    top: 4em;
+    left: -3.5em;
+    font-weight: 700;
+    color: var(--clr-dark-violet);
+}
+
+.section.section-main .wrapper > article > section section div.container.justify-content.center {
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section.section-main .wrapper > article > section section div.container.flex-end {
+    justify-content: flex-end;
+}
+
+.section.section-main .wrapper > article > section section div.container.space-between {
+    justify-content: space-between;
+}
+
+.section.section-main .wrapper > article > section section div.container.space-around {
+    justify-content: space-around;
+}
+
+.section.section-main .wrapper > article > section section div.container.space-evenly {
+    justify-content: space-evenly;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items {
+    height: 8em;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.stretch {
+    align-items: stretch;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.flex-start {
+    align-items: flex-start;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.center {
+    align-items: center;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.flex-end {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.baseline {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(1) {
+    height: 5em;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(2) {
+    height: 3em;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(3) {
+    height: 6em;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(1),
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(2),
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline
+    div:nth-child(3) {
+    align-content: center;
+}
+
+.section.section-main .wrapper > article > section section div.container.align-items.baseline {
+    position: relative;
+}
+
+.section.section-main
+    .wrapper
+    > article
+    > section
+    section
+    div.container.align-items.baseline::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 16em;
+    height: 0.05em;
+    background: var(--clr-dark-red);
+    z-index: 10;
+}
+
+section#special {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+details p{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+@media (max-width: 927px) {
+    .section.section-main .wrapper > article > section {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 565px) {
+    .section.section-main .wrapper > article > h2,
+    .section.section-main .wrapper > article > section > h3,
+    .section.section-main .wrapper > article > section section > h4 {
+        text-align: left;
+    }
+
+    .section.section-main .wrapper > article > section section {
+        justify-content: flex-start;
+    }
+}

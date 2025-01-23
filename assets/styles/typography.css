@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/tisa-sans-pro');
+
+html {
+    font: clamp(12px, 1.8dvw, 16px) / 1.4 'Tisa Sans Pro', sans-serif;
+    font-variant-caps: small-caps;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
