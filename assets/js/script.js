@@ -1,10 +1,3 @@
-// const firstSummaryElements = document.querySelectorAll('.property-container details:nth-of-type(1)');
-
-// // [...firstSummaryElements].forEach(summaryElement => summaryElement.classList.add('black'))
-
-// // [...firstSummaryElements].forEach(summaryElement => summaryElement.setAttribute('open', 'true'));
-// [...firstSummaryElements].forEach(summaryElement => summaryElement.open = true);
-
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.property-container');
 
@@ -12,10 +5,25 @@ document.addEventListener('DOMContentLoaded', function () {
         const detailsElement = section.querySelectorAll('details');
         const firstDetailsElement = detailsElement[0];
         firstDetailsElement.open = true;
+    });
+});
 
-        console.log(firstDetailsElement);
-        
+const propertyContainerElements = document.querySelectorAll('.property-container');
 
-        return section;
-    })
+propertyContainerElements.forEach(propertyContainerElement => {
+    propertyContainerElement.addEventListener('click', e => {
+        const currentTargetElement = e.currentTarget;
+        const targetElement = e.target;
+
+        console.log(currentTargetElement);
+        console.log(targetElement);
+
+        if (targetElement.tagName === 'SUMMARY') {
+            const detailsElements = currentTargetElement.querySelectorAll('details');
+
+            detailsElements.forEach(detailsElement => (detailsElement.open = false));
+        }
+
+        currentTargetElement.open = true;
+    });
 });
