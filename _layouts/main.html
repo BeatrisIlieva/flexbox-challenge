@@ -6,27 +6,22 @@
             {% for property in site.data.properties %}
             <section class="property-section">
                 <h3>{{property.name}}</h3>
-                <section>
+                <div class="property-container">
                     {% for item in property.items %}
-                    <!-- <h4>{{item.title}}</h4> -->
+                    
                     <div class="boxes-container {{property.class-name.title}} {{item.class-name}}">
                         {% for i in (1..item.elements-count) %}
                         <div class="box">{{ i }}</div>
                         {% endfor %}
                     </div>
+                        <details name="accordion" open>
+                            <summary>desck</summary>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aliquid, molestiae explicabo, laudantium qui beatae distinctio animi debitis voluptatum nihil deleniti ab suscipit magni fuga. Cum quo nulla recusandae nesciunt.</p>
+                        </details>
+                    
                     {% endfor %}
-                </section>
-                <h3>{{property.name}}</h3>
-                <section>
-                    {% for item in property.items %}
-                    <!-- <h4>{{item.title}}</h4> -->
-                    <div class="boxes-container {{property.class-name.title}} {{item.class-name}}">
-                        {% for i in (1..item.elements-count) %}
-                        <div class="box">{{ i }}</div>
-                        {% endfor %}
-                    </div>
-                    {% endfor %}
-                </section>
+                </div>
+                
             </section>
             {% endfor %}
         </article>
@@ -36,4 +31,4 @@
 {% include footer.html%}
 
 
-        <!-- <pre>{{ site.data | jsonify }}</pre> -->
+<!-- <pre>{{ site.data | jsonify }}</pre> -->
