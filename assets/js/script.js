@@ -15,9 +15,6 @@ propertyContainerElements.forEach(propertyContainerElement => {
         const currentTargetElement = e.currentTarget;
         const targetElement = e.target;
 
-        console.log(currentTargetElement);
-        console.log(targetElement);
-
         if (targetElement.tagName === 'SUMMARY') {
             const detailsElements = currentTargetElement.querySelectorAll('details');
 
