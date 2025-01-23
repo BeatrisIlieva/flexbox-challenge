@@ -24,3 +24,30 @@ propertyContainerElements.forEach(propertyContainerElement => {
         currentTargetElement.open = true;
     });
 });
+
+propertyContainerElements.forEach(propertyContainerElement => {
+    propertyContainerElement.addEventListener('click', e => {
+        const targetElement = e.target;
+
+        if (targetElement.tagName === 'SUMMARY') {
+            const summaryElementId = targetElement.id;
+
+            const boxesContainerElements =
+                propertyContainerElement.querySelectorAll('.boxes-container');
+
+            boxesContainerElements.forEach(element => (element.style.display = 'none'));
+
+            const boxContainerElement = [...boxesContainerElements].find(element => {
+                const classList = element.classList;
+                const lastClassName = classList[classList.length - 1];
+
+                if (lastClassName === summaryElementId) {
+                    return element;
+                }
+            });
+
+            boxContainerElement.style.display = 'flex';
+            console.log(boxContainerElement);
+        }
+    });
+});

@@ -71,8 +71,13 @@
 }
 
 .property-section:nth-child(even) .boxes-container {
-    order: 1;
+    order: 2;
 }
+
+.property-section:nth-child(odd) .boxes-container {
+    order: -1;
+}
+
 
 .property-container > details > summary,
 .property-container > details {
