@@ -58,7 +58,6 @@ propertyContainerElements.forEach(propertyContainerElement => {
         const carouselWrapperElements = currentTargetElement.querySelectorAll('.carousel-wrapper');
 
         const targetElementTagName = targetElement.tagName;
-
         let elementId;
 
         if (targetElementTagName === 'BUTTON') {
