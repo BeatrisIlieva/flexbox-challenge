@@ -51,7 +51,7 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     opacity: 0.5;
-    border: 0.04em solid var(--clr-white);
+    border: 0.06 em solid var(--clr-white);
 }
 
 #previous:hover > i,
@@ -76,6 +76,7 @@
     align-items: flex-start;
     aspect-ratio: 1/1;
     position: relative;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .boxes-container figcaption {
@@ -151,4 +152,28 @@
 
 .boxes-container.cross::after {
     content: '  Cross Axis';
+}
+
+.boxes-container.main::before,
+.boxes-container.main::after {
+    animation: transitionIn 2s forwards;
+}
+
+/* Add transition-out animation */
+.boxes-container.cross::before,
+.boxes-container.cross::after {
+    animation: transitionIn 2s forwards;
+}
+
+.transition-in {
+    animation: transitionIn 2s forwards;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
