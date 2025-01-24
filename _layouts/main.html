@@ -16,9 +16,9 @@
                             class="boxes-container {{item.axis}} {{property.class-name.title}} {{item.class-name}}"
                         >
                             {% for i in (1..item.elements-count) %}
-                            <p class="box transition-in">{{ i }}</p>
+                            <p class="box transition-in-faster">{{ i }}</p>
                             {% endfor %}
-                            <figcaption class="transition-in">{{item.title}}</figcaption>
+                            <figcaption class="transition-in-slower">{{item.title}}</figcaption>
                         </figure>
                         
                         <button id="previous">

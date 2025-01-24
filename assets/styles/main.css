@@ -156,20 +156,32 @@
 
 .boxes-container.main::before,
 .boxes-container.main::after {
-    animation: transitionIn 2s forwards;
+    animation: transitionInSlower 3s forwards;
 }
 
-/* Add transition-out animation */
 .boxes-container.cross::before,
 .boxes-container.cross::after {
-    animation: transitionIn 2s forwards;
+    animation: transitionInSlower 3s forwards;
 }
 
-.transition-in {
-    animation: transitionIn 2s forwards;
+.transition-in-faster {
+    animation: transitionInFaster 1s forwards;
 }
 
-@keyframes transitionIn {
+@keyframes transitionInFaster {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.transition-in-slower {
+    animation: transitionInSlower 3s forwards;
+}
+
+@keyframes transitionInSlower {
     from {
         opacity: 0;
     }
