@@ -136,6 +136,22 @@
 .carousel-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#previous,
+#next {
+    position: absolute;
+}
+
+#previous {
+    left: 0;
+    top: 50%;
+}
+
+#next {
+    right: 0;
+    top: 50%;
 }
 
 .carousel-wrapper:not(:first-of-type) {
