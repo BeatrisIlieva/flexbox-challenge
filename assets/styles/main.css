@@ -1,4 +1,4 @@
-.section.section-main .wrapper > article {
+/* .section.section-main .wrapper > article {
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
@@ -35,9 +35,7 @@
 .boxes-container {
     height: 100%;
     background: var(--clr-yellow);
-    width: 18em;
-    flex-grow: 0;
-    flex-shrink: 1;
+    flex-grow: 1;
     display: flex;
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
@@ -100,18 +98,25 @@
 }
 
 .property-container > details {
-    width: 28em;
+    flex-grow: 3;
+    background: #000;
 }
 
 .property-container > details:not(:last-of-type) {
     margin-bottom: auto;
 }
 
-/* .accordion details[open] summary:before {
-    content: '^';
-    transform: rotate(180deg);
-} */
-
 .black {
     background: #000;
+} */
+
+.property-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+body{
+    background: #000;
+    margin: 3em;
 }

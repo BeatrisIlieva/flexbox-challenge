@@ -5,15 +5,19 @@
     - title: Row (Default)
       elements-count: 3
       class-name: row
+      definition: def row
     - title: Row-Reverse
       elements-count: 3
       class-name: row-reverse
+      definition: def row-reverse
     - title: Column
       elements-count: 3
       class-name: column
+      definition: def column
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
+      definition: column-reverse
 - name: Flex Wrap
   class-name: 
     title: flex-wrap
