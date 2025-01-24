@@ -238,22 +238,15 @@
     padding-left: 1em;
 }
 
-.details-container > details[open] > summary::before {
-    content: '-';
-    width: 10px;
-    height: 10px;
+.details-container > details > summary::before {
+    content: '+';
     position: absolute;
     left: 0;
     top: 35%;
 }
 
-.details-container > details > summary::before {
-    content: '+';
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 0;
-    top: 35%;
+.details-container > details[open] > summary::before {
+    content: '-';
 }
 
 .details-container > details > p {
