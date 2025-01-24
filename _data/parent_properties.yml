@@ -6,18 +6,22 @@
       elements-count: 3
       class-name: row
       definition: def row
+      axis: main
     - title: Row-Reverse
       elements-count: 3
       class-name: row-reverse
       definition: def row-reverse
+      axis: main
     - title: Column
       elements-count: 3
       class-name: column
       definition: def column
+      axis: cross
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
       definition: column-reverse
+      axis: cross
 - name: Flex Wrap
   class-name: 
     title: flex-wrap

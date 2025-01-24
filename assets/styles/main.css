@@ -118,10 +118,8 @@
     flex-direction: column-reverse;
 }
 
-.carousel-wrapper .boxes-container.flex-direction.row::before,
-.carousel-wrapper .boxes-container.flex-direction.row-reverse::before,
-.carousel-wrapper .boxes-container.flex-direction.column::before,
-.carousel-wrapper .boxes-container.flex-direction.column-reverse::before {
+.boxes-container.main::before,
+.boxes-container.cross::before {
     position: absolute;
     top: 70%;
     left: 60%;
@@ -134,10 +132,8 @@
     color: var(--clr-dark-red);
 }
 
-.carousel-wrapper .boxes-container.flex-direction.row::after,
-.carousel-wrapper .boxes-container.flex-direction.row-reverse::after,
-.carousel-wrapper .boxes-container.flex-direction.column::after,
-.carousel-wrapper .boxes-container.flex-direction.column-reverse::after {
+.boxes-container.main::after,
+.boxes-container.cross::after {
     position: absolute;
     top: 60%;
     left: 70%;
@@ -150,12 +146,10 @@
     color: var(--clr-dark-red);
 }
 
-.carousel-wrapper .boxes-container.flex-direction.column::before,
-.carousel-wrapper .boxes-container.flex-direction.column-reverse::before {
+.boxes-container.cross::before {
     content: '  Main Axis';
 }
 
-.carousel-wrapper .boxes-container.flex-direction.column::after,
-.carousel-wrapper .boxes-container.flex-direction.column-reverse::after {
+.boxes-container.cross::after {
     content: '  Cross Axis';
 }
