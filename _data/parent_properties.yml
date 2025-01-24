@@ -23,15 +23,15 @@
     title: flex-wrap
   items:
     - title: No-Wrap (Default)
-      elements-count: 7
+      elements-count: 8
       class-name: no-wrap
       definition: def row
     - title: Wrap
-      elements-count: 7
+      elements-count: 8
       class-name: wrap
       definition: def row
     - title: Wrap-Reverse
-      elements-count: 7
+      elements-count: 8
       class-name: wrap-reverse
       definition: def row
 - name: Justify Content

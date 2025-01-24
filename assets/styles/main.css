@@ -143,7 +143,7 @@
 }
 
 .boxes-container {
-    width: 18em;
+    width: 22em;
     background: var(--clr-yellow);
     display: flex;
     background: var(--clr-yellow);
@@ -152,8 +152,7 @@
     padding: 1em 1em 2.5em 1em;
     gap: 0.5rem;
     align-items: flex-start;
-    height: 12em;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
     position: relative;
 }
 
@@ -164,7 +163,7 @@
 }
 
 .details-container {
-    width: 30em;
+    width: 20em;
     display: flex;
     flex-direction: column;
 }
