@@ -234,11 +234,30 @@
 .details-container > details > summary {
     background: var(--clr-violet);
     padding: 0.6em;
+    position: relative;
+    padding-left: 1em;
+}
+
+.details-container > details[open] > summary::before {
+    content: '-';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 35%;
+}
+
+.details-container > details > summary::before {
+    content: '+';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 35%;
 }
 
 .details-container > details > p {
     text-indent: 1ch;
-    /* border: 1px solid var(--clr-gray); */
     padding: 0.5em;
     font-variant-caps: normal;
 }
