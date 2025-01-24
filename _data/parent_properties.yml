@@ -5,7 +5,7 @@
     - title: Row (Default)
       elements-count: 3
       class-name: row
-      definition: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quam, error fuga magni id eos! Dolorem eius eos, quam quaerat architecto praesentium sint repudiandae assumenda? Ipsum pariatur totam cumque.
+      definition: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quam, error fuga magni id eos! Dolorem eius 
       axis: main
     - title: Row-Reverse
       elements-count: 3

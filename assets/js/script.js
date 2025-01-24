@@ -64,14 +64,18 @@ propertyContainerElements.forEach(propertyContainerElement => {
             const buttonId = targetElement.id;
 
             elementId = buttonId;
+
+            return functionMapper[elementId](carouselWrapperElements);
         } else if (targetElementTagName === 'I') {
             const buttonElement = targetElement.parentElement;
             const buttonId = buttonElement.id;
 
             elementId = buttonId;
+
+            return functionMapper[elementId](carouselWrapperElements);
         }
 
-        return functionMapper[elementId](carouselWrapperElements);
+        
     });
 
     const functionMapper = {
