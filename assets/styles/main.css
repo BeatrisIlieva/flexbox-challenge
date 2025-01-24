@@ -1,114 +1,138 @@
-/* .section.section-main .wrapper > article {
-    flex: 1 1 100%;
-    display: flex;
-    flex-direction: column;
-    background: var(--clr-white);
-    padding: 2em;
-    border-radius: 0.5em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
-    gap: 2em;
+/* @import url('https://fonts.cdnfonts.com/css/tisa-sans-pro');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.property-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
+html {
+    box-sizing: border-box;
 }
 
-.property-section > h3 {
-    text-align: center;
+*,
+*::before,
+*::after,
+button {
+    box-sizing: inherit;
+    font: inherit;
 }
 
-.property-section > h3,
-.property-section > section:nth-of-type(1) > h4,
-.property-container {
-    flex: 1 1 100%;
-}
-
-.property-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 16em;
-}
-
-.boxes-container {
-    height: 100%;
-    background: var(--clr-yellow);
-    flex-grow: 1;
-    display: flex;
-    background: var(--clr-yellow);
-    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-    padding: 1em;
-    gap: 0.5rem;
-    align-items: flex-start;
-}
-
-.boxes-container:not(:first-of-type) {
-    display: none;
-}
-
-.boxes-container .box {
-    padding: 0.5em 1.4em;
-    color: var(--clr-black);
-    background: var(--clr-pink);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.2), 0 0 0.5em 0 rgb(0, 0, 0, 0.2) inset;
-    outline: 0.1em solid var(--clr-white);
-    text-align: center;
-}
-
-.boxes-container.flex-direction.row {
-    flex-direction: row;
-}
-
-.boxes-container.flex-direction.column {
-    flex-direction: column;
-}
-
-.boxes-container.flex-direction.row-reverse {
-    flex-direction: row-reverse;
-}
-
-.boxes-container.flex-direction.column-reverse {
-    flex-direction: column-reverse;
-}
-
-.property-section:nth-child(even) .property-container > .boxes-container {
-    margin-left: auto;
-}
-
-.property-section:nth-child(odd) .property-container > details {
-    margin-left: auto;
-}
-
-.property-section:nth-child(even) .boxes-container {
-    order: 2;
-}
-
-.property-section:nth-child(odd) .boxes-container {
-    order: -1;
-}
-
-.property-container > details > summary,
-.property-container > details {
+details,
+details > summary {
     display: block;
 }
 
-.property-container > details {
-    flex-grow: 3;
-    background: #000;
+button {
+    all: unset;
+    cursor: pointer;
 }
 
-.property-container > details:not(:last-of-type) {
-    margin-bottom: auto;
+html {
+    font: clamp(12px, 1.8dvw, 16px) / 1.4 'Tisa Sans Pro', sans-serif;
+    font-variant-caps: small-caps;
 }
 
-.black {
-    background: #000;
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+body {
+    background: var(--hdr-gradient), var(--sdr-gradient);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-main {
+    flex-grow: 1;
+}
+
+.section .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul ul {
+    display: none;
+}
+
+.main-nav ul li,
+.main-nav ul li a {
+    display: block;
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li:hover > ul {
+    min-width: 20ch;
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    padding: 0.5em;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    background: #369;
+    color: white;
+    padding: 0.7em 1.2em;
+    border-radius: 0.3em;
+}
+
+.main-nav ul li:hover > a,
+.main-nav ul li a:hover {
+    background: lightblue;
+    color: black;
+}
+
+.main-nav ul ul li:hover > ul {
+    left: initial;
+    right: 100%;
+    top: 0;
+}
+
+details,
+details > summary {
+    display: block;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
 } */
+
+/* main CSS */
 
 .section-main .wrapper > article {
     flex: 1 1 100%;
@@ -143,7 +167,7 @@
 #next {
     position: absolute;
     color: var(--clr-pink);
-    padding: 2em;
+    padding: 4em;
 }
 
 #previous {

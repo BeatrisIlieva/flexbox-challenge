@@ -9,11 +9,18 @@ html {
 
 *,
 *::before,
-*::after {
+*::after,
+button {
     box-sizing: inherit;
+    font: inherit;
 }
 
 details,
-details > summary{
+details > summary {
     display: block;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
 }
