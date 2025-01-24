@@ -206,6 +206,7 @@
         opacity: 1;
     }
 }
+
 .details-container {
     border: 0.3em solid var(--clr-white);
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
@@ -216,10 +217,13 @@
 .details-container > details {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 
-.details-container > details:not(:last-of-type){
+.details-container > details:last-child {
+    margin-bottom: auto;
+}
+
+.details-container > details:not(:last-of-type) {
     border-bottom: 0.15em solid var(--clr-white);
 }
 
@@ -231,4 +235,3 @@
 .details-container > details > p {
     text-indent: 2ch;
 }
-
