@@ -51,7 +51,6 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     opacity: 0.5;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
     border: 0.04em solid var(--clr-white);
 }
 
@@ -126,10 +125,10 @@
     transform: translate(-70%, -60%);
     width: 0.08em;
     height: 12em;
-    background: var(--clr-dark-red);
+    background: var(--clr-red);
     content: '  Cross Axis';
     white-space: pre;
-    color: var(--clr-dark-red);
+    color: var(--clr-red);
 }
 
 .boxes-container.main::after,
@@ -140,10 +139,10 @@
     transform: translate(-70%, -60%);
     width: 12em;
     height: 0.08em;
-    background: var(--clr-dark-red);
+    background: var(--clr-red);
     content: '  Main Axis';
     white-space: pre;
-    color: var(--clr-dark-red);
+    color: var(--clr-red);
 }
 
 .boxes-container.cross::before {
