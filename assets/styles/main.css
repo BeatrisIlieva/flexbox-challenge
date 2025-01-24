@@ -238,6 +238,14 @@
 }
 
 .details-container > details > p {
-    text-indent: 2ch;
-    border: 1px solid gray;
+    text-indent: 1ch;
+    border: 1px solid var(--clr-gray);
+    padding: 0.5em;
+    font-variant-caps: normal;
+}
+
+.details-container > details[open] > summary {
+    background: var(--clr-dark-violet);
+    font-weight: bold;
+    color: var(--clr-green);
 }
