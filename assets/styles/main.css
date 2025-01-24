@@ -142,6 +142,8 @@
 #previous,
 #next {
     position: absolute;
+    color: var(--clr-pink);
+    padding: 2em;
 }
 
 #previous {

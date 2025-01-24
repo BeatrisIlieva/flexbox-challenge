@@ -57,11 +57,22 @@ propertyContainerElements.forEach(propertyContainerElement => {
 
         const carouselWrapperElements = currentTargetElement.querySelectorAll('.carousel-wrapper');
 
-        if (targetElement.tagName === 'I') {
-            const iconId = targetElement.id;
+        const targetElementTagName = targetElement.tagName;
 
-            return functionMapper[iconId](carouselWrapperElements);
+        let elementId;
+
+        if (targetElementTagName === 'BUTTON') {
+            const buttonId = targetElement.id;
+
+            elementId = buttonId;
+        } else if (targetElementTagName === 'I') {
+            const buttonElement = targetElement.parentElement;
+            const buttonId = buttonElement.id;
+
+            elementId = buttonId;
         }
+
+        return functionMapper[elementId](carouselWrapperElements);
     });
 
     const functionMapper = {
