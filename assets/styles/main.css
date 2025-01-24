@@ -65,7 +65,7 @@
 }
 
 .boxes-container {
-    width: 22em;
+    width: 20em;
     background: var(--clr-yellow);
     display: flex;
     background: var(--clr-yellow);
@@ -114,36 +114,52 @@
     flex-direction: row-reverse;
 }
 
-.boxes-container.flex-direction.column-reverse {
+.boxes-container.flex-wrap.column-reverse {
     flex-direction: column-reverse;
+}
+
+.boxes-container.flex-wrap.nowrap {
+    flex-wrap: nowrap;
+}
+
+.boxes-container.flex-wrap.wrap {
+    flex-wrap: wrap;
+}
+
+.boxes-container.flex-wrap.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.boxes-container.main::before,
+.boxes-container.cross::before,
+.boxes-container.main::after,
+.boxes-container.cross::after {
+    border-radius: 100%;
+    z-index: 10;
+    white-space: pre;
+    color: var(--clr-red);
+    background: var(--clr-red);
+    position: absolute;
 }
 
 .boxes-container.main::before,
 .boxes-container.cross::before {
-    position: absolute;
     top: 70%;
     left: 60%;
     transform: translate(-70%, -60%);
-    width: 0.08em;
+    width: 0.1em;
     height: 12em;
-    background: var(--clr-red);
     content: '  Cross Axis';
-    white-space: pre;
-    color: var(--clr-red);
 }
 
 .boxes-container.main::after,
 .boxes-container.cross::after {
-    position: absolute;
     top: 60%;
     left: 70%;
     transform: translate(-70%, -60%);
     width: 12em;
-    height: 0.08em;
-    background: var(--clr-red);
+    height: 0.1em;
     content: '  Main Axis';
-    white-space: pre;
-    color: var(--clr-red);
 }
 
 .boxes-container.cross::before {

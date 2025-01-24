@@ -26,18 +26,21 @@
   class-name: 
     title: flex-wrap
   items:
-    - title: No-Wrap (Default)
+    - title: NoWrap (Default)
       elements-count: 8
-      class-name: no-wrap
+      class-name: nowrap
       definition: def row
+      axis: main
     - title: Wrap
       elements-count: 8
       class-name: wrap
       definition: def row
+      axis: main
     - title: Wrap-Reverse
       elements-count: 8
       class-name: wrap-reverse
       definition: def row
+      axis: main
 - name: Justify Content
   class-name: 
     title: justify-content
