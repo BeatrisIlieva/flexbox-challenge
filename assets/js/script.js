@@ -32,12 +32,11 @@ propertyContainerElements.forEach(propertyContainerElement => {
         if (targetElement.tagName === 'SUMMARY') {
             const summaryElementId = targetElement.id;
 
-            const boxesContainerElements =
-                propertyContainerElement.querySelectorAll('.carousel-wrapper');
+            const carouselElements = propertyContainerElement.querySelectorAll('.carousel-wrapper');
 
-            boxesContainerElements.forEach(element => (element.style.display = 'none'));
+            carouselElements.forEach(element => (element.style.display = 'none'));
 
-            const boxContainerElement = [...boxesContainerElements].find(element => {
+            const carouselElement = [...carouselElements].find(element => {
                 const classList = element.classList;
                 const lastClassName = classList[classList.length - 1];
 
@@ -46,67 +45,57 @@ propertyContainerElements.forEach(propertyContainerElement => {
                 }
             });
 
-            boxContainerElement.style.display = 'flex';
-            console.log(boxContainerElement);
+            carouselElement.style.display = 'flex';
         }
     });
 });
 
+propertyContainerElements.forEach(propertyContainerElement => {
+    propertyContainerElement.addEventListener('click', e => {
+        const currentTargetElement = e.currentTarget;
+        const targetElement = e.target;
 
+        const carouselWrapperElements = currentTargetElement.querySelectorAll('.carousel-wrapper');
 
+        if (targetElement.tagName === 'I') {
+            const iconId = targetElement.id;
 
+            return functionMapper[iconId](carouselWrapperElements);
+        }
+    });
 
+    const functionMapper = {
+        next: boxesContainerElements => displayNextElement(boxesContainerElements),
+        previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
+    };
+});
 
-// const boxesContainerElements = document.querySelectorAll('.boxes-container');
+function displayNextElement(elements) {
+    for (let i = 0; i < elements.length; i++) {
+        let currentElement = elements[i];
 
-// boxesContainerElements.forEach(boxesContainerElement => {
-//     boxesContainerElement.addEventListener('click', e => {
-//         const carouselElement = e.currentTarget;
-//         const buttonElement = e.target;
+        if (window.getComputedStyle(currentElement).display === 'flex') {
+            currentElement.style.display = 'none';
 
-//         // const ulElement = carouselElement.querySelector('ul');
-//         // const liElements = Array.from(ulElement.querySelectorAll('li'));
+            const nextIndex = (i + 1) % elements.length;
+            elements[nextIndex].style.display = 'flex';
 
-//         if (buttonElement.tagName === 'BUTTON') {
-//             const buttonId = buttonElement.id;
+            break;
+        }
+    }
+}
 
-//             return functionMapper[buttonId](boxesContainerElements);
-//         }
-//     });
+function displayPreviousElement(elements) {
+    for (let i = elements.length - 1; i >= 0; i--) {
+        let currentElement = elements[i];
 
-//     const functionMapper = {
-//         next: boxesContainerElements => displayNextElement(boxesContainerElements),
-//         previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
-//     };
-// });
+        if (window.getComputedStyle(currentElement).display === 'flex') {
+            currentElement.style.display = 'none';
 
-// function displayNextElement(elements) {
-//     for (let i = 0; i < elements.length; i++) {
-//         let currentElement = elements[i];
+            const previousIndex = (i - 1 + elements.length) % elements.length;
+            elements[previousIndex].style.display = 'flex';
 
-//         if (window.getComputedStyle(currentElement).display === 'flex') {
-//             currentElement.style.display = 'none';
-
-//             const nextIndex = (i + 1) % elements.length;
-//             elements[nextIndex].style.display = 'flex';
-
-//             break;
-//         }
-//     }
-// }
-
-// function displayPreviousElement(elements) {
-//     for (let i = elements.length - 1; i >= 0; i--) {
-//         let currentElement = elements[i];
-
-//         if (window.getComputedStyle(currentElement).display === 'flex') {
-//             currentElement.style.display = 'none';
-
-//             const previousIndex = (i - 1 + elements.length) % elements.length;
-//             elements[previousIndex].style.display = 'flex';
-
-//             break;
-//         }
-//     }
-// }
-
+            break;
+        }
+    }
+}

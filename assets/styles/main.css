@@ -130,6 +130,7 @@
 .property-container {
     display: flex;
     gap: 2em;
+    justify-content: space-between;
 }
 
 .carousel-wrapper {
@@ -142,21 +143,28 @@
 }
 
 .boxes-container {
-    flex-grow: 1;
+    width: 18em;
     background: var(--clr-yellow);
     display: flex;
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-    padding: 1em;
+    padding: 1em 1em 2.5em 1em;
     gap: 0.5rem;
     align-items: flex-start;
     height: 12em;
     aspect-ratio: 1/1;
+    position: relative;
+}
+
+.boxes-container figcaption {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0.5em;
 }
 
 .details-container {
-    flex-grow: 3;
+    width: 30em;
     display: flex;
     flex-direction: column;
 }
@@ -172,18 +180,18 @@
     text-align: center;
 }
 
-.boxes-container .flex-direction.row {
+.boxes-container.flex-direction.row {
     flex-direction: row;
 }
 
-.boxes-container .flex-direction.column {
+.boxes-container.flex-direction.column {
     flex-direction: column;
 }
 
-.boxes-container .flex-direction.row-reverse {
+.boxes-container.flex-direction.row-reverse {
     flex-direction: row-reverse;
 }
 
-.boxes-container .flex-direction.column-reverse {
+.boxes-container.flex-direction.column-reverse {
     flex-direction: column-reverse;
 }
