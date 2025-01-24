@@ -208,10 +208,9 @@
 }
 
 .details-container {
-    border: 0.3em solid var(--clr-white);
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5em;
-    padding: 1em;
+    overflow: hidden;
 }
 
 .details-container > details {
@@ -239,7 +238,7 @@
 
 .details-container > details > p {
     text-indent: 1ch;
-    border: 1px solid var(--clr-gray);
+    /* border: 1px solid var(--clr-gray); */
     padding: 0.5em;
     font-variant-caps: normal;
 }
