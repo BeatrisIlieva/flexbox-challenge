@@ -205,3 +205,12 @@
         opacity: 1;
     }
 }
+
+.details-container > details {
+    border: 1px solid black;
+}
+
+.details-container > details > summary {
+    background: pink;
+    padding: 0.5em;
+}
