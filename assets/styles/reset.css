@@ -9,3 +9,8 @@
 *::after {
     box-sizing: inherit;
 }
+
+details,
+details > summary{
+    display: block;
+}

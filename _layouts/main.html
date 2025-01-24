@@ -2,42 +2,49 @@
 
 <main class="section section-main">
     <div class="wrapper">
-        ha
-        <!-- <article>
-            {% for property in site.data.properties %}
+        
+        <article>
+            <h2>Parent Properties</h2>
+            
+            {% for property in site.data.parent_properties %}
             <section class="property-section">
                 <h3>{{property.name}}</h3>
                 
                 <div class="property-container">
                     
                     {% for item in property.items %}
-                    <div>
+                    <div class="carousel-wrapper">
+                        
                         <figure class="boxes-container {{property.class-name.title}} {{item.class-name}}">
                             {% for i in (1..item.elements-count) %}
                             <p class="box">{{ i }}</p>
                             {% endfor %}
                             <figcaption>{{item.title}}</figcaption>
                         </figure>
+                        
                         <i id="next" class="fa-solid fa-camera" aria-hidden="true"></i>
                         <i id="previous" class="fa-solid fa-camera" aria-hidden="true"></i>
+                        
                     </div>
                     {% endfor %}
                     
-                    {% for item in property.items %}
-                    <div class="summary-container">
-                        <details>
-                            <summary id="{{item.class-name}}">{{item.definition}}</summary>
-                            <p>Lorem</p>
+                    <aside class="details-container">
+                        {% for item in property.items %}
+                        
+                        <details name="accordion">
+                            <summary id="{{item.class-name}}">{{item.title}}</summary>
+                            <p>{{item.definition}}</p>
                         </details>
-                    </div>
-                    {% endfor %}
+                        
+                        {% endfor %}
+                    </aside>
                     
                 </div>
                 
             </section>
             {% endfor %}
             
-        </article> -->
+        </article>
         
     </div>
 </main>

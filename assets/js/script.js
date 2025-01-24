@@ -33,7 +33,7 @@ propertyContainerElements.forEach(propertyContainerElement => {
             const summaryElementId = targetElement.id;
 
             const boxesContainerElements =
-                propertyContainerElement.querySelectorAll('.boxes-container');
+                propertyContainerElement.querySelectorAll('.carousel-wrapper');
 
             boxesContainerElements.forEach(element => (element.style.display = 'none'));
 
@@ -57,56 +57,56 @@ propertyContainerElements.forEach(propertyContainerElement => {
 
 
 
-const boxesContainerElements = document.querySelectorAll('.boxes-container');
+// const boxesContainerElements = document.querySelectorAll('.boxes-container');
 
-boxesContainerElements.forEach(boxesContainerElement => {
-    boxesContainerElement.addEventListener('click', e => {
-        const carouselElement = e.currentTarget;
-        const buttonElement = e.target;
+// boxesContainerElements.forEach(boxesContainerElement => {
+//     boxesContainerElement.addEventListener('click', e => {
+//         const carouselElement = e.currentTarget;
+//         const buttonElement = e.target;
 
-        // const ulElement = carouselElement.querySelector('ul');
-        // const liElements = Array.from(ulElement.querySelectorAll('li'));
+//         // const ulElement = carouselElement.querySelector('ul');
+//         // const liElements = Array.from(ulElement.querySelectorAll('li'));
 
-        if (buttonElement.tagName === 'BUTTON') {
-            const buttonId = buttonElement.id;
+//         if (buttonElement.tagName === 'BUTTON') {
+//             const buttonId = buttonElement.id;
 
-            return functionMapper[buttonId](boxesContainerElements);
-        }
-    });
+//             return functionMapper[buttonId](boxesContainerElements);
+//         }
+//     });
 
-    const functionMapper = {
-        next: boxesContainerElements => displayNextElement(boxesContainerElements),
-        previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
-    };
-});
+//     const functionMapper = {
+//         next: boxesContainerElements => displayNextElement(boxesContainerElements),
+//         previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
+//     };
+// });
 
-function displayNextElement(elements) {
-    for (let i = 0; i < elements.length; i++) {
-        let currentElement = elements[i];
+// function displayNextElement(elements) {
+//     for (let i = 0; i < elements.length; i++) {
+//         let currentElement = elements[i];
 
-        if (window.getComputedStyle(currentElement).display === 'flex') {
-            currentElement.style.display = 'none';
+//         if (window.getComputedStyle(currentElement).display === 'flex') {
+//             currentElement.style.display = 'none';
 
-            const nextIndex = (i + 1) % elements.length;
-            elements[nextIndex].style.display = 'flex';
+//             const nextIndex = (i + 1) % elements.length;
+//             elements[nextIndex].style.display = 'flex';
 
-            break;
-        }
-    }
-}
+//             break;
+//         }
+//     }
+// }
 
-function displayPreviousElement(elements) {
-    for (let i = elements.length - 1; i >= 0; i--) {
-        let currentElement = elements[i];
+// function displayPreviousElement(elements) {
+//     for (let i = elements.length - 1; i >= 0; i--) {
+//         let currentElement = elements[i];
 
-        if (window.getComputedStyle(currentElement).display === 'flex') {
-            currentElement.style.display = 'none';
+//         if (window.getComputedStyle(currentElement).display === 'flex') {
+//             currentElement.style.display = 'none';
 
-            const previousIndex = (i - 1 + elements.length) % elements.length;
-            elements[previousIndex].style.display = 'flex';
+//             const previousIndex = (i - 1 + elements.length) % elements.length;
+//             elements[previousIndex].style.display = 'flex';
 
-            break;
-        }
-    }
-}
+//             break;
+//         }
+//     }
+// }
 
