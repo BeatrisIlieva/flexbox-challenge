@@ -32,17 +32,17 @@
     - title: NoWrap (Default)
       elements-count: 6
       class-name: nowrap
-      definition: def row
+      definition: Specifies that the flexible items will not wrap
       axis: main
     - title: Wrap
       elements-count: 6
       class-name: wrap
-      definition: def row
+      definition: Specifies that the flexible items will wrap if necessary
       axis: main
     - title: Wrap-Reverse
       elements-count: 6
       class-name: wrap-reverse
-      definition: def row
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
       axis: main
 - name: Justify Content
   class-name: 

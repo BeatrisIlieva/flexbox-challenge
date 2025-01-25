@@ -1,28 +1,30 @@
 .layout-item .wrapper > .site-content > article {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
 }
 
 .site-content > article > h2 {
     align-self: center;
-    margin-bottom: 1.5em;
-    border-bottom: 0.2rem solid var(--clr-blue);
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: var(--clr-blue);
+    text-underline-offset: 0.2em;
+    border-radius: 0.4em;
+    overflow: hidden;
 }
 
 .property-section {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .property-section > h3 {
     text-align: center;
-    border-bottom: 0.2rem solid var(--clr-green);
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    background-color: var(--clr-blue);
+    border-radius: 0.2em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
 }
 
 .property-section > p {
@@ -32,6 +34,7 @@
     max-width: 66ch;
     justify-self: center;
     align-self: center;
+    margin-bottom: 2em;
 }
 
 .property-container {
@@ -258,7 +261,7 @@
     padding-left: 1.5em;
     color: var(--clr-yellow);
     font-weight: bold;
-    text-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
     /* font-size: 1.1em; */
 }
 
