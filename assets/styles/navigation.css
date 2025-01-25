@@ -1,3 +1,16 @@
+.main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav > h1 {
+    font-weight: bold;
+    text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    color: var(--clr-white);
+}
+
 .main-nav ul ul {
     display: none;
 }

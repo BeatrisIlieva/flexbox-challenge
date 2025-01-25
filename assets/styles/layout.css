@@ -18,9 +18,10 @@ main.layout-item {
     align-items: center;
 }
 
-h1 {
-
-    font-weight: bold;
-    text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
-    color: var(--clr-white);
+.site-content {
+    flex: 1 1 100%;
+    background: var(--clr-white);
+    padding: 3em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
 }
