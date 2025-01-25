@@ -2,13 +2,13 @@
 section.insights {
     display: flex;
     max-width: 1000px;
-    gap: 2em;
+    gap: 1em;
 }
 
 .double-layout {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     flex: 1 1 70%;
 }
 
@@ -18,7 +18,6 @@ section.insights {
     background: white;
     display: flex;
     flex-direction: column;
-    /* gap: 2em; */
 }
 
 .double-layout article {
@@ -27,7 +26,7 @@ section.insights {
     display: flex;
     gap: 2em;
     align-items: center;
-    /* flex-grow: 1;s */
+    /* flex-grow: 1; */
 }
 
 .single-layout article {
@@ -52,13 +51,14 @@ section.content {
 }
 
 section.content i {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .single-layout section.content,
 .double-layout section.content {
     flex-direction: column;
     gap: 1em;
+    justify-content: space-between;
 }
 
 .double-layout .content h5 {
@@ -66,7 +66,6 @@ section.content i {
 }
 
 div.avatar {
-    background: green;
     width: 8em;
     border-radius: 50%;
     overflow: hidden;
@@ -75,5 +74,5 @@ div.avatar {
 }
 
 .single-layout .avatar {
-    width: 4em;
+    width: 6em;
 }
