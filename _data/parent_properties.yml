@@ -6,22 +6,22 @@
     - title: Row (Default)
       elements-count: 3
       class-name: row
-      definition: The flexible items are displayed horizontally, as a row
+      definition: The flexible items are displayed horizontally, as a row.
       axis: main
     - title: Row-Reverse
       elements-count: 3
       class-name: row-reverse
-      definition: The flexible items are displayed horizontally, as a row but in reverse order
+      definition: The flexible items are displayed horizontally, as a row but in reverse order.
       axis: main
     - title: Column
       elements-count: 3
       class-name: column
-      definition: The flexible items are displayed vertically, as a column
+      definition: The flexible items are displayed vertically, as a column.
       axis: cross
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
-      definition: The flexible items are displayed vertically, as a column but in reverse order
+      definition: The flexible items are displayed vertically, as a column but in reverse order.
       axis: cross
 - name: Flex-Wrap
   class-name: 
@@ -31,17 +31,17 @@
     - title: NoWrap (Default)
       elements-count: 6
       class-name: nowrap
-      definition: Specifies that the flexible items will not wrap
+      definition: Specifies that the flexible items will not wrap.
       axis: main
     - title: Wrap
       elements-count: 6
       class-name: wrap
-      definition: Specifies that the flexible items will wrap if necessary
+      definition: Specifies that the flexible items will wrap if necessary.
       axis: main
     - title: Wrap-Reverse
       elements-count: 6
       class-name: wrap-reverse
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order.
       axis: main
 
 - name: Flex-Flow
@@ -52,33 +52,33 @@
     - title: Row-NoWrap (Default)
       elements-count: 6
       class-name: row-nowrap
-      definition: main-axis is the block direction with a reversed main-start and main-end. The flex items are allowed to wrap, creating new lines if needed
+      definition: The flex items are not allowed to wrap, so new rows are not created.
       axis: main
     - title: Row-Reverse-NoWrap
       elements-count: 6
       class-name: row-reverse-nowrap
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: Flex items in reversed order; not are allowed to wrap.
       axis: main
     - title: Row-Wrap
       elements-count: 6
       class-name: row-wrap
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: The flex items are allowed to wrap, creating new rows if needed.
       axis: main
 
     - title: Column-NoWrap
-      elements-count: 6
+      elements-count: 7
       class-name: column-nowrap
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: The flex items are not allowed to wrap, so new columns are not created.
       axis: cross
     - title: Column-Reverse-NoWrap
-      elements-count: 6
+      elements-count: 7
       class-name: column-reverse-nowrap
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: Flex items in reversed order; not are allowed to wrap.
       axis: cross
     - title: Column-Wrap
       elements-count: 6
       class-name: column-wrap
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      definition: The flex items are allowed to wrap, creating new columns if needed.
       axis: cross
 
 

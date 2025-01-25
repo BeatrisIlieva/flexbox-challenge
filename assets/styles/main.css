@@ -40,7 +40,7 @@
 .property-container {
     display: flex;
     gap: 2em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -94,14 +94,12 @@
 .boxes-container,
 .details-container {
     width: 19em;
-    height: 21em;
+    height: 20em;
     aspect-ratio: 1/1;
 }
 
 .details-container {
-    width: 23em;
-    height: 21em;
-    aspect-ratio: 1/1;
+    width: 19em;
 }
 
 .boxes-container {
@@ -140,6 +138,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .boxes-container.flex-direction.row {
@@ -170,12 +169,20 @@
     flex-wrap: wrap-reverse;
 }
 
+.boxes-container.flex-flow.row-nowrap {
+    flex-flow: row nowrap;
+}
+
 .boxes-container.flex-flow.row-reverse-nowrap {
     flex-flow: row-reverse nowrap;
 }
 
 .boxes-container.flex-flow.row-wrap {
     flex-flow: row wrap;
+}
+
+.boxes-container.flex-flow.column-nowrap {
+    flex-flow: column nowrap;
 }
 
 .boxes-container.flex-flow.column-reverse-nowrap {
@@ -185,10 +192,6 @@
 .boxes-container.flex-flow.column-wrap {
     flex-flow: column wrap;
 }
-
-
-
-
 
 .boxes-container.main::before,
 .boxes-container.cross::before,
@@ -286,13 +289,12 @@
 
 .details-container > details > summary {
     background: var(--clr-violet);
-    padding: 1em;
+    padding: 0.5em;
     position: relative;
     padding-left: 1.5em;
     color: var(--clr-yellow);
     font-weight: bold;
     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
-    /* font-size: 1.1em; */
 }
 
 .details-container > details > summary::before {
@@ -320,7 +322,7 @@
 
 .details-container > details > p {
     text-indent: 1ch;
-    padding: 0.5em;
+    padding: 0.25em;
     font-variant-caps: normal;
 }
 
