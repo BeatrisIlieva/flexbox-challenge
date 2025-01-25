@@ -139,6 +139,7 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    z-index: 3;
 }
 
 .boxes-container.flex-direction.row {
@@ -191,6 +192,30 @@
 
 .boxes-container.flex-flow.column-wrap {
     flex-flow: column wrap;
+}
+
+.boxes-container.justify-content.flex-start {
+    justify-content: flex-start;
+}
+
+.boxes-container.justify-content.flex-end {
+    justify-content: flex-end;
+}
+
+.boxes-container.justify-content.center {
+    justify-content: center;
+}
+
+.boxes-container.justify-content.space-between {
+    justify-content: space-between;
+}
+
+.boxes-container.justify-content.space-around {
+    justify-content: space-around;
+}
+
+.boxes-container.justify-content.space-evenly {
+    justify-content: space-evenly;
 }
 
 .boxes-container.main::before,

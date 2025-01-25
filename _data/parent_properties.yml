@@ -47,7 +47,7 @@
 - name: Flex-Flow
   class-name: 
     title: flex-flow
-  definition: This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes.
+  definition: Flex-Flow a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes.
   items:
     - title: Row-NoWrap (Default)
       elements-count: 6
@@ -86,23 +86,35 @@
 - name: Justify Content
   class-name: 
     title: justify-content
-    definition:
+  definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
   items:
     - title: Flex-Start (Default)
       elements-count: 3
       class-name: flex-start
+      definition: Items are aligned toward the start of the flex-direction.
+      axis: cross
     - title: Center
       elements-count: 3
       class-name: center
+      definition: Items are aligned toward the center of the flex-direction.
+      axis: cross
     - title: Flex-End
       elements-count: 3
       class-name: flex-end
+      definition: Items are aligned toward the end of the flex-direction.
+      axis: cross
     - title: Space-Between
       elements-count: 3
       class-name: space-between
+      definition: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
+      axis: cross
     - title: Space-Around
       elements-count: 3
       class-name: space-around
+      definition: Items are evenly distributed in the line with equal space around them (all the items have equal space on both sides). 
+      axis: cross
     - title: Space-Evenly
       elements-count: 3
       class-name: space-evenly
+      definition: Items are distributed so that the spacing between any two items is equal.
+      axis: cross
