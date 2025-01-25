@@ -88,34 +88,24 @@ propertyContainerElements.forEach(propertyContainerElement => {
 
             elementId = buttonId;
             delta = deltaMapper[elementId];
-
-            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
-            displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
         } else if (targetElementTagName === 'I') {
             const buttonElement = targetElement.parentElement;
             const buttonId = buttonElement.id;
 
             elementId = buttonId;
             delta = deltaMapper[elementId];
-
-            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
-            displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
         }
+
+        displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
+        displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
     });
 });
 
 function displayRelevantDetailsElement(delta, lastClassName, currentTargetElement) {
     const summaryElements = currentTargetElement.querySelectorAll('details summary');
-    // let foundIndex;
 
     const detailsElements = currentTargetElement.querySelectorAll('details');
     detailsElements.forEach(detailsElement => (detailsElement.open = false));
-
-    // const currentElement = [...summaryElements].find((element, index) => {
-    //     if (element.id === lastClassName) {
-    //         foundIndex = index;
-    //     }
-    // });
 
     const foundIndex = [...summaryElements].findIndex(element => element.id === lastClassName);
 

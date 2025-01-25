@@ -40,16 +40,19 @@
 
 .main-nav ul li a {
     text-decoration: none;
-    background: #369;
-    color: white;
+    background: var(--hdr-gradient), var(--sdr-gradient);
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    color: var(--clr-white);
+    font-weight: bold;
     padding: 0.7em 1.2em;
     border-radius: 0.3em;
+    font-size: 1.1em;
 }
 
 .main-nav ul li:hover > a,
 .main-nav ul li a:hover {
-    background: lightblue;
-    color: black;
+    color: var(--clr-black);
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
 }
 
 .main-nav ul ul li:hover > ul {
