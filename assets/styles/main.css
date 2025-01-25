@@ -218,6 +218,26 @@
     justify-content: space-evenly;
 }
 
+.boxes-container.align-items.stretch {
+    align-items: stretch;
+}
+
+.boxes-container.align-items.flex-start {
+    align-items: flex-start;
+}
+
+.boxes-container.align-items.center {
+    align-items: center;
+}
+
+.boxes-container.align-items.flex-end {
+    align-items: flex-end;
+}
+
+.boxes-container.align-items.baseline {
+    align-items: baseline;
+}
+
 .boxes-container.main::before,
 .boxes-container.cross::before,
 .boxes-container.main::after,

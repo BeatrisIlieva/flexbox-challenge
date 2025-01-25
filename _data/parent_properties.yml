@@ -83,7 +83,7 @@
 
 
 
-- name: Justify Content
+- name: Justify-Content
   class-name: 
     title: justify-content
   definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
@@ -118,3 +118,35 @@
       class-name: space-evenly
       definition: Items are distributed so that the spacing between any two items is equal.
       axis: cross
+
+- name: Align-Items
+  class-name: 
+    title: align-items
+  definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
+  items:
+    - title: Stretch (Default) 
+      elements-count: 3
+      class-name: stretch
+      definition: Items stretch to fill the container, respecting min-width/max-width.
+      axis: cross
+    - title: Flex-Start 
+      elements-count: 3
+      class-name: flex-start
+      definition: Items are placed at the start of the cross axis. 
+      axis: cross
+    - title: Center
+      elements-count: 3
+      class-name: center
+      definition: Items are centered in the cross-axis.
+      axis: cross
+    - title: Flex-End
+      elements-count: 3
+      class-name: flex-end
+      definition: Items are placed at the end of the cross axis. 
+      axis: cross
+    - title: Baseline
+      elements-count: 3
+      class-name: baseline
+      definition: Items are aligned such as their baselines align.
+      axis: cross
+
