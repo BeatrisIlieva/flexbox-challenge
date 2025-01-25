@@ -214,6 +214,8 @@
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5em;
     overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .details-container > details {
