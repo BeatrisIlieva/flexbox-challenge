@@ -8,6 +8,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+const displayDetailsFunctionMapper = {
+    next: (delta, lastClassName, currentTargetElement) =>
+        displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
+    previous: (delta, lastClassName, currentTargetElement) =>
+        displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
+};
+
+const displayNextBoxFunctionMapper = {
+    next: boxesContainerElements => displayNextElement(boxesContainerElements),
+    previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
+};
+
 const propertyContainerElements = document.querySelectorAll('.property-container');
 
 propertyContainerElements.forEach(propertyContainerElement => {
@@ -64,6 +76,7 @@ propertyContainerElements.forEach(propertyContainerElement => {
 
         const targetElementTagName = targetElement.tagName;
         let elementId;
+        let delta;
 
         const deltaMapper = {
             next: 1,
@@ -74,32 +87,21 @@ propertyContainerElements.forEach(propertyContainerElement => {
             const buttonId = targetElement.id;
 
             elementId = buttonId;
-            const delta = deltaMapper[elementId];
+            delta = deltaMapper[elementId];
+
             displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
-            functionMapper[elementId](carouselWrapperElements);
+            displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
         } else if (targetElementTagName === 'I') {
             const buttonElement = targetElement.parentElement;
             const buttonId = buttonElement.id;
 
             elementId = buttonId;
-            const delta = deltaMapper[elementId];
-            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
+            delta = deltaMapper[elementId];
 
-            functionMapper[elementId](carouselWrapperElements);
+            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
+            displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
         }
     });
-
-    const displayDetailsFunctionMapper = {
-        next: (delta, lastClassName, currentTargetElement) =>
-            displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
-        previous: (delta, lastClassName, currentTargetElement) =>
-            displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
-    };
-
-    const functionMapper = {
-        next: boxesContainerElements => displayNextElement(boxesContainerElements),
-        previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
-    };
 });
 
 function displayRelevantDetailsElement(delta, lastClassName, currentTargetElement) {
