@@ -12,7 +12,7 @@ body {
 .section .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1vw;
+    padding: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
