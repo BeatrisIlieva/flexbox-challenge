@@ -1,0 +1,79 @@
+
+section.insights {
+    display: flex;
+    max-width: 1000px;
+    gap: 2em;
+}
+
+.double-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1 1 70%;
+}
+
+.single-layout {
+    flex: 1 1 30%;
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2em; */
+}
+
+.double-layout article {
+    border: 1px solid black;
+    background: white;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    /* flex-grow: 1;s */
+}
+
+.single-layout article {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-end;
+    /* flex-grow: 1; */
+}
+
+.single-layout article,
+.double-layout article {
+    padding: 1em;
+}
+
+.single-layout article:nth-child(even) {
+    padding-top: 0;
+}
+
+section.content {
+    display: flex;
+}
+
+section.content i {
+    font-size: 2em;
+}
+
+.single-layout section.content,
+.double-layout section.content {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.double-layout .content h5 {
+    order: 2;
+}
+
+div.avatar {
+    background: green;
+    width: 8em;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+}
+
+.single-layout .avatar {
+    width: 4em;
+}
