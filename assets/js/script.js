@@ -59,73 +59,67 @@ propertyContainerElements.forEach(propertyContainerElement => {
             element => window.getComputedStyle(element).display === 'flex'
         );
 
-
-
-
         const classList = currentCarouselElement.classList;
         const lastClassName = classList[classList.length - 1];
-
-
-        
 
         const targetElementTagName = targetElement.tagName;
         let elementId;
 
         const deltaMapper = {
             next: 1,
-            previous: carouselWrapperElements.length -1
-        }
+            previous: carouselWrapperElements.length - 1,
+        };
 
         if (targetElementTagName === 'BUTTON') {
             const buttonId = targetElement.id;
 
-
-
             elementId = buttonId;
             const delta = deltaMapper[elementId];
-            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement)
-            return functionMapper[elementId](carouselWrapperElements);
+            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
+            functionMapper[elementId](carouselWrapperElements);
         } else if (targetElementTagName === 'I') {
             const buttonElement = targetElement.parentElement;
             const buttonId = buttonElement.id;
 
             elementId = buttonId;
             const delta = deltaMapper[elementId];
-            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement)
+            displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
 
-            return functionMapper[elementId](carouselWrapperElements);
+            functionMapper[elementId](carouselWrapperElements);
         }
     });
+
     const displayDetailsFunctionMapper = {
-        next: (delta,lastClassName, currentTargetElement) => displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
-        previous: (delta,lastClassName, currentTargetElement) => displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
-    }
+        next: (delta, lastClassName, currentTargetElement) =>
+            displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
+        previous: (delta, lastClassName, currentTargetElement) =>
+            displayRelevantDetailsElement(delta, lastClassName, currentTargetElement),
+    };
+
     const functionMapper = {
         next: boxesContainerElements => displayNextElement(boxesContainerElements),
         previous: boxesContainerElements => displayPreviousElement(boxesContainerElements),
     };
-
-
 });
 
-function displayRelevantDetailsElement(delta, lastClassName, currentTargetElement){
+function displayRelevantDetailsElement(delta, lastClassName, currentTargetElement) {
     const summaryElements = currentTargetElement.querySelectorAll('details summary');
-        let foundIndex;
+    let foundIndex;
 
-        const detailsElements = currentTargetElement.querySelectorAll('details');
-        detailsElements.forEach(detailsElement => (detailsElement.open = false));
+    const detailsElements = currentTargetElement.querySelectorAll('details');
+    detailsElements.forEach(detailsElement => (detailsElement.open = false));
 
-        const currentElement = [...summaryElements].find((element, index) => {
-            if (element.id === lastClassName) {
-                foundIndex = index;
-            }
-        });
+    const currentElement = [...summaryElements].find((element, index) => {
+        if (element.id === lastClassName) {
+            foundIndex = index;
+        }
+    });
 
-        const index = (foundIndex + delta) % summaryElements.length;
-        const summaryElementToBeOpen = summaryElements[index];
+    const index = (foundIndex + delta) % summaryElements.length;
+    const summaryElementToBeOpen = summaryElements[index];
 
-        const detailsElement = summaryElementToBeOpen.parentElement;
-        detailsElement.open = true;
+    const detailsElement = summaryElementToBeOpen.parentElement;
+    detailsElement.open = true;
 }
 
 function displayNextElement(elements) {
