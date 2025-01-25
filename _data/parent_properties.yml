@@ -27,17 +27,17 @@
     title: flex-wrap
   items:
     - title: NoWrap (Default)
-      elements-count: 8
+      elements-count: 6
       class-name: nowrap
       definition: def row
       axis: main
     - title: Wrap
-      elements-count: 8
+      elements-count: 6
       class-name: wrap
       definition: def row
       axis: main
     - title: Wrap-Reverse
-      elements-count: 8
+      elements-count: 6
       class-name: wrap-reverse
       definition: def row
       axis: main
