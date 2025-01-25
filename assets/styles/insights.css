@@ -3,6 +3,7 @@ section.insights {
     display: flex;
     max-width: 1000px;
     gap: 1em;
+    font-variant-caps: normal;
 }
 
 .double-layout {
@@ -46,6 +47,10 @@ section.insights {
 
 section.content {
     display: flex;
+}
+
+section.content blockquote {
+    opacity: 0.5;
 }
 
 section.content i {
