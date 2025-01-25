@@ -17,7 +17,6 @@ section.insights {
     border: 1px solid black;
     background: white;
     display: flex;
-    flex-direction: column;
 }
 
 .double-layout article {
@@ -26,15 +25,14 @@ section.insights {
     display: flex;
     gap: 2em;
     align-items: center;
-    /* flex-grow: 1; */
 }
 
 .single-layout article {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    align-items: flex-end;
-    /* flex-grow: 1; */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .single-layout article,
@@ -73,6 +71,3 @@ div.avatar {
     flex-shrink: 0;
 }
 
-.single-layout .avatar {
-    width: 6em;
-}
