@@ -1,13 +1,37 @@
-.layout-item .wrapper > article {
+.layout-item .wrapper > .site-content > article {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+.site-content > article > h2 {
+    align-self: center;
+    margin-bottom: 1.5em;
+    border-bottom: 0.2rem solid var(--clr-blue);
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
 }
 
 .property-section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+.property-section > h3 {
+    text-align: center;
+    border-bottom: 0.2rem solid var(--clr-green);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.property-section > p {
+    text-align: center;
+    opacity: 0.5;
+    font-variant-caps: normal;
+    max-width: 66ch;
+    justify-self: center;
+    align-self: center;
 }
 
 .property-container {
@@ -229,12 +253,13 @@
 
 .details-container > details > summary {
     background: var(--clr-violet);
-    padding: 0.6em;
+    padding: 1em;
     position: relative;
     padding-left: 1.5em;
     color: var(--clr-yellow);
     font-weight: bold;
     text-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    /* font-size: 1.1em; */
 }
 
 .details-container > details > summary::before {

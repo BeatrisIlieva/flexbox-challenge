@@ -13,7 +13,7 @@
             {% for property in site.data.parent_properties %}
             <section class="property-section">
                 <h3>{{property.name}}</h3>
-                
+                <p>{{property.definition}}</p>
                 <div class="property-container">
                     {% for item in property.items %}
                     <div class="carousel-wrapper {{item.class-name}}">

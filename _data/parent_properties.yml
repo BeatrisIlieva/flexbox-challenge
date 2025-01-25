@@ -1,30 +1,33 @@
 - name: Flex Direction
   class-name: 
     title: flex-direction
+
+  definition: When working with Flexbox we need to think in terms of two axes - the main axis and the cross axis. The main axis is defined by the flex-direction property.
   items:
     - title: Row (Default)
       elements-count: 3
       class-name: row
-      definition: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed praesentium quam, error fuga magni id eos! Dolorem eius 
+      definition: The flexible items are displayed horizontally, as a row
       axis: main
     - title: Row-Reverse
       elements-count: 3
       class-name: row-reverse
-      definition: def row-reverse
+      definition: The flexible items are displayed horizontally, as a row but in reverse order
       axis: main
     - title: Column
       elements-count: 3
       class-name: column
-      definition: def column
+      definition: The flexible items are displayed vertically, as a column
       axis: cross
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
-      definition: column-reverse
+      definition: The flexible items are displayed vertically, as a column but in reverse order
       axis: cross
 - name: Flex Wrap
   class-name: 
     title: flex-wrap
+  definition: By default, flex items will try to fit onto one line. However, we can change that and allow the items to wrap as needed.
   items:
     - title: NoWrap (Default)
       elements-count: 6
