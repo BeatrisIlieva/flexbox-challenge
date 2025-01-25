@@ -106,16 +106,18 @@ propertyContainerElements.forEach(propertyContainerElement => {
 
 function displayRelevantDetailsElement(delta, lastClassName, currentTargetElement) {
     const summaryElements = currentTargetElement.querySelectorAll('details summary');
-    let foundIndex;
+    // let foundIndex;
 
     const detailsElements = currentTargetElement.querySelectorAll('details');
     detailsElements.forEach(detailsElement => (detailsElement.open = false));
 
-    const currentElement = [...summaryElements].find((element, index) => {
-        if (element.id === lastClassName) {
-            foundIndex = index;
-        }
-    });
+    // const currentElement = [...summaryElements].find((element, index) => {
+    //     if (element.id === lastClassName) {
+    //         foundIndex = index;
+    //     }
+    // });
+
+    const foundIndex = [...summaryElements].findIndex(element => element.id === lastClassName);
 
     const index = (foundIndex + delta) % summaryElements.length;
     const summaryElementToBeOpen = summaryElements[index];
