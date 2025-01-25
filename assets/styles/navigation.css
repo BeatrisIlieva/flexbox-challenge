@@ -41,7 +41,7 @@
 .main-nav ul li a {
     text-decoration: none;
     background: var(--hdr-gradient), var(--sdr-gradient);
-    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 0.7em rgba(0, 0, 0, 0.8);
     color: var(--clr-white);
     font-weight: bold;
     padding: 0.7em 1.2em;

@@ -3,6 +3,7 @@
 html {
     font: clamp(12px, 1.8dvw, 16px) / 1.4 'Tisa Sans Pro', sans-serif;
     font-variant-caps: small-caps;
+    letter-spacing: 0.063em;
 }
 
 h1 {
