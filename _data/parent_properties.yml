@@ -1,7 +1,6 @@
-- name: Flex Direction
+- name: Flex-Direction
   class-name: 
     title: flex-direction
-
   definition: When working with Flexbox we need to think in terms of two axes - the main axis and the cross axis. The main axis is defined by the flex-direction property.
   items:
     - title: Row (Default)
@@ -24,7 +23,7 @@
       class-name: column-reverse
       definition: The flexible items are displayed vertically, as a column but in reverse order
       axis: cross
-- name: Flex Wrap
+- name: Flex-Wrap
   class-name: 
     title: flex-wrap
   definition: By default, flex items will try to fit onto one line. However, we can change that and allow the items to wrap as needed.
@@ -44,9 +43,50 @@
       class-name: wrap-reverse
       definition: Specifies that the flexible items will wrap, if necessary, in reverse order
       axis: main
+
+- name: Flex-Flow
+  class-name: 
+    title: flex-flow
+  definition: This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes.
+  items:
+    - title: Row-NoWrap (Default)
+      elements-count: 6
+      class-name: row-nowrap
+      definition: main-axis is the block direction with a reversed main-start and main-end. The flex items are allowed to wrap, creating new lines if needed
+      axis: main
+    - title: Row-Reverse-NoWrap
+      elements-count: 6
+      class-name: row-reverse-nowrap
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      axis: main
+    - title: Row-Wrap
+      elements-count: 6
+      class-name: row-wrap
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      axis: main
+
+    - title: Column-NoWrap
+      elements-count: 6
+      class-name: column-nowrap
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      axis: cross
+    - title: Column-Reverse-NoWrap
+      elements-count: 6
+      class-name: column-reverse-nowrap
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      axis: cross
+    - title: Column-Wrap
+      elements-count: 6
+      class-name: column-wrap
+      definition: Specifies that the flexible items will wrap, if necessary, in reverse order
+      axis: cross
+
+
+
 - name: Justify Content
   class-name: 
     title: justify-content
+    definition:
   items:
     - title: Flex-Start (Default)
       elements-count: 3

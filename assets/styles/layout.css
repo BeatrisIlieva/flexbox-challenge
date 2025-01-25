@@ -12,7 +12,7 @@ main.layout-item {
 .layout-item .wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2vw;
+    padding: 2dvw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ main.layout-item {
 .site-content {
     flex: 1 1 100%;
     background: var(--clr-white);
-    padding: 3em;
+    padding: 6dvh;
     border-radius: 0.5em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
 }

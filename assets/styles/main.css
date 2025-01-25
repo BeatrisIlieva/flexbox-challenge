@@ -94,6 +94,13 @@
 .boxes-container,
 .details-container {
     width: 19em;
+    height: 21em;
+    aspect-ratio: 1/1;
+}
+
+.details-container {
+    width: 23em;
+    height: 21em;
     aspect-ratio: 1/1;
 }
 
@@ -130,6 +137,9 @@
     box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.2), 0 0 0.5em 0 rgb(0, 0, 0, 0.2) inset;
     outline: 0.1em solid var(--clr-white);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxes-container.flex-direction.row {
@@ -159,6 +169,26 @@
 .boxes-container.flex-wrap.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
+
+.boxes-container.flex-flow.row-reverse-nowrap {
+    flex-flow: row-reverse nowrap;
+}
+
+.boxes-container.flex-flow.row-wrap {
+    flex-flow: row wrap;
+}
+
+.boxes-container.flex-flow.column-reverse-nowrap {
+    flex-flow: column-reverse nowrap;
+}
+
+.boxes-container.flex-flow.column-wrap {
+    flex-flow: column wrap;
+}
+
+
+
+
 
 .boxes-container.main::before,
 .boxes-container.cross::before,
