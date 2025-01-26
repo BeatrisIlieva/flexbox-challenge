@@ -15,13 +15,21 @@
     - title: Row-Reverse
       elements-count: 3
       class-name: row-reverse
-      definition: The flexible items are displayed horizontally, as a row but in reverse order.
+      code: | 
+        /* items are displayed horizontally as a row in reverse order */
+        .container {
+            align-items: row-reverse;
+        }
       axis: main
 
     - title: Column
       elements-count: 3
       class-name: column
-      definition: The flexible items are displayed vertically, as a column.
+      code: | 
+        /* items are displayed vertically, as a column */
+        .container {
+            align-items: column;
+        }
       axis: cross
 
     - title: Column-Reverse

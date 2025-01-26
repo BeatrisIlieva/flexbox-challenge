@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 21em;
+    width: 20em;
     height: 23em;
     aspect-ratio: 1/1;
     background: var(--clr-yellow);
@@ -207,7 +207,7 @@
     justify-content: flex-start;
     flex-direction: column;
     justify-content: center;
-    width: 21em;
+    width: 20em;
     height: 23em;
     aspect-ratio: 1/1;
 }
