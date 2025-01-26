@@ -1,15 +1,14 @@
 .property-section {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
 }
 
 .property-section > h3 {
     text-align: center;
-    background-color: var(--clr-blue);
+    /* background-color: var(--clr-blue); */
     border-radius: 0.2em;
     overflow: hidden;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1); */
 }
 
 .property-section > p {
@@ -19,7 +18,7 @@
     max-width: 66ch;
     justify-self: center;
     align-self: center;
-    margin-bottom: 2em;
+
 }
 
 .property-container {
