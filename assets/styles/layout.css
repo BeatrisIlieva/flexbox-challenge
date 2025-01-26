@@ -6,7 +6,7 @@ body {
 }
 
 .layout-item {
-    padding: 6dvh max(calc((100vw - 1000px) / 2), 6dvh);
+    padding: 1dvh max(calc((100vw - 1000px) / 2), 1dvh);
 }
 
 main.layout-item {
