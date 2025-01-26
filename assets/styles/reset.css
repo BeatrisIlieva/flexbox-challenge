@@ -38,6 +38,6 @@ details {
     cursor: pointer;
 }
 
-pre, code {
-    display: flex;
+pre > code {
+    /* display: inline-block !important; */
 }

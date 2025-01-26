@@ -60,7 +60,7 @@
       elements-count: 6
       class-name: wrap
       code: | 
-        /* items are allowed to wrap if necessary, creating new rows if needed */
+        /* items are allowed to wrap, if necessary, creating new rows if needed */
         .container {
             flex-wrap: wrap;
         }
@@ -69,7 +69,6 @@
     - title: Wrap-Reverse
       elements-count: 6
       class-name: wrap-reverse
-      definition: 
       code: | 
         /* items are allowed to wrap, if necessary, in reverse order, creating new rows if needed */
         .container {
@@ -84,110 +83,134 @@
     - title: Row-NoWrap (Default)
       elements-count: 6
       class-name: row-nowrap
-      definition: The flex items are not allowed to wrap, so new rows are not created.
+      code: | 
+        /* items are not allowed to wrap; all flex items will be on one line */
+        .container {
+            flex-flow: row-nowrap;
+        }
       axis: main
 
     - title: Row-Reverse-NoWrap
       elements-count: 6
       class-name: row-reverse-nowrap
-      definition: Flex items in reversed order; not are allowed to wrap.
+      code: | 
+        /* items are not allowed to wrap; flex items will be on one line in reverse order */
+        .container {
+            flex-flow: row-reverse-nowrap;
+        }
       axis: main
 
     - title: Row-Wrap
       elements-count: 6
       class-name: row-wrap
-      definition: The flex items are allowed to wrap, creating new rows if needed.
+      code: | 
+        /* items are allowed to wrap, if necessary, creating new rows if needed */
+        .container {
+            flex-flow: row-wrap;
+        }
       axis: main
 
     - title: Column-NoWrap
       elements-count: 7
       class-name: column-nowrap
-      definition: The flex items are not allowed to wrap, so new columns are not created.
+      code: | 
+        /* items are allowed to wrap, if necessary, in reverse order, creating new columns if needed */
+        .container {
+            flex-flow: column-nowrap;
+        }
       axis: cross
 
     - title: Column-Reverse-NoWrap
       elements-count: 7
       class-name: column-reverse-nowrap
-      definition: Flex items in reversed order; not are allowed to wrap.
+      code: | 
+        /* items are displayed vertically as a column in reverse order not being allowed to wrap */
+        .container {
+            flex-flow: column-reverse-nowrap;
+        }
       axis: cross
 
     - title: Column-Wrap
       elements-count: 6
       class-name: column-wrap
-      definition: The flex items are allowed to wrap, creating new columns if needed.
+      code: | 
+        /* items are displayed vertically as a column, being allowed to wrap if necessary */
+        .container {
+            flex-flow: column-wrap;
+        }
       axis: cross
 
-- name: Justify-Content
-  class-name: justify-content
-  definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
-  items:
-    - title: Flex-Start (Default)
-      elements-count: 3
-      class-name: flex-start
-      definition: Items are aligned toward the start of the flex-direction.
-      axis: cross
+# - name: Justify-Content
+#   class-name: justify-content
+#   definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
+#   items:
+#     - title: Flex-Start (Default)
+#       elements-count: 3
+#       class-name: flex-start
+#       definition: Items are aligned toward the start of the flex-direction.
+#       axis: cross
 
-    - title: Center
-      elements-count: 3
-      class-name: center
-      definition: Items are aligned toward the center of the flex-direction.
-      axis: cross
+#     - title: Center
+#       elements-count: 3
+#       class-name: center
+#       definition: Items are aligned toward the center of the flex-direction.
+#       axis: cross
 
-    - title: Flex-End
-      elements-count: 3
-      class-name: flex-end
-      definition: Items are aligned toward the end of the flex-direction.
-      axis: cross
+#     - title: Flex-End
+#       elements-count: 3
+#       class-name: flex-end
+#       definition: Items are aligned toward the end of the flex-direction.
+#       axis: cross
 
-    - title: Space-Between
-      elements-count: 3
-      class-name: space-between
-      definition: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
-      axis: cross
+#     - title: Space-Between
+#       elements-count: 3
+#       class-name: space-between
+#       definition: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
+#       axis: cross
 
-    - title: Space-Around
-      elements-count: 3
-      class-name: space-around
-      definition: Items are evenly distributed in the line with equal space around them (all the items have equal space on both sides). 
-      axis: cross
+#     - title: Space-Around
+#       elements-count: 3
+#       class-name: space-around
+#       definition: Items are evenly distributed in the line with equal space around them (all the items have equal space on both sides). 
+#       axis: cross
 
-    - title: Space-Evenly
-      elements-count: 3
-      class-name: space-evenly
-      definition: Items are distributed so that the spacing between any two items is equal.
-      axis: cross
+#     - title: Space-Evenly
+#       elements-count: 3
+#       class-name: space-evenly
+#       definition: Items are distributed so that the spacing between any two items is equal.
+#       axis: cross
 
-- name: Align-Items
-  class-name: align-items
-  definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
-  items:
-    - title: Stretch (Default) 
-      elements-count: 3
-      class-name: stretch
-      definition: Items stretch to fill the container, respecting min-width/max-width.
-      axis: cross
+# - name: Align-Items
+#   class-name: align-items
+#   definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
+#   items:
+#     - title: Stretch (Default) 
+#       elements-count: 3
+#       class-name: stretch
+#       definition: Items stretch to fill the container, respecting min-width/max-width.
+#       axis: cross
 
-    - title: Flex-Start 
-      elements-count: 3
-      class-name: flex-start
-      definition: Items are placed at the start of the cross axis. 
-      axis: cross
+#     - title: Flex-Start 
+#       elements-count: 3
+#       class-name: flex-start
+#       definition: Items are placed at the start of the cross axis. 
+#       axis: cross
 
-    - title: Center
-      elements-count: 3
-      class-name: center
-      definition: Items are centered in the cross-axis.
-      axis: cross
+#     - title: Center
+#       elements-count: 3
+#       class-name: center
+#       definition: Items are centered in the cross-axis.
+#       axis: cross
 
-    - title: Flex-End
-      elements-count: 3
-      class-name: flex-end
-      definition: Items are placed at the end of the cross axis. 
-      axis: cross
+#     - title: Flex-End
+#       elements-count: 3
+#       class-name: flex-end
+#       definition: Items are placed at the end of the cross axis. 
+#       axis: cross
 
-    - title: Baseline
-      elements-count: 3
-      class-name: baseline
-      definition: Items are aligned such as their baselines align.
-      axis: cross
+#     - title: Baseline
+#       elements-count: 3
+#       class-name: baseline
+#       definition: Items are aligned such as their baselines align.
+#       axis: cross
 

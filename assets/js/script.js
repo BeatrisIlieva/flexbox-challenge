@@ -75,7 +75,7 @@ propertyContainerElements.forEach(propertyContainerElement => {
         const lastClassName = classList[classList.length - 1];
 
         const targetElementTagName = targetElement.tagName;
-        let elementId;
+
         let delta;
 
         const deltaMapper = {
@@ -86,18 +86,21 @@ propertyContainerElements.forEach(propertyContainerElement => {
         if (targetElementTagName === 'BUTTON') {
             const buttonId = targetElement.id;
 
-            elementId = buttonId;
-            delta = deltaMapper[elementId];
+            delta = deltaMapper[buttonId];
+
+            displayDetailsFunctionMapper[buttonId](delta, lastClassName, currentTargetElement);
+            displayNextBoxFunctionMapper[buttonId](carouselWrapperElements);
         } else if (targetElementTagName === 'I') {
             const buttonElement = targetElement.parentElement;
             const buttonId = buttonElement.id;
 
-            elementId = buttonId;
-            delta = deltaMapper[elementId];
+            delta = deltaMapper[buttonId];
+
+            displayDetailsFunctionMapper[buttonId](delta, lastClassName, currentTargetElement);
+            displayNextBoxFunctionMapper[buttonId](carouselWrapperElements);
         }
-        console.log(elementId);
-        displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
-        displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
+
+
     });
 });
 
