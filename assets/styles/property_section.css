@@ -1,6 +1,7 @@
 .property-section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 5em;
 }
 
 .property-section > h3 {
@@ -18,7 +19,6 @@
     max-width: 66ch;
     justify-self: center;
     align-self: center;
-
 }
 
 .property-container {
@@ -280,6 +280,7 @@ code {
     display: block;
     white-space: pre-wrap;
     font-variant-caps: normal;
+    cursor: auto;
 }
 
 pre code.language-css {
