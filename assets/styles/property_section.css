@@ -33,7 +33,7 @@
     flex-direction: column;
     position: relative;
     width: 21em;
-    height: 23em;
+    height: 22em;
     aspect-ratio: 1/1;
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
@@ -206,16 +206,15 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    justify-content: center;
     width: 21em;
-    height: 23em;
+    height: 22em;
     aspect-ratio: 1/1;
 }
 
 .details-container > details {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .details-container > details:not(:last-of-type) {
@@ -229,6 +228,7 @@
     padding-left: 1.5em;
     color: var(--clr-gray);
     font-weight: bold;
+    height: 1.8em;
 }
 
 .details-container > details > summary::before {
@@ -267,21 +267,14 @@
     color: var(--clr-black);
 }
 
-code {
-    display: block;
-    white-space: pre-wrap;
+pre code.language-css {
     font-variant-caps: normal;
     cursor: auto;
-}
-
-pre code.language-css {
+    position: relative;
+    top: -1rem;
     word-wrap: break-word;
-    overflow-x: auto;
     white-space: pre-wrap;
     font-size: 1em;
-}
-
-pre code.language-css {
     color: var(--clr-electric);
 }
 
