@@ -5,7 +5,7 @@
     - title: Row (Default)
       elements-count: 3
       class-name: row
-      definition: | 
+      code: | 
         /* items are displayed horizontally as a row */
         .container {
             align-items: flex-start;
