@@ -25,6 +25,7 @@
     --clr-magic-blue: #0077c0;
     --clr-baby-blue: #89cff0;
     --clr-violet: #d1d1f9;
+    --clr-light-violet: #d1d1f968;
     --clr-dark-violet: #a7a7c7;
     --clr-purple: #ee82ee;
     --clr-electric: #6f00ff;
@@ -33,7 +34,7 @@
     --clr-black: #000;
     --clr-red: #ff7779;
     --clr-dark-red: #e66b6d;
-    --clr-gray: #d3d3d3;
+    --clr-gray: #707070;
     --clr-bronze: #cd7f32;
-    --clr-dark-green: #1DB954;
+    --clr-dark-green: #1db954;
 }

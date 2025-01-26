@@ -93,13 +93,9 @@
 
 .boxes-container,
 .details-container {
-    width: 19em;
-    height: 20em;
+    width: 21em;
+    height: 23em;
     aspect-ratio: 1/1;
-}
-
-.details-container {
-    width: 19em;
 }
 
 .boxes-container {
@@ -152,6 +148,10 @@
 
 .boxes-container.flex-direction.row-reverse {
     flex-direction: row-reverse;
+}
+
+.boxes-container.flex-direction.column-reverse {
+    flex-direction: column-reverse;
 }
 
 .boxes-container.flex-wrap.column-reverse {
@@ -245,8 +245,8 @@
     border-radius: 100%;
     z-index: 10;
     white-space: pre;
-    color: var(--clr-red);
-    background: var(--clr-red);
+    /* color: var(--clr-magic-blue); */
+
     position: absolute;
 }
 
@@ -257,7 +257,8 @@
     transform: translate(-70%, -60%);
     width: 0.1em;
     height: 12em;
-    content: '  Cross Axis';
+    /* content: '  Cross Axis';
+    color: var(--clr-purple); */
 }
 
 .boxes-container.main::after,
@@ -267,15 +268,33 @@
     transform: translate(-70%, -60%);
     width: 12em;
     height: 0.1em;
-    content: '  Main Axis';
+    /* content: '  Main Axis'; */
 }
 
 .boxes-container.cross::before {
     content: '  Main Axis';
+    color: var(--clr-magic-blue);
+    background: var(--clr-magic-blue);
+    z-index: 11;
 }
 
 .boxes-container.cross::after {
     content: '  Cross Axis';
+    color: var(--clr-purple);
+    background: var(--clr-purple);
+}
+
+.boxes-container.main::before {
+    content: '  Cross Axis ';
+    color: var(--clr-magic-blue);
+    background: var(--clr-magic-blue);
+        z-index: 11
+}
+
+.boxes-container.main::after {
+    content: '  Main Axis ';
+    color: var(--clr-purple);
+    background: var(--clr-purple);
 }
 
 .boxes-container.main::before,
@@ -333,28 +352,27 @@
 }
 
 .details-container > details > summary {
-    background: var(--clr-violet);
+    background: var(--clr-light-violet);
     padding: 0.5em;
     position: relative;
     padding-left: 1.5em;
-    color: var(--clr-yellow);
+    color: var(--clr-gray);
     font-weight: bold;
-    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
 }
 
 .details-container > details > summary::before {
     content: '+';
     position: absolute;
     left: 0.3em;
-    top: 0.16em;
+    top: 0.12em;
     font-size: 1.4em;
-    color: var(--clr-yellow);
+    color: var(--clr-gray);
     font-weight: bold;
 }
 
 .details-container > details[open] > summary::before {
     content: '-';
-    color: var(--clr-green);
+    color: var(--clr-black);
 }
 
 .details-container > details[open] {
@@ -372,9 +390,9 @@
 }
 
 .details-container > details[open] > summary {
-    background: var(--clr-dark-violet);
+    background: var(--clr-violet);
     font-weight: bold;
-    color: var(--clr-green);
+    color: var(--clr-black);
 }
 
 code {
@@ -384,10 +402,10 @@ code {
 }
 
 pre code.language-css {
-    font-size: 0.9em;
     word-wrap: break-word;
     overflow-x: auto;
     white-space: pre-wrap;
+    font-size: 1em;
 }
 
 pre code.language-css {
@@ -410,7 +428,6 @@ pre[class*='language-'] {
 
 .token.punctuation {
     color: var(--clr-magic-blue);
-    font-size: 1em;
 }
 
 .token.property {
