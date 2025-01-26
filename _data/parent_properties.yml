@@ -6,10 +6,10 @@
       elements-count: 3
       class-name: row
       definition: | 
+        /* items are displayed horizontally as a row. */
         .container {
             align-items: flex-start;
         }
-      # definition: The flexible items are displayed horizontally, as a row.
       axis: main
 
     - title: Row-Reverse
