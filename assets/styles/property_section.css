@@ -1,0 +1,322 @@
+.property-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.property-section > h3 {
+    text-align: center;
+    background-color: var(--clr-blue);
+    border-radius: 0.2em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.property-section > p {
+    text-align: center;
+    opacity: 0.5;
+    font-variant-caps: normal;
+    max-width: 66ch;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2em;
+}
+
+.property-container {
+    display: flex;
+    gap: 2em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.property-section:nth-of-type(even) .carousel-wrapper {
+    order: 2;
+}
+
+.carousel-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#previous,
+#next {
+    position: absolute;
+}
+
+#previous {
+    left: -0.9rem;
+    top: 50%;
+}
+
+#next {
+    right: -0.9rem;
+    top: 50%;
+}
+
+#previous > i,
+#next > i {
+    color: var(--clr-dark-violet);
+    font-size: 2em;
+    background: var(--clr-dark-blue);
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    opacity: 0.5;
+    border: 0.06 em solid var(--clr-white);
+}
+
+#previous:hover > i,
+#next:hover > i {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.carousel-wrapper:not(:first-of-type) {
+    display: none;
+}
+
+.boxes-container,
+.details-container {
+    width: 21em;
+    height: 23em;
+    aspect-ratio: 1/1;
+}
+
+.boxes-container {
+    background: var(--clr-yellow);
+    display: flex;
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 2em 2em 2.5em 2em;
+    gap: 0.8rem;
+    align-items: flex-start;
+    position: relative;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.boxes-container figcaption {
+    position: absolute;
+    bottom: 0.2em;
+    left: 0.5em;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxes-container .box {
+    padding: 0.8em 1.6em;
+    color: var(--clr-black);
+    background: var(--clr-pink);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.2), 0 0 0.5em 0 rgb(0, 0, 0, 0.2) inset;
+    outline: 0.1em solid var(--clr-white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 3;
+    width: 1.5em;
+    aspect-ratio: 1/1;
+}
+
+.boxes-container.main::before,
+.boxes-container.cross::before,
+.boxes-container.main::after,
+.boxes-container.cross::after {
+    border-radius: 100%;
+    z-index: 10;
+    white-space: pre;
+    position: absolute;
+}
+
+.boxes-container.main::before,
+.boxes-container.cross::before {
+    top: 70%;
+    left: 60%;
+    transform: translate(-70%, -60%);
+    width: 0.1em;
+    height: 12em;
+}
+
+.boxes-container.main::after,
+.boxes-container.cross::after {
+    top: 60%;
+    left: 70%;
+    transform: translate(-70%, -60%);
+    width: 12em;
+    height: 0.1em;
+}
+
+.boxes-container.cross::before {
+    content: '  Main Axis';
+    color: var(--clr-magic-blue);
+    background: var(--clr-magic-blue);
+    z-index: 11;
+}
+
+.boxes-container.cross::after {
+    content: '  Cross Axis';
+    color: var(--clr-purple);
+    background: var(--clr-purple);
+}
+
+.boxes-container.main::before {
+    content: '  Cross Axis ';
+    color: var(--clr-magic-blue);
+    background: var(--clr-magic-blue);
+    z-index: 11;
+}
+
+.boxes-container.main::after {
+    content: '  Main Axis ';
+    color: var(--clr-purple);
+    background: var(--clr-purple);
+}
+
+.boxes-container.main::before,
+.boxes-container.main::after {
+    animation: transitionInSlower 3s forwards;
+}
+
+.boxes-container.cross::before,
+.boxes-container.cross::after {
+    animation: transitionInSlower 3s forwards;
+}
+
+.transition-in-faster {
+    animation: transitionInFaster 1s forwards;
+}
+
+@keyframes transitionInFaster {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.transition-in-slower {
+    animation: transitionInSlower 3s forwards;
+}
+
+@keyframes transitionInSlower {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.details-container {
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.details-container > details {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.details-container > details:not(:last-of-type) {
+    border-bottom: 0.15em solid var(--clr-white);
+}
+
+.details-container > details > summary {
+    background: var(--clr-light-violet);
+    padding: 0.5em;
+    position: relative;
+    padding-left: 1.5em;
+    color: var(--clr-gray);
+    font-weight: bold;
+}
+
+.details-container > details > summary::before {
+    content: '+';
+    position: absolute;
+    left: 0.3em;
+    top: 0.12em;
+    font-size: 1.4em;
+    color: var(--clr-gray);
+    font-weight: bold;
+}
+
+.details-container > details[open] > summary::before {
+    content: '-';
+    color: var(--clr-black);
+}
+
+.details-container > details[open] {
+    margin-bottom: auto;
+}
+
+.details-container > details:last-of-type {
+    margin-bottom: 0;
+}
+
+.details-container > details > p {
+    text-indent: 1ch;
+    padding: 0.25em;
+    font-variant-caps: normal;
+}
+
+.details-container > details[open] > summary {
+    background: var(--clr-violet);
+    font-weight: bold;
+    color: var(--clr-black);
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+    font-variant-caps: normal;
+}
+
+pre code.language-css {
+    word-wrap: break-word;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-size: 1em;
+}
+
+pre code.language-css {
+    color: var(--clr-electric);
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+    background: transparent;
+}
+
+pre[class*='language-'] {
+    padding: 0.5em;
+    margin: 0;
+}
+
+.token.selector {
+    color: var(--clr-purple);
+}
+
+.token.punctuation {
+    color: var(--clr-magic-blue);
+}
+
+.token.property {
+    color: var(--clr-bronze);
+}
+
+.token.comment {
+    color: var(--clr-dark-green);
+    font-style: italic;
+}

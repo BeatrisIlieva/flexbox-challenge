@@ -5,23 +5,13 @@ body {
     flex-direction: column;
 }
 
+.layout-item {
+    padding: 6dvh max(calc((100vw - 1000px) / 2), 6dvh);
+}
+
 main.layout-item {
     flex-grow: 1;
-}
-
-.layout-item .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2dvw;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-content {
-    flex: 1 1 100%;
-    background: var(--clr-white);
-    padding: 6dvh;
-    border-radius: 0.5em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    flex-direction: column;
+    gap: 4em;
 }

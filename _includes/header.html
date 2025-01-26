@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.webp" />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
-            rel="stylesheet"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
-        <link rel="stylesheet" href="assets/styles/reset.css" />
-        <link rel="stylesheet" href="assets/styles/typography.css" />
-        <link rel="stylesheet" href="assets/styles/layout.css" />
-        <link rel="stylesheet" href="assets/styles/variables.css" />
-        <link rel="stylesheet" href="assets/styles/navigation.css" />
-        <link rel="stylesheet" href="assets/styles/main.css" />
-        <link rel="stylesheet" href="assets/styles/insights.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.webp">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+    rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/typography.css">
+    <link rel="stylesheet" href="assets/styles/layout.css">
+    <link rel="stylesheet" href="assets/styles/variables.css">
+    <link rel="stylesheet" href="assets/styles/navigation.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/insights.css">
+    <link rel="stylesheet" href="assets/styles/property_section.css">
+    <link rel="stylesheet" href="assets/styles/parent_props.css">
+    <title>{{site.title}}</title>
+</head>
+<body>
+    <header class="layout-item">
 
-        <title>{{site.title}}</title>
-    </head>
-    <body>
-        <header class="layout-item">
-            <div class="wrapper">
-                <nav class="main-nav">
-                    <h1>Flexbox</h1>
+        <nav class="main-nav">
+            <h1>Flexbox</h1>
+
+            <ul>
+                <li>
+                    <a href="">Children Props</a>
                     <ul>
-                        <li>
-                            <a href="">Children Props</a>
-                            <ul>
-                                <li><a href="#flex-direction">Flex-Direction</a></li>
-                                <li><a href="#flex-wrap">Flex-Wrap</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Parent Props</a>
-                            <ul>
-                                <li><a href="#flex-direction">Flex-Direction</a></li>
-                                <li><a href="#flex-wrap">Flex-Wrap</a></li>
-                            </ul>
-                        </li>
-
+                        <li><a href="#flex-direction">Flex-Direction</a></li>
+                        <li><a href="#flex-wrap">Flex-Wrap</a></li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-    </body>
+                </li>
+                <li>
+                    <a href="">Parent Props</a>
+                    <ul>
+                        <li><a href="#flex-direction">Flex-Direction</a></li>
+                        <li><a href="#flex-wrap">Flex-Wrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+</body>
 </html>

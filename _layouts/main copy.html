@@ -1,0 +1,58 @@
+{% include header.html %}
+
+<main class="layout-item">
+    <div class="wrapper">
+        {% include insights.html %}
+    </div>
+
+    <div class="wrapper">
+        <div class="site-content">
+        <article>
+            <h2>Parent Properties</h2>
+            
+            {% for property in site.data.parent_properties %}
+            <section class="property-section">
+                <h3>{{property.name}}</h3>
+                <p>{{property.definition}}</p>
+                <div class="property-container">
+                    {% for item in property.items %}
+                    <div class="carousel-wrapper {{item.class-name}}">
+                        <figure
+                            class="boxes-container {{item.axis}} {{property.class-name}} {{item.class-name}}"
+                        >
+                            {% for i in (1..item.elements-count) %}
+                            <p class="box transition-in-faster">{{ i }}</p>
+                            {% endfor %}
+                            <figcaption class="transition-in-slower">{{item.title}}</figcaption>
+                        </figure>
+                        
+                        <button id="previous">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </button>
+                        <button id="next">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </button>
+                        
+                    </div>
+                    {% endfor %}
+                
+                    <aside class="details-container">
+                        {% for item in property.items %}
+                        
+                        <details>
+                            <summary id="{{item.class-name}}">{{item.title}}</summary>
+                            <pre><code class="language-css">{% highlight css %}{{item.definition}}{% endhighlight %}</code></pre>
+                        </details>
+                        
+                        {% endfor %}
+                    </aside>
+                </div>
+            </section>
+            {% endfor %}
+        </article>
+        
+    </div>
+</div>
+</main>
+
+{% include footer.html %}
