@@ -5,7 +5,13 @@
     background: var(--clr-white);
     border-radius: 0.5em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .layout-item .main-content h2 {
+    background: var(--clr-blue);
+    padding: 0.4em 0.8em;
+    text-align: center;
+    border-bottom: 0.03em solid var(--clr-white);
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
 }
