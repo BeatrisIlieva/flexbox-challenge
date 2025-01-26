@@ -1,6 +1,5 @@
 - name: Flex-Direction
-  class-name: 
-    title: flex-direction
+  class-name: flex-direction
   definition: When working with Flexbox we need to think in terms of two axes - the main axis and the cross axis. The main axis is defined by the flex-direction property.
   items:
     - title: Row (Default)
@@ -24,8 +23,7 @@
       definition: The flexible items are displayed vertically, as a column but in reverse order.
       axis: cross
 - name: Flex-Wrap
-  class-name: 
-    title: flex-wrap
+  class-name: flex-wrap
   definition: By default, flex items will try to fit onto one line. However, we can change that and allow the items to wrap as needed.
   items:
     - title: NoWrap (Default)
@@ -45,8 +43,7 @@
       axis: main
 
 - name: Flex-Flow
-  class-name: 
-    title: flex-flow
+  class-name: flex-flow
   definition: Flex-Flow a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes.
   items:
     - title: Row-NoWrap (Default)
@@ -81,11 +78,8 @@
       definition: The flex items are allowed to wrap, creating new columns if needed.
       axis: cross
 
-
-
 - name: Justify-Content
-  class-name: 
-    title: justify-content
+  class-name: justify-content
   definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
   items:
     - title: Flex-Start (Default)
@@ -120,8 +114,7 @@
       axis: cross
 
 - name: Align-Items
-  class-name: 
-    title: align-items
+  class-name: align-items
   definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
   items:
     - title: Stretch (Default) 
