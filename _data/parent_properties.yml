@@ -6,7 +6,7 @@
       elements-count: 3
       class-name: row
       definition: | 
-        /* items are displayed horizontally as a row. */
+        /* items are displayed horizontally as a row */
         .container {
             align-items: flex-start;
         }

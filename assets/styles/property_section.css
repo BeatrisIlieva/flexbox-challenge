@@ -254,6 +254,7 @@
 
 .details-container > details[open] {
     margin-bottom: auto;
+    cursor: auto;
 }
 
 .details-container > details:last-of-type {
