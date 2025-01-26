@@ -95,7 +95,7 @@ propertyContainerElements.forEach(propertyContainerElement => {
             elementId = buttonId;
             delta = deltaMapper[elementId];
         }
-
+        console.log(elementId);
         displayDetailsFunctionMapper[elementId](delta, lastClassName, currentTargetElement);
         displayNextBoxFunctionMapper[elementId](carouselWrapperElements);
     });

@@ -8,7 +8,7 @@
       code: | 
         /* items are displayed horizontally as a row */
         .container {
-            align-items: flex-start;
+            justify-content: flex-start;
         }
       axis: main
 
@@ -18,7 +18,7 @@
       code: | 
         /* items are displayed horizontally as a row in reverse order */
         .container {
-            align-items: row-reverse;
+            justify-content: row-reverse;
         }
       axis: main
 
@@ -28,14 +28,18 @@
       code: | 
         /* items are displayed vertically, as a column */
         .container {
-            align-items: column;
+            justify-content: column;
         }
       axis: cross
 
     - title: Column-Reverse
       elements-count: 3
       class-name: column-reverse
-      definition: The flexible items are displayed vertically, as a column but in reverse order.
+      code: | 
+        /* items are displayed vertically as a column in reverse order */
+        .container {
+            justify-content: column-reverse;
+        }
       axis: cross
 
 - name: Flex-Wrap
@@ -45,19 +49,32 @@
     - title: NoWrap (Default)
       elements-count: 6
       class-name: nowrap
-      definition: Specifies that the flexible items will not wrap.
+      code: | 
+        /* items are not allowed to wrap; all flex items will be on one line */
+        .container {
+            flex-wrap: nowrap;
+        }
       axis: main
 
     - title: Wrap
       elements-count: 6
       class-name: wrap
-      definition: Specifies that the flexible items will wrap if necessary.
+      code: | 
+        /* items are allowed to wrap if necessary, creating new rows if needed */
+        .container {
+            flex-wrap: wrap;
+        }
       axis: main
 
     - title: Wrap-Reverse
       elements-count: 6
       class-name: wrap-reverse
-      definition: Specifies that the flexible items will wrap, if necessary, in reverse order.
+      definition: 
+      code: | 
+        /* items are allowed to wrap, if necessary, in reverse order, creating new rows if needed */
+        .container {
+            flex-wrap: wrap-reverse;
+        }
       axis: main
 
 - name: Flex-Flow

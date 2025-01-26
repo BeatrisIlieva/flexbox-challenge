@@ -37,3 +37,7 @@ button {
 details {
     cursor: pointer;
 }
+
+pre, code {
+    display: flex;
+}
