@@ -245,8 +245,6 @@
     border-radius: 100%;
     z-index: 10;
     white-space: pre;
-    /* color: var(--clr-magic-blue); */
-
     position: absolute;
 }
 
@@ -257,8 +255,6 @@
     transform: translate(-70%, -60%);
     width: 0.1em;
     height: 12em;
-    /* content: '  Cross Axis';
-    color: var(--clr-purple); */
 }
 
 .boxes-container.main::after,
@@ -268,7 +264,6 @@
     transform: translate(-70%, -60%);
     width: 12em;
     height: 0.1em;
-    /* content: '  Main Axis'; */
 }
 
 .boxes-container.cross::before {
@@ -288,7 +283,7 @@
     content: '  Cross Axis ';
     color: var(--clr-magic-blue);
     background: var(--clr-magic-blue);
-        z-index: 11
+    z-index: 11;
 }
 
 .boxes-container.main::after {
