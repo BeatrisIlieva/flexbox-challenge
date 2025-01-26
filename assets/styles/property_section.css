@@ -30,10 +30,8 @@
 
 .carousel-wrapper {
     display: flex;
-    flex-direction: column;
     position: relative;
     width: 21em;
-    height: 22em;
     aspect-ratio: 1/1;
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
@@ -207,14 +205,12 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 21em;
-    height: 22em;
-    aspect-ratio: 1/1;
 }
 
 .details-container > details {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .details-container > details:not(:last-of-type) {
@@ -228,7 +224,6 @@
     padding-left: 1.5em;
     color: var(--clr-gray);
     font-weight: bold;
-    height: 1.8em;
 }
 
 .details-container > details > summary::before {
@@ -270,17 +265,18 @@
 pre code.language-css {
     font-variant-caps: normal;
     cursor: auto;
-    position: relative;
-    top: -1rem;
     word-wrap: break-word;
     white-space: pre-wrap;
-    font-size: 1em;
     color: var(--clr-electric);
 }
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
     background: transparent;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: -1.2em;
 }
 
 pre[class*='language-'] {

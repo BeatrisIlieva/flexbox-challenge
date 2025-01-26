@@ -114,14 +114,14 @@
       elements-count: 7
       class-name: column-nowrap
       code: | 
-        /* items are allowed to wrap, if necessary, in reverse order, creating new columns if needed */
+        /* items are displayed vertically as a column not being allowed to wrap */
         .container {
             flex-flow: column-nowrap;
         }
       axis: cross
 
     - title: Column-Reverse-NoWrap
-      elements-count: 7
+      elements-count: 8
       class-name: column-reverse-nowrap
       code: | 
         /* items are displayed vertically as a column in reverse order not being allowed to wrap */
@@ -131,7 +131,7 @@
       axis: cross
 
     - title: Column-Wrap
-      elements-count: 6
+      elements-count: 8
       class-name: column-wrap
       code: | 
         /* items are displayed vertically as a column, being allowed to wrap if necessary */
