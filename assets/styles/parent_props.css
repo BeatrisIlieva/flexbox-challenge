@@ -63,7 +63,7 @@
 }
 
 .boxes-container.justify-content.center {
-    justify-content: center;
+    justify-content: center !important;
 }
 
 .boxes-container.justify-content.space-between {

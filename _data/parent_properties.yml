@@ -178,7 +178,7 @@
       elements-count: 3
       class-name: space-between
       code: | 
-        /* items are evenly distributed in the line; first item is on the start line, last item on the end line */
+        /* items are evenly distributed in the line */
         .container {
             justify-content: space-between;
         }
@@ -188,7 +188,7 @@
       elements-count: 3
       class-name: space-around
       code: | 
-        /* items are evenly distributed in the line; first item is on the start line, last item on the end line */
+        /* items have equal space on both sides */
         .container {
             justify-content: space-around;
         }
