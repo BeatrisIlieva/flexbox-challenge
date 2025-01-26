@@ -376,3 +376,47 @@
     font-weight: bold;
     color: var(--clr-green);
 }
+
+pre code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+    font-variant-caps: normal;
+}
+
+pre code.language-css {
+    font-size: 0.8em;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+    background: transparent;
+}
+
+.token.selector {
+    color: #e06c75;
+}
+
+.token.property {
+    color: #d19a66;
+}
+
+.token.string,
+.token.value {
+    color: #98c379;
+}
+
+.token.comment {
+    color: #5c6370;
+    font-style: italic;
+}

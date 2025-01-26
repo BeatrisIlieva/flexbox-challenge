@@ -41,7 +41,7 @@
                         
                         <details>
                             <summary id="{{item.class-name}}">{{item.title}}</summary>
-                            <p>{{item.definition}}</p>
+                            <pre><code class="language-css">{% highlight css %}{{item.definition}}{% endhighlight %}</code></pre>
                         </details>
                         
                         {% endfor %}

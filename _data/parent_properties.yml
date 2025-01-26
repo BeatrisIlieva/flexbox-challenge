@@ -5,7 +5,11 @@
     - title: Row (Default)
       elements-count: 3
       class-name: row
-      definition: The flexible items are displayed horizontally, as a row.
+      definition: | 
+        .container {
+            align-items: flex-start;
+        }
+      # definition: The flexible items are displayed horizontally, as a row.
       axis: main
 
     - title: Row-Reverse
@@ -155,7 +159,7 @@
       class-name: flex-end
       definition: Items are placed at the end of the cross axis. 
       axis: cross
-      
+
     - title: Baseline
       elements-count: 3
       class-name: baseline
