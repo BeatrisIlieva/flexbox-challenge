@@ -140,77 +140,101 @@
         }
       axis: cross
 
-# - name: Justify-Content
-#   class-name: justify-content
-#   definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
-#   items:
-#     - title: Flex-Start (Default)
-#       elements-count: 3
-#       class-name: flex-start
-#       definition: Items are aligned toward the start of the flex-direction.
-#       axis: cross
+- name: Justify-Content
+  class-name: justify-content
+  definition: Justify-Content defines the alignment along the main axis. It helps distribute extra free space.
+  items:
+    - title: Flex-Start (Default)
+      elements-count: 3
+      class-name: flex-start
+      code: | 
+        /* items are aligned toward the start of the flex-direction */
+        .container {
+            justify-content: flex-start;
+        }
+      axis: cross
 
-#     - title: Center
-#       elements-count: 3
-#       class-name: center
-#       definition: Items are aligned toward the center of the flex-direction.
-#       axis: cross
+    - title: Center
+      elements-count: 3
+      class-name: center
+      code: | 
+        /* items are aligned toward the center of the flex-direction */
+        .container {
+            justify-content: center;
+        }
+      axis: cross
 
-#     - title: Flex-End
-#       elements-count: 3
-#       class-name: flex-end
-#       definition: Items are aligned toward the end of the flex-direction.
-#       axis: cross
+    - title: Flex-End
+      elements-count: 3
+      class-name: flex-end
+      code: | 
+        /* items are aligned toward the end of the flex-direction */
+        .container {
+            justify-content: flex-end;
+        }
+      axis: cross
 
-#     - title: Space-Between
-#       elements-count: 3
-#       class-name: space-between
-#       definition: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
-#       axis: cross
+    - title: Space-Between
+      elements-count: 3
+      class-name: space-between
+      code: | 
+        /* items are evenly distributed in the line; first item is on the start line, last item on the end line */
+        .container {
+            justify-content: space-between;
+        }
+      axis: cross
 
-#     - title: Space-Around
-#       elements-count: 3
-#       class-name: space-around
-#       definition: Items are evenly distributed in the line with equal space around them (all the items have equal space on both sides). 
-#       axis: cross
+    - title: Space-Around
+      elements-count: 3
+      class-name: space-around
+      code: | 
+        /* items are evenly distributed in the line; first item is on the start line, last item on the end line */
+        .container {
+            justify-content: space-around;
+        }
+      axis: cross
 
-#     - title: Space-Evenly
-#       elements-count: 3
-#       class-name: space-evenly
-#       definition: Items are distributed so that the spacing between any two items is equal.
-#       axis: cross
+    - title: Space-Evenly
+      elements-count: 3
+      class-name: space-evenly
+      code: | 
+        /* items are distributed so that the spacing between any two items is equal */
+        .container {
+            justify-content: space-around;
+        }
+      axis: cross
 
-# - name: Align-Items
-#   class-name: align-items
-#   definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
-#   items:
-#     - title: Stretch (Default) 
-#       elements-count: 3
-#       class-name: stretch
-#       definition: Items stretch to fill the container, respecting min-width/max-width.
-#       axis: cross
+- name: Align-Items
+  class-name: align-items
+  definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
+  items:
+    - title: Stretch (Default) 
+      elements-count: 3
+      class-name: stretch
+      definition: Items stretch to fill the container, respecting min-width/max-width.
+      axis: cross
 
-#     - title: Flex-Start 
-#       elements-count: 3
-#       class-name: flex-start
-#       definition: Items are placed at the start of the cross axis. 
-#       axis: cross
+    - title: Flex-Start 
+      elements-count: 3
+      class-name: flex-start
+      definition: Items are placed at the start of the cross axis. 
+      axis: cross
 
-#     - title: Center
-#       elements-count: 3
-#       class-name: center
-#       definition: Items are centered in the cross-axis.
-#       axis: cross
+    - title: Center
+      elements-count: 3
+      class-name: center
+      definition: Items are centered in the cross-axis.
+      axis: cross
 
-#     - title: Flex-End
-#       elements-count: 3
-#       class-name: flex-end
-#       definition: Items are placed at the end of the cross axis. 
-#       axis: cross
+    - title: Flex-End
+      elements-count: 3
+      class-name: flex-end
+      definition: Items are placed at the end of the cross axis. 
+      axis: cross
 
-#     - title: Baseline
-#       elements-count: 3
-#       class-name: baseline
-#       definition: Items are aligned such as their baselines align.
-#       axis: cross
+    - title: Baseline
+      elements-count: 3
+      class-name: baseline
+      definition: Items are aligned such as their baselines align.
+      axis: cross
 
