@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 2em;
     background: var(--clr-white);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
 }
 
 .layout-item .main-content h2 {
