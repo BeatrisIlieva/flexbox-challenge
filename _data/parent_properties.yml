@@ -209,52 +209,52 @@
   definition: Align-Items defines the alignment along the cross axis. It works like Justify-Content but in the opposite direction.
   items:
     - title: Stretch (Default) 
-      elements-count: 3
+      elements-count: 4
       class-name: stretch
       code: | 
         /* items stretch to fill the container, respecting min-width/max-width */
         .container {
             align-items: stretch;
         }
-      axis: cross
+      axis: main
 
     - title: Flex-Start 
-      elements-count: 3
+      elements-count: 4
       class-name: flex-start
       code: | 
         /* items are placed at the start of the cross axis */
         .container {
             align-items: flex-start;
         }
-      axis: cross
+      axis: main
 
     - title: Center
-      elements-count: 3
+      elements-count: 4
       class-name: center
       code: | 
         /* items are centered in the cross-axis */
         .container {
             align-items: center;
         }
-      axis: cross
+      axis: main
 
     - title: Flex-End
-      elements-count: 3
+      elements-count: 4
       class-name: flex-end
       code: | 
         /* items are placed at the end of the cross axis */
         .container {
             align-items: flex-end;
         }
-      axis: cross
+      axis: main
 
     - title: Baseline
-      elements-count: 3
+      elements-count: 4
       class-name: baseline
       code: | 
         /* items are aligned such as their baselines align */
         .container {
             align-items: flex-end;
         }
-      axis: cross
+      axis: main
 
