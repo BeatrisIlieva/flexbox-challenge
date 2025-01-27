@@ -20,7 +20,15 @@
     text-align: center;
     /* border-bottom: 0.03em solid var(--clr-white); */
     /* box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2); */
-    background: linear-gradient(-135deg, transparent 4rem, var(--clr-blue) 0);
+    /* background: linear-gradient(-135deg, transparent 4rem, var(--clr-blue) 0); */
+    background: linear-gradient(
+    -135deg, 
+    transparent 4rem,            /* Transparent for the main background */
+    rgba(0, 0, 0, 0.15) 4rem,    /* Subtle shadow effect */
+    var(--clr-blue) 0              /* Folded corner color */
+);
+
+
 }
 
 .layout-item .main-content > article::after {
@@ -31,7 +39,7 @@
     display: inline-block;
     width: 5.7em;
     height: 5.7em;
-    background: linear-gradient(-135deg, transparent 4rem, var(--clr-white) 0);
+    background: linear-gradient(-135deg, transparent 4rem, 229deg, #fff 0%, #ccc 50%, #fff 100% 0);
     box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.6);
     border-bottom-left-radius: 1.5em 100%;
     z-index: 100;
