@@ -6,14 +6,9 @@
 
 .layout-item .main-content > article {
     background: var(--clr-white);
-    /* border-radius: 0.5em; */
+    border-radius: 0.5em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     overflow: hidden;
-    
-    border-radius: 50px;
-    /* border-top-right-radius: 50% 100%;
-    border-bottom-right-radius: 50% 100%; */
-    background: linear-gradient(-135deg, transparent 30px, #ddd 0);
 }
 
 .layout-item .main-content h2 {
@@ -22,4 +17,9 @@
     text-align: center;
     border-bottom: 0.03em solid var(--clr-white);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
+}
+
+.layout-item .main-content > article,
+.layout-item .main-content h2 {
+    background: linear-gradient(-135deg, transparent 30px, var(--clr-white) 0);
 }
