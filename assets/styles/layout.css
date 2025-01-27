@@ -9,9 +9,22 @@ body {
     padding: 1dvh max(calc((100vw - 1000px) / 2), 1dvh);
 }
 
+header.layout-item {
+    order: 1;
+}
+
 main.layout-item {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 4em;
+    order: 3;
+}
+
+aside.layout-item {
+    order: 2;
+}
+
+footer.layout-item {
+    order: 4;
 }
