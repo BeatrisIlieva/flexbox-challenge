@@ -1,15 +1,14 @@
-section.insights {
+aside.insights {
     display: flex;
-    max-width: 1000px;
-    gap: 1em;
     font-variant-caps: normal;
+    justify-content: space-between;
 }
 
 .double-layout {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    flex: 1 1 70%;
+    flex: 0 1 69.3%;
 }
 
 .single-layout,
@@ -21,7 +20,7 @@ section.insights {
 }
 
 .single-layout {
-    flex: 1 1 30%;
+    flex: 0 1 29.3%;
 }
 
 .double-layout article {
