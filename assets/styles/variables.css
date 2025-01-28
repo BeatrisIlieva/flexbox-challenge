@@ -8,6 +8,8 @@
         #fcfdcd 100%
     );
 
+    --heading-title-color: linear-gradient(229deg in oklab, #ee82ee -1% -1%, #0077c0 64% 64%);
+
     --clr-white: #fff;
     --clr-pink: #ffdbdb;
     --clr-blue: #cff1fb;

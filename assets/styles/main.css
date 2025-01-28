@@ -17,12 +17,7 @@
     background: var(--clr-blue);
     padding: 0.2em 0.4em;
     text-align: center;
-    background: linear-gradient(
-        -135deg,
-        transparent 4rem,
-        rgba(0, 0, 0, 0.15) 4rem,
-        var(--clr-blue) 0
-    );
+    background: linear-gradient(-135deg, transparent 4rem, var(--clr-blue) 0);
 }
 
 .layout-item .main-content > article::after {
@@ -33,12 +28,19 @@
     display: inline-block;
     width: 5.7em;
     height: 5.7em;
-    background: linear-gradient(-135deg, transparent 4rem, rgba(255, 255, 255, 0.494) 0);
+    background: linear-gradient(-135deg, transparent 4rem, #ee82ee 40% 40%, #0077c0 67% 67%);
+    background: linear-gradient(
+        -135deg,
+        transparent 4rem,
+        #ccc 46% 46%,
+        #fff 64% 64%,
+        #ccc 81% 81%
+    );
+    /* background: linear-gradient(-135deg, transparent 4rem,#ccc 47% 47%, #fff 49% 49%, #ccc 101% 101%); */
+    /* background: linear-gradient(-135deg, transparent 4rem, rgba(255, 255, 255, 0.494) 0); */
     box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.5);
     border-bottom-left-radius: 1.5em 100%;
     z-index: 100;
     border-top: none;
     border-right: none;
 }
-
-

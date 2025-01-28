@@ -11,8 +11,11 @@
 
 .main-nav > h1 {
     font-weight: bold;
-    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
-    color: var(--clr-white);
+    background: linear-gradient(229deg in oklab, #ee82ee 40% 40%, #0077c0 67% 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 1px var(--clr-white);
 }
 
 .main-nav ul ul {
@@ -50,7 +53,7 @@
     padding: 0.4em 0.8em;
     border-radius: 0.3em;
     color: var(--clr-white);
-    border: 0.03em solid white;
+    border: 0.09em solid white;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
 }
 
