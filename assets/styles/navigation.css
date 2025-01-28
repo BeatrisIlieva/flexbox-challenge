@@ -56,11 +56,8 @@
     padding: 0.4em 0.8em;
     border-radius: 0.3em;
     color: var(--clr-white);
-    border: 0.09em solid white;
-
     border: none;
     outline: none;
-
     border-radius: 5px;
     position: relative;
 }
@@ -71,20 +68,18 @@
     top: 0;
     left: 0;
     border-width: 0;
-
     border: solid;
-    
-    border-color: var(--clr-transparent-violet) rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.4) var(--clr-transparent-violet);
+    border-color: var(--clr-transparent-violet) rgba(255, 255, 255, 0.4) rgba(255, 255, 255, 0.4)
+        var(--clr-transparent-violet);
     border-bottom-right-radius: 5px;
     visibility: hidden;
     transition: 0.7s ease-in-out;
     box-shadow: 0.05em 0.05em 0 rgb(0, 0, 0, 0.3);
 }
 
-.main-nav ul li a:hover::before{
+.main-nav ul li a:hover::before {
     border-width: 14px;
     visibility: visible;
-
 }
 
 .main-nav ul li:first-of-type a {

@@ -109,3 +109,11 @@
 .boxes-container.align-items.baseline {
     align-items: baseline;
 }
+
+.boxes-container.align-content {
+    flex-wrap: wrap;
+}
+
+.boxes-container.align-content.flex-start {
+    align-content: flex-start;
+}
