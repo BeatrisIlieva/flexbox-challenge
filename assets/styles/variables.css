@@ -1,5 +1,5 @@
 :root {
-    --hdr-gradient: linear-gradient(
+    --body-gradient: linear-gradient(
         130deg in oklab,
         #ffdbdb 0%,
         #d1d1f9 25%,
@@ -7,16 +7,6 @@
         #d6fbe4 75%,
         #fcfdcd 100%
     );
-    --sdr-gradient: linear-gradient(
-        130deg,
-        #ffdbdb 0%,
-        #d1d1f9 25%,
-        #cff1fb 50%,
-        #d6fbe4 75%,
-        #fcfdcd 100%
-    );
-
-    background: var(--hdr-gradient);
 
     --clr-white: #fff;
     --clr-pink: #ffdbdb;
