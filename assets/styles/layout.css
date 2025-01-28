@@ -8,10 +8,13 @@ body {
 
 .layout-item {
     padding: 1dvh max(calc((100vw - 1000px) / 2), 1dvh);
+
 }
 
 header.layout-item {
     order: 1;
+    background: var(--clr-transparent-violet);
+    border-bottom: 2px solid white;
 }
 
 main.layout-item {
