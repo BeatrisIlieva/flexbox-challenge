@@ -291,3 +291,34 @@
             align-content: flex-end;
         }
       axis: main
+
+    - title: Space-Between
+      elements-count: 6
+      class-name: space-between
+      code: | 
+        /*  items evenly distributed; the first line is at the start of the container while the last one is at the end */
+        .container {
+            align-content: space-between;
+        }
+      axis: main
+
+    - title: Space-Around
+      elements-count: 6
+      class-name: space-around
+      code: | 
+        /*  items evenly distributed with equal space around each line */
+        .container {
+            align-content: space-around;
+        }
+      axis: main
+
+
+    - title: Space-Evenly
+      elements-count: 6
+      class-name: space-evenly
+      code: | 
+        /*  items are evenly distributed with equal space around them */
+        .container {
+            align-content: space-evenly;
+        }
+      axis: main

@@ -125,3 +125,11 @@
 .boxes-container.align-content.flex-end {
     align-content: flex-end;
 }
+
+.boxes-container.align-content.space-between {
+    align-content: space-between;
+}
+
+.boxes-container.align-content.space-around {
+    align-content: space-around;
+}
