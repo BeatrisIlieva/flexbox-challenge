@@ -2,22 +2,26 @@
     flex-grow: 0;
 }
 
-.boxes-container.flex-grow.one .box{
+.boxes-container.flex-grow.one .box {
     flex-grow: 1;
 }
 
-.boxes-container.flex-grow.second-child .box:nth-child(2){
+.boxes-container.flex-grow.second-child .box:nth-child(2) {
     flex-grow: 2;
 }
 
-.boxes-container.flex-grow.proportionally .box:nth-child(1){
+.boxes-container.flex-grow.proportionally .box:nth-child(1) {
     flex-grow: 1;
 }
 
-.boxes-container.flex-grow.proportionally .box:nth-child(2){
+.boxes-container.flex-grow.proportionally .box:nth-child(2) {
     flex-grow: 2;
 }
 
-.boxes-container.flex-grow.proportionally .box:nth-child(3){
+.boxes-container.flex-grow.proportionally .box:nth-child(3) {
     flex-grow: 3;
+}
+
+.boxes-container.flex-shrink.one {
+    flex-shrink: 1;
 }

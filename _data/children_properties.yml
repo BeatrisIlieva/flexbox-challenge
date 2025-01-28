@@ -1,6 +1,6 @@
 - name: Flex-Grow
   class-name: flex-grow
-  definition: This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
+  definition: Flex-Grow defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
   items:
     - title: 0 (Default)
       elements-count: 3
@@ -45,5 +45,19 @@
         }
         .container .box:nth-child(3) {
             flex-grow: 3;
+        }
+      axis: main
+
+- name: Flex-Shrink
+  class-name: flex-shrink
+  definition: Flex-Shrink defines the ability for a flex item to shrink if necessary.
+  items:
+    - title: 1 (Default)
+      elements-count: 3
+      class-name: one
+      code: | 
+        /* all items have equal width */
+        .container {
+            flex-shrink: 1;
         }
       axis: main
