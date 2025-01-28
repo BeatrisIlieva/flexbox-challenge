@@ -117,3 +117,11 @@
 .boxes-container.align-content.flex-start {
     align-content: flex-start;
 }
+
+.boxes-container.align-content.center {
+    align-content: center;
+}
+
+.boxes-container.align-content.flex-end {
+    align-content: flex-end;
+}

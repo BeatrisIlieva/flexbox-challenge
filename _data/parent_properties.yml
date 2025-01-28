@@ -260,7 +260,7 @@
 
 - name: Align-Content
   class-name: align-content
-  definition: Align-Content aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+  definition: Align-Content aligns a flex container’s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. Note that it only takes effect on multi-line flexible containers, where flex-wrap is set to either wrap or wrap-reverse.
   items:
     - title: Flex-Start (Default) 
       elements-count: 6
@@ -269,5 +269,25 @@
         /* items packed to the start of the container */
         .container {
             align-content: flex-start;
+        }
+      axis: main
+
+    - title: Center
+      elements-count: 6
+      class-name: center
+      code: | 
+        /* items centered in the container */
+        .container {
+            align-content: center;
+        }
+      axis: main
+
+    - title: Flex-End
+      elements-count: 6
+      class-name: flex-end
+      code: | 
+        /* items packed to the end of the container */
+        .container {
+            align-content: flex-end;
         }
       axis: main
