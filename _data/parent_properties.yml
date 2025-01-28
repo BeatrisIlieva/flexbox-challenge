@@ -332,3 +332,37 @@
             align-content: stretch;
         }
       axis: main
+
+- name: Gap
+  class-name: gap
+  definition: The gap property explicitly controls the space between flex items. It applies that spacing only between items not on the outer edges. The gap will only take effect if space applied by justify-content or align-items is smaller.
+  items:
+    - title: Gap
+      elements-count: 6
+      class-name: gap
+      code: | 
+        /* sets spacing between the items both in the row direction and in the column direction */
+        .container {
+            gap: 2rem;
+        }
+      axis: main
+
+    - title: Row-Gap
+      elements-count: 8
+      class-name: row-gap
+      code: | 
+        /* sets spacing between the items in the row direction */
+        .container {
+            row-gap: 2rem;
+        }
+      axis: main
+
+    - title: Column-Gap
+      elements-count: 8
+      class-name: column-gap
+      code: | 
+        /* sets spacing between the items in the column direction */
+        .container {
+            column-gap: 2rem;
+        }
+      axis: main
