@@ -322,3 +322,13 @@
             align-content: space-evenly;
         }
       axis: main
+
+    - title: Stretch
+      elements-count: 6
+      class-name: stretch
+      code: | 
+        /*  lines stretch to take up the remaining space */
+        .container {
+            align-content: stretch;
+        }
+      axis: main

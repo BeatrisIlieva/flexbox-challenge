@@ -79,6 +79,26 @@
     border-bottom-right-radius: 50% 100%;
 }
 
+.boxes-container .box:nth-child(1) {
+    min-height: 5em;
+}
+
+.boxes-container .box:nth-child(3) {
+    min-height: 4em;
+}
+
+.boxes-container .box:nth-child(4) {
+    min-height: 6.6em;
+}
+
+.boxes-container .box:nth-child(5) {
+    min-height: 7.6em;
+}
+
+.boxes-container .box:nth-child(7) {
+    min-height: 3em;
+}
+
 .boxes-container.main::before,
 .boxes-container.cross::before,
 .boxes-container.main::after,
