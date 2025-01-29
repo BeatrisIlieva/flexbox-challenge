@@ -7,7 +7,7 @@
       class-name: row
       code: | 
         /* items are displayed horizontally as a row */
-        .container {
+        .flex-container {
             justify-content: flex-start;
         }
       axis: main
@@ -17,7 +17,7 @@
       class-name: row-reverse
       code: | 
         /* items are displayed horizontally as a row in reverse order */
-        .container {
+        .flex-container {
             justify-content: row-reverse;
         }
       axis: main
@@ -27,7 +27,7 @@
       class-name: column
       code: | 
         /* items are displayed vertically, as a column */
-        .container {
+        .flex-container {
             justify-content: column;
         }
       axis: cross
@@ -37,7 +37,7 @@
       class-name: column-reverse
       code: | 
         /* items are displayed vertically as a column in reverse order */
-        .container {
+        .flex-container {
             justify-content: column-reverse;
         }
       axis: cross
@@ -51,7 +51,7 @@
       class-name: nowrap
       code: | 
         /* items are not allowed to wrap; all flex items will be on one line */
-        .container {
+        .flex-container {
             flex-wrap: nowrap;
         }
       axis: main
@@ -61,7 +61,7 @@
       class-name: wrap
       code: | 
         /* items are allowed to wrap, if necessary, creating new rows if needed */
-        .container {
+        .flex-container {
             flex-wrap: wrap;
         }
       axis: main
@@ -71,7 +71,7 @@
       class-name: wrap-reverse
       code: | 
         /* items are allowed to wrap, if necessary, in reverse order, creating new rows if needed */
-        .container {
+        .flex-container {
             flex-wrap: wrap-reverse;
         }
       axis: main
@@ -85,7 +85,7 @@
       class-name: row-nowrap
       code: | 
         /* items are not allowed to wrap; all flex items will be on one line */
-        .container {
+        .flex-container {
             flex-flow: row-nowrap;
         }
       axis: main
@@ -95,7 +95,7 @@
       class-name: row-reverse-nowrap
       code: | 
         /* items are not allowed to wrap; flex items will be on one line in reverse order */
-        .container {
+        .flex-container {
             flex-flow: row-reverse-nowrap;
         }
       axis: main
@@ -105,7 +105,7 @@
       class-name: row-wrap
       code: | 
         /* items are allowed to wrap, if necessary, creating new rows if needed */
-        .container {
+        .flex-container {
             flex-flow: row-wrap;
         }
       axis: main
@@ -115,7 +115,7 @@
       class-name: column-nowrap
       code: | 
         /* items are displayed vertically as a column not being allowed to wrap */
-        .container {
+        .flex-container {
             flex-flow: column-nowrap;
         }
       axis: cross
@@ -125,7 +125,7 @@
       class-name: column-reverse-nowrap
       code: | 
         /* items are displayed vertically as a column in reverse order not being allowed to wrap */
-        .container {
+        .flex-container {
             flex-flow: column-reverse-nowrap;
         }
       axis: cross
@@ -135,7 +135,7 @@
       class-name: column-wrap
       code: | 
         /* items are displayed vertically as a column, being allowed to wrap if necessary */
-        .container {
+        .flex-container {
             flex-flow: column-wrap;
         }
       axis: cross
@@ -149,7 +149,7 @@
       class-name: flex-start
       code: | 
         /* items are aligned toward the start of the flex-direction */
-        .container {
+        .flex-container {
             justify-content: flex-start;
         }
       axis: cross
@@ -159,7 +159,7 @@
       class-name: center
       code: | 
         /* items are aligned toward the center of the flex-direction */
-        .container {
+        .flex-container {
             justify-content: center;
         }
       axis: cross
@@ -169,7 +169,7 @@
       class-name: flex-end
       code: | 
         /* items are aligned toward the end of the flex-direction */
-        .container {
+        .flex-container {
             justify-content: flex-end;
         }
       axis: cross
@@ -179,7 +179,7 @@
       class-name: space-between
       code: | 
         /* items are evenly distributed in the line */
-        .container {
+        .flex-container {
             justify-content: space-between;
         }
       axis: cross
@@ -189,7 +189,7 @@
       class-name: space-around
       code: | 
         /* items have equal space on both sides */
-        .container {
+        .flex-container {
             justify-content: space-around;
         }
       axis: cross
@@ -199,7 +199,7 @@
       class-name: space-evenly
       code: | 
         /* items are distributed so that the spacing between any two items is equal */
-        .container {
+        .flex-container {
             justify-content: space-evenly;
         }
       axis: cross
@@ -213,7 +213,7 @@
       class-name: stretch
       code: | 
         /* items stretch to fill the container, respecting min-width/max-width */
-        .container {
+        .flex-container {
             align-items: stretch;
         }
       axis: main
@@ -223,7 +223,7 @@
       class-name: flex-start
       code: | 
         /* items are placed at the start of the cross axis */
-        .container {
+        .flex-container {
             align-items: flex-start;
         }
       axis: main
@@ -233,7 +233,7 @@
       class-name: center
       code: | 
         /* items are centered in the cross-axis */
-        .container {
+        .flex-container {
             align-items: center;
         }
       axis: main
@@ -243,7 +243,7 @@
       class-name: flex-end
       code: | 
         /* items are placed at the end of the cross axis */
-        .container {
+        .flex-container {
             align-items: flex-end;
         }
       axis: main
@@ -253,7 +253,7 @@
       class-name: baseline
       code: | 
         /* items are aligned such as their baselines align */
-        .container {
+        .flex-container {
             align-items: flex-end;
         }
       axis: main
@@ -267,7 +267,7 @@
       class-name: flex-start
       code: | 
         /* items packed to the start of the container */
-        .container {
+        .flex-container {
             align-content: flex-start;
         }
       axis: main
@@ -277,7 +277,7 @@
       class-name: center
       code: | 
         /* items centered in the container */
-        .container {
+        .flex-container {
             align-content: center;
         }
       axis: main
@@ -287,7 +287,7 @@
       class-name: flex-end
       code: | 
         /* items packed to the end of the container */
-        .container {
+        .flex-container {
             align-content: flex-end;
         }
       axis: main
@@ -297,7 +297,7 @@
       class-name: space-between
       code: | 
         /*  items evenly distributed; the first line is at the start of the container while the last one is at the end */
-        .container {
+        .flex-container {
             align-content: space-between;
         }
       axis: main
@@ -307,7 +307,7 @@
       class-name: space-around
       code: | 
         /*  items evenly distributed with equal space around each line */
-        .container {
+        .flex-container {
             align-content: space-around;
         }
       axis: main
@@ -318,7 +318,7 @@
       class-name: space-evenly
       code: | 
         /*  items are evenly distributed with equal space around them */
-        .container {
+        .flex-container {
             align-content: space-evenly;
         }
       axis: main
@@ -328,7 +328,7 @@
       class-name: stretch
       code: | 
         /*  lines stretch to take up the remaining space */
-        .container {
+        .flex-container {
             align-content: stretch;
         }
       axis: main
@@ -342,7 +342,7 @@
       class-name: gap
       code: | 
         /* sets spacing between the items both in the row direction and in the column direction */
-        .container {
+        .flex-container {
             gap: 2rem;
         }
       axis: main
@@ -352,7 +352,7 @@
       class-name: row-gap
       code: | 
         /* sets spacing between the items in the row direction */
-        .container {
+        .flex-container {
             row-gap: 2rem;
         }
       axis: main
@@ -362,7 +362,7 @@
       class-name: column-gap
       code: | 
         /* sets spacing between the items in the column direction */
-        .container {
+        .flex-container {
             column-gap: 2rem;
         }
       axis: main

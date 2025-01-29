@@ -7,7 +7,7 @@
       class-name: zero
       code: | 
         /* all items have equal width */
-        .container {
+        .flex-container .item:nth-child(1) {
             flex-grow: 0;
         }
       axis: main
@@ -17,7 +17,7 @@
       class-name: one
       code: | 
         /* the remaining space in the container is distributed equally to all children */
-        .container {
+        .flex-container .item:nth-child(1) {
             flex-grow: 1;
         }
       axis: main
@@ -27,7 +27,7 @@
       class-name: second-child
       code: | 
         /* the second child takes up twice as much of the available space as either one of the others */
-        .container .box:nth-child(2) {
+        .flex-container .item:nth-child(2) {
             flex-grow: 2;
         }
       axis: main
@@ -37,13 +37,13 @@
       class-name: proportionally
       code: | 
         /* all children grow proportionally */
-        .container .box:nth-child(1) {
+        .flex-container .item:nth-child(1) {
             flex-grow: 1;
         }
-        .container .box:nth-child(2) {
+        .flex-container .item:nth-child(2) {
             flex-grow: 2;
         }
-        .container .box:nth-child(3) {
+        .flex-container .item:nth-child(3) {
             flex-grow: 3;
         }
       axis: main
@@ -57,7 +57,17 @@
       class-name: one
       code: | 
         /* all items have equal width */
-        .container {
+        .flex-container .item:nth-child(1) {
+            flex-shrink: 1;
+        }
+      axis: main
+
+    - title: 0
+      elements-count: 3
+      class-name: zero
+      code: | 
+        /* children maintain their width as defined by their content and width property, without compressing to fit available space */
+        .flex-container .item:nth-child(1) {
             flex-shrink: 1;
         }
       axis: main
