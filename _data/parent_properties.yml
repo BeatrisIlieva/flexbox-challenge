@@ -121,7 +121,7 @@
       axis: cross
 
     - title: Column-Reverse-NoWrap
-      elements-count: 8
+      elements-count: 5
       class-name: column-reverse-nowrap
       code: | 
         /* items are displayed vertically as a column in reverse order not being allowed to wrap */
@@ -131,7 +131,7 @@
       axis: cross
 
     - title: Column-Wrap
-      elements-count: 8
+      elements-count: 7
       class-name: column-wrap
       code: | 
         /* items are displayed vertically as a column, being allowed to wrap if necessary */
