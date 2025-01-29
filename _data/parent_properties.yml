@@ -111,7 +111,7 @@
       axis: main
 
     - title: Column-NoWrap
-      elements-count: 7
+      elements-count: 5
       class-name: column-nowrap
       code: | 
         /* items are displayed vertically as a column not being allowed to wrap */
