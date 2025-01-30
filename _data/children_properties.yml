@@ -68,6 +68,6 @@
       code: | 
         /* children maintain their width as defined by their content and width property, without compressing to fit available space */
         .flex-container .item:nth-child(1) {
-            flex-shrink: 1;
+            flex-shrink: 0;
         }
       axis: main
