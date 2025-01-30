@@ -26,12 +26,16 @@
     align-items: unset;
 }
 
-.boxes-container.flex-shrink.one .box:nth-child(1){
-    flex-basis: 12em;
+.boxes-container.flex-shrink.zero .box:nth-child(1),
+.boxes-container.flex-shrink.zero .box:nth-child(2),
+.boxes-container.flex-shrink.zero .box:nth-child(3){
+    flex-basis: 7em;
     flex-shrink: 1;
 }
 
-.boxes-container.flex-shrink.zero .box:nth-child(1) {
-    flex-basis: 12em;
+.boxes-container.flex-shrink.zero .box:nth-child(1),
+.boxes-container.flex-shrink.zero .box:nth-child(2),
+.boxes-container.flex-shrink.zero .box:nth-child(3) {
+    flex-basis: 7em;
     flex-shrink: 0;
 }

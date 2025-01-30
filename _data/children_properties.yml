@@ -56,8 +56,11 @@
       elements-count: 3
       class-name: one
       code: | 
-        /* all items have equal width */
-        .flex-container .item:nth-child(1) {
+        /* items shrink if necessary */
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(2),
+        .flex-container .item:nth-child(3) {
+            flex-basis: 7em;
             flex-shrink: 1;
         }
       axis: main
@@ -66,8 +69,11 @@
       elements-count: 3
       class-name: zero
       code: | 
-        /* children maintain their width as defined by their content and width property, without compressing to fit available space */
-        .flex-container .item:nth-child(1) {
+        /* children maintain their width as defined by their flex-basis, without compressing to fit available space */
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(2),
+        .flex-container .item:nth-child(3) {
+            flex-basis: 7em;
             flex-shrink: 0;
         }
       axis: main
