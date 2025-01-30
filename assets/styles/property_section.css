@@ -35,6 +35,16 @@
     padding: 2em;
 }
 
+.carousel-wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    content: '21em x 21em';
+    font-variant-caps: normal;
+    opacity: 0.5;
+}
+
 .property-section:nth-of-type(even) .carousel-wrapper {
     order: 2;
 }
@@ -122,9 +132,10 @@
 }
 
 .boxes-container.cross::after {
-    content: '  Cross Axis';
+    content: '  Cross Axis\21em';
     color: var(--clr-purple);
     background: var(--clr-purple);
+    white-space: pre;
 }
 
 .boxes-container.main::before {
