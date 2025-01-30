@@ -11,24 +11,14 @@ body {
 }
 
 header.layout-item {
-    order: 1;
     background: var(--clr-transparent-violet);
     border-bottom: 2px solid white;
     box-shadow: 0 0.1em 0 0 rgb(0, 0, 0, 0.1);
 }
 
-main.layout-item {
+.layout-item.main-content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 4em;
-    order: 3;
-}
-
-aside.layout-item {
-    order: 2;
-}
-
-footer.layout-item {
-    order: 4;
 }

@@ -1,10 +1,10 @@
-.layout-item .main-content {
+.layout-item.main-content {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
 }
 
-.layout-item .main-content > article {
+.layout-item.main-content > article {
     background: var(--clr-white);
     border-radius: 0.5em;
     overflow: hidden;
@@ -13,14 +13,14 @@
     background: linear-gradient(-135deg, transparent 4rem, var(--clr-white) 0);
 }
 
-.layout-item .main-content h2 {
+.layout-item.main-content h2 {
     background: var(--clr-blue);
     padding: 0.2em 0.4em;
     text-align: center;
     background: linear-gradient(-135deg, transparent 4rem, var(--clr-blue) 0);
 }
 
-.layout-item .main-content > article::after {
+.layout-item.main-content > article::after {
     content: '';
     position: absolute;
     top: 0;

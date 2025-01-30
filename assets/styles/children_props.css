@@ -22,6 +22,10 @@
     flex-grow: 3;
 }
 
+.boxes-container.flex-shrink .box{
+    align-items: unset;
+}
+
 .boxes-container.flex-shrink.one {
     flex-shrink: 1;
 }
