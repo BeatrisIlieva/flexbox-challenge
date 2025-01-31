@@ -254,7 +254,7 @@
       code: | 
         /* items are aligned such as their baselines align */
         .flex-container {
-            align-items: flex-end;
+            align-items: baseline;
         }
       axis: main
 

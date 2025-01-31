@@ -139,4 +139,48 @@
         }
       axis: main
 
+- name: Align-Self
+  class-name: align-self
+  definition: Align-Self allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+  items:
+    - title: Flex-Start 
+      elements-count: 3
+      class-name: flex-start
+      code: | 
+        /* the second item is placed at the start of the cross axis */
+        .flex-container {
+            align-items: flex-start;
+        }
+      axis: main
+
+    - title: Center
+      elements-count: 3
+      class-name: center
+      code: | 
+        /* the second item is centered in the cross-axis */
+        .flex-container {
+            align-items: center;
+        }
+      axis: main
+
+    - title: Flex-End
+      elements-count: 3
+      class-name: flex-end
+      code: | 
+        /* the second item is placed at the end of the cross axis */
+        .flex-container {
+            align-items: flex-end;
+        }
+      axis: main
+
+    - title: Baseline
+      elements-count: 3
+      class-name: baseline
+      code: | 
+        /* the second item is aligned at the baseline level */
+        .flex-container {
+            align-items: baseline;
+        }
+      axis: main
+
 
