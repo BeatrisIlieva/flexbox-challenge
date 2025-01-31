@@ -28,7 +28,7 @@
 
 .boxes-container.flex-shrink.zero .box:nth-child(1),
 .boxes-container.flex-shrink.zero .box:nth-child(2),
-.boxes-container.flex-shrink.zero .box:nth-child(3){
+.boxes-container.flex-shrink.zero .box:nth-child(3) {
     flex-basis: 7em;
     flex-shrink: 1;
 }
@@ -38,4 +38,10 @@
 .boxes-container.flex-shrink.zero .box:nth-child(3) {
     flex-basis: 7em;
     flex-shrink: 0;
+}
+
+.boxes-container.flex-basis.three .box:nth-child(1),
+.boxes-container.flex-basis.three .box:nth-child(2),
+.boxes-container.flex-basis.three .box:nth-child(3) {
+    flex-basis: 3em;
 }
