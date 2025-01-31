@@ -41,7 +41,10 @@
 }
 
 .boxes-container.flex-basis.three .box:nth-child(1),
-.boxes-container.flex-basis.three .box:nth-child(2),
-.boxes-container.flex-basis.three .box:nth-child(3) {
+.boxes-container.flex-basis.three .box:nth-child(2) {
     flex-basis: 3em;
+}
+
+.boxes-container.flex-basis.three .box:nth-child(2) {
+    flex-basis: 5em;
 }

@@ -86,6 +86,25 @@
       elements-count: 3
       class-name: three
       code: | 
+        /* items occupy the space they are assigned */
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(3) {
+            flex-basis: 3em;
+        }
+
+        .flex-container .item:nth-child(2), {
+            flex-basis: 5em;
+        }
+      axis: main
+
+- name: Align-Self
+  class-name: flex-basis
+  definition: Flex-Basis defines the default size of an item before the remaining space is distributed.
+  items:
+    - title: 3em
+      elements-count: 3
+      class-name: three
+      code: | 
         /* items take up a space of 3em. */
         .flex-container .item:nth-child(1),
         .flex-container .item:nth-child(2),
