@@ -47,7 +47,7 @@
   definition: By default, flex items will try to fit onto one line. However, we can change that and allow the items to wrap as needed.
   items:
     - title: NoWrap (Default)
-      elements-count: 5
+      elements-count: 6
       class-name: nowrap
       code: | 
         /* items are not allowed to wrap; all flex items will be on one line */
@@ -57,7 +57,7 @@
       axis: main
 
     - title: Wrap
-      elements-count: 5
+      elements-count: 6
       class-name: wrap
       code: | 
         /* items are allowed to wrap, if necessary, creating new rows if needed */
@@ -67,7 +67,7 @@
       axis: main
 
     - title: Wrap-Reverse
-      elements-count: 5
+      elements-count: 6
       class-name: wrap-reverse
       code: | 
         /* items are allowed to wrap, if necessary, in reverse order, creating new rows if needed */
