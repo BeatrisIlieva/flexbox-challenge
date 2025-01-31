@@ -1,103 +1,18 @@
-/* aside.insights {
-    display: flex;
-    flex-wrap: wrap;
-    font-variant-caps: normal;
-    justify-content: space-between;
-    gap: 1em;
-}
-
-.double-layout, single-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    flex: 0 1 670px;
-}
-
-.single-layout,
-.double-layout article {
-    background: var(--clr-white);
-    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-    display: flex;
-}
-
-@media (min-width: 900px) {
-    .single-layout {
-        flex: 0 1 300px;
-    }
-}
-
-.double-layout article {
-    gap: 2em;
-    align-items: center;
-}
-
-.single-layout article, .double-layout article {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.single-layout article,
-.double-layout article {
-    padding: 1em;
-}
-
-.single-layout article:nth-child(even) {
-    padding-top: 0;
-}
-
-section.content {
-    display: flex;
-}
-
-section.content blockquote {
-    opacity: 0.5;
-}
-
-section.content i {
-    font-size: 1.5em;
-}
-
-.single-layout section.content,
-.double-layout section.content {
-    flex-direction: column;
-    gap: 1em;
-    justify-content: space-between;
-}
-
-.double-layout .content h5 {
-    order: 2;
-}
-
-div.avatar {
-    width: 8em;
-    border-radius: 50%;
-    overflow: hidden;
-    aspect-ratio: 1/1;
-    flex-shrink: 0;
-    border: 0.2em solid var(--clr-white);
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
-}
-
-.single-layout div.avatar {
-    width: 10em;
-} */
-
-/* //// */
-
 .insights {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+}
 
+.insights .wrapper {
+    flex: 0 1 800px;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
 }
 
 .insights .card {
-    flex: 0 1 800px;
     background: var(--clr-white);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5rem;
@@ -123,10 +38,6 @@ section.content i {
     font-size: 1.5em;
 }
 
-/* .double-layout .content h5 {
-    order: 2;
-} */
-
 div.avatar {
     max-width: 10em;
     border-radius: 50%;
@@ -137,6 +48,28 @@ div.avatar {
     display: flex;
 }
 
-/* .single-layout div.avatar {
-    width: 10em;
-} */
+@media (min-width: 950px) {
+    .insights .wrapper:not(:last-child) {
+        flex: 1 1 600px;
+        gap: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .insights .wrapper:last-child {
+        flex: 1 1 300px;
+        flex-direction: row;
+    }
+
+    .insights .wrapper:last-child .card {
+        flex-direction: column;
+    }
+
+    .insights .wrapper:last-child .content h5 {
+        order: 2;
+    }
+
+    .insights .wrapper:last-child .avatar {
+        align-self: flex-end;
+    }
+}
