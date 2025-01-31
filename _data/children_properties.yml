@@ -96,7 +96,7 @@
             flex-basis: 5em;
         }
       axis: main
-      
+
     - title: 2em
       elements-count: 3
       class-name: two
@@ -113,14 +113,39 @@
   class-name: flex
   definition: Flex is the shorthand for flex-grow, flex-shrink and flex-basis combined. 
   items:
-    - title: 3em
+    - title: 'grow: 1, shrink: 1, basis: 8em'
       elements-count: 3
-      class-name: three
+      class-name: grow1-shrink1-basis5
       code: | 
         /* items take up a space of 3em. */
         .flex-container .item:nth-child(1),
-        .flex-container .item:nth-child(2),
         .flex-container .item:nth-child(3) {
-            flex-basis: 3em;
+            flex: 1 1 8em;
+        }
+      axis: main
+
+    - title: 'grow: 1, shrink: 0, basis: 8em'
+      elements-count: 3
+      class-name: grow1-shrink0-basis5
+      code: | 
+        /* items take up a space of 3em. */
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(3) {
+            flex: 1 0 8em;
+        }
+      axis: main
+
+    - title: 'grow: 0, shrink: 1, basis: auto (Default)' 
+      elements-count: 3
+      class-name: grow1-shrink0-basis5
+      code: | 
+        /* items take up a space of 3em. */
+        .flex-container .item:nth-child(2) {
+            flex: 0 1 auto;
+        }
+
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(3) {
+            flex: 1 1 5em;
         }
       axis: main

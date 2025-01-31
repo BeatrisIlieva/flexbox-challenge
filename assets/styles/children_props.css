@@ -54,3 +54,22 @@
 .boxes-container.flex-basis.two .box:nth-child(3) {
     flex-basis: 2em;
 }
+
+.boxes-container.flex.grow1-shrink1-basis5 .box:nth-child(1),
+.boxes-container.flex.grow1-shrink1-basis5 .box:nth-child(3) {
+    flex: 1 1 8em;
+}
+
+.boxes-container.flex.grow1-shrink0-basis5 .box:nth-child(1),
+.boxes-container.flex.grow1-shrink0-basis5 .box:nth-child(3) {
+    flex: 1 0 8em;
+}
+
+.boxes-container.flex.grow1-shrink0-basis5 .box:nth-child(2) {
+    flex: 1 1 10em;
+}
+
+.boxes-container.flex.grow1-shrink0-basis5 .box:nth-child(1),
+.boxes-container.flex.grow1-shrink0-basis5 .box:nth-child(2) {
+    flex: 1 1 auto;
+}
