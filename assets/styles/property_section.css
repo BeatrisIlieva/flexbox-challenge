@@ -244,7 +244,8 @@
 details::details-content {
     font-size: 0.9em;
     block-size: 0;
-    transition: block-size 1s;
+    transition: block-size 1s, content-visibility 1s;
+    transition-behavior: allow-discrete;
     background: var(--clr-white);
 }
 .details-container > details[open] > summary::before {
@@ -257,7 +258,7 @@ details::details-content {
 }
 
 .details-container > details[open] > summary {
-    background: var(--clr-violet);  
+    background: var(--clr-violet);
     font-weight: bold;
     color: var(--clr-black);
 }
@@ -265,7 +266,6 @@ details::details-content {
 details[open]::details-content {
     block-size: auto;
 }
-
 
 .details-container::-webkit-scrollbar {
     width: 0.75em;
@@ -307,8 +307,6 @@ details[open]::details-content {
     color: var(--clr-gray);
     font-weight: bold;
 }
-
-
 
 .details-container > details:last-of-type {
     margin-bottom: 0;
