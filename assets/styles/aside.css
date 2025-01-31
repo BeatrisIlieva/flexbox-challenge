@@ -6,7 +6,7 @@
 }
 
 .insights .wrapper {
-    flex: 0 1 800px;
+    flex: 0 1 700px;
     display: flex;
     gap: 1em;
     flex-direction: column;
@@ -20,6 +20,7 @@
     gap: 1em;
     padding: 1em;
     justify-content: space-between;
+    align-items: center;
 }
 
 section.content {
@@ -39,7 +40,7 @@ section.content i {
 }
 
 div.avatar {
-    max-width: 10em;
+    max-width: 8em;
     border-radius: 50%;
     overflow: hidden;
     aspect-ratio: 1/1;
@@ -70,6 +71,7 @@ div.avatar {
     }
 
     .insights .wrapper:last-child .avatar {
-        align-self: flex-end;
+        align-self: center;
+        max-width: 10em;
     }
 }

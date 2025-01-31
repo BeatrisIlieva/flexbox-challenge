@@ -32,17 +32,24 @@
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-    padding: 2em;
+    padding: 2.5em;
 }
 
-.carousel-wrapper::before {
+.carousel-wrapper::after {
+    display: inline-block;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    content: '21em x 21em';
+    right: 0;
+    padding: 0.4em 0.8em;
+    content: '\2195  21em';
     font-variant-caps: normal;
-    opacity: 0.5;
+    background: var(--clr-orange);
+    color: var(--clr-white);
+    box-shadow: -0.2em 0.2em 0.2em 0 rgb(0, 0, 0, 0.2);
+    font-weight: 700;
+    font-size: 0.8em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
 }
 
 .property-section:nth-of-type(even) .carousel-wrapper {
@@ -133,7 +140,7 @@
 }
 
 .boxes-container.cross::after {
-    content: '  Cross Axis\21em';
+    content: '  Cross Axis ';
     color: var(--clr-purple);
     background: var(--clr-purple);
     white-space: pre;
