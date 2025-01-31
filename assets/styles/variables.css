@@ -1,4 +1,6 @@
 :root {
+    interpolate-size: allow-keywords;
+
     --body-gradient: linear-gradient(
         130deg in oklab,
         #ffdbdb 0%,
