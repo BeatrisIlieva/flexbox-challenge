@@ -96,10 +96,22 @@
             flex-basis: 5em;
         }
       axis: main
+      
+    - title: 2em
+      elements-count: 3
+      class-name: two
+      code: | 
+        /* items occupy equal space */
+        .flex-container .item:nth-child(1),
+        .flex-container .item:nth-child(2),
+        .flex-container .item:nth-child(3) {
+            flex-basis: 2em;
+        }
+      axis: main
 
-- name: Align-Self
-  class-name: flex-basis
-  definition: Flex-Basis defines the default size of an item before the remaining space is distributed.
+- name: Flex
+  class-name: flex
+  definition: Flex is the shorthand for flex-grow, flex-shrink and flex-basis combined. 
   items:
     - title: 3em
       elements-count: 3
