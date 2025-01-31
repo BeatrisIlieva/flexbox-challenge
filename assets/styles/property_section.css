@@ -80,20 +80,23 @@
     justify-content: center;
     flex-shrink: 0;
     z-index: 3;
-    flex-basis: 1.5em;
+    width: 1.5em;
     aspect-ratio: 1/1;
+    align-items: center;
 }
 
 .boxes-container .box:nth-child(1) {
-    flex-basis: 4em;
+    width: 1.5em;
+
 }
 
 .boxes-container .box:nth-child(3) {
-    flex-basis: 5em;
+    width: 1.5em;
+
 }
 
 .boxes-container .box:nth-child(5) {
-    flex-basis: 6em;
+    width: 1.5em;
 }
 
 .boxes-container.main::before,

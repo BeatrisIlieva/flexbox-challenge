@@ -47,7 +47,7 @@
   definition: By default, flex items will try to fit onto one line. However, we can change that and allow the items to wrap as needed.
   items:
     - title: NoWrap (Default)
-      elements-count: 6
+      elements-count: 5
       class-name: nowrap
       code: | 
         /* items are not allowed to wrap; all flex items will be on one line */
@@ -57,7 +57,7 @@
       axis: main
 
     - title: Wrap
-      elements-count: 6
+      elements-count: 5
       class-name: wrap
       code: | 
         /* items are allowed to wrap, if necessary, creating new rows if needed */
@@ -67,7 +67,7 @@
       axis: main
 
     - title: Wrap-Reverse
-      elements-count: 6
+      elements-count: 5
       class-name: wrap-reverse
       code: | 
         /* items are allowed to wrap, if necessary, in reverse order, creating new rows if needed */
@@ -111,7 +111,7 @@
       axis: main
 
     - title: Column-NoWrap
-      elements-count: 5
+      elements-count: 6
       class-name: column-nowrap
       code: | 
         /* items are displayed vertically as a column not being allowed to wrap */
@@ -121,7 +121,7 @@
       axis: cross
 
     - title: Column-Reverse-NoWrap
-      elements-count: 5
+      elements-count: 6
       class-name: column-reverse-nowrap
       code: | 
         /* items are displayed vertically as a column in reverse order not being allowed to wrap */
@@ -131,7 +131,7 @@
       axis: cross
 
     - title: Column-Wrap
-      elements-count: 7
+      elements-count: 6
       class-name: column-wrap
       code: | 
         /* items are displayed vertically as a column, being allowed to wrap if necessary */
@@ -348,7 +348,7 @@
       axis: main
 
     - title: Row-Gap
-      elements-count: 8
+      elements-count: 6
       class-name: row-gap
       code: | 
         /* sets spacing between the items in the row direction */
@@ -358,7 +358,7 @@
       axis: main
 
     - title: Column-Gap
-      elements-count: 8
+      elements-count: 6
       class-name: column-gap
       code: | 
         /* sets spacing between the items in the column direction */
