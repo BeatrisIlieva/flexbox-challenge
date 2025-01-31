@@ -67,3 +67,19 @@
 .boxes-container.flex.grow0-shrink1-basisauto .box:nth-child(3) {
     flex: 1 1 8em;
 }
+
+.boxes-container.align-self.flex-start .box:nth-child(2) {
+    align-self: flex-start;
+}
+
+.boxes-container.align-self.center .box:nth-child(2) {
+    align-self: center;
+}
+
+.boxes-container.align-self.flex-end .box:nth-child(2) {
+    align-self: flex-end;
+}
+
+.boxes-container.align-self.baseline .box:nth-child(2) {
+    align-self: baseline;
+}
