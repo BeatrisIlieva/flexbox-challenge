@@ -40,9 +40,11 @@
         .flex-container .item:nth-child(1) {
             flex-grow: 1;
         }
+
         .flex-container .item:nth-child(2) {
             flex-grow: 2;
         }
+        
         .flex-container .item:nth-child(3) {
             flex-grow: 3;
         }
@@ -173,5 +175,44 @@
         }
       axis: main
 
+- name: Order
+  class-name: order
+  definition: By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
+  items:
+    - title: Reversed first and last item 
+      elements-count: 4
+      class-name: first-last
+      code: | 
+        /* the first and last item switch their places */
+        .flex-container .item:nth-child(1){
+            order: 4
+        }
+
+        .flex-container .item:nth-child(4){
+            order: -1
+        }
+      axis: main
+
+    - title: All items reversed 
+      elements-count: 4
+      class-name: all-reversed
+      code: | 
+        /* all items are reversed */
+        .flex-container .item:nth-child(1){
+            order: 2
+        }
+
+        .flex-container .item:nth-child(2){
+            order: -1
+        }
+
+        .flex-container .item:nth-child(4){
+            order: 3
+        }
+
+        .flex-container .item:nth-child(3){
+            order: 4
+        }
+      axis: main
 
 

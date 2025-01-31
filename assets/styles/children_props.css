@@ -88,3 +88,26 @@
     height: 6em;
 }
 
+.boxes-container.order.first-last .box:nth-child(1) {
+    order: 4;
+}
+
+.boxes-container.order.first-last .box:nth-child(4) {
+    order: -1;
+}
+
+.boxes-container.order.all-reversed .box:nth-child(1) {
+    order: 2;
+}
+
+.boxes-container.order.all-reversed .box:nth-child(2) {
+    order: -1;
+}
+
+.boxes-container.order.all-reversed .box:nth-child(4) {
+    order: 3;
+}
+
+.boxes-container.order.all-reversed .box:nth-child(3) {
+    order: 4;
+}
