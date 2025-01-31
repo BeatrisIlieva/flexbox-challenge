@@ -232,7 +232,6 @@
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
     border-radius: 0.5em;
     overflow-y: auto;
-    /* overflow: hidden; */
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -244,7 +243,7 @@
 details::details-content {
     font-size: 0.9em;
     block-size: 0;
-    transition: block-size 1s, content-visibility 1s;
+    transition: content-visibility 1s, block-size 1s;
     transition-behavior: allow-discrete;
     background: var(--clr-white);
 }
@@ -290,7 +289,6 @@ details[open]::details-content {
 }
 
 .details-container > details > summary {
-    /* background: var(--clr-light-violet); */
     padding: 0.5em;
     position: relative;
     padding-left: 1.5em;
@@ -306,10 +304,6 @@ details[open]::details-content {
     font-size: 1.4em;
     color: var(--clr-gray);
     font-weight: bold;
-}
-
-.details-container > details:last-of-type {
-    margin-bottom: 0;
 }
 
 .details-container > details > p {
