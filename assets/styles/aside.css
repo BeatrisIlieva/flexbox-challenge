@@ -1,5 +1,5 @@
 .insights article + article {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .insights .card {
@@ -43,23 +43,23 @@ div.avatar {
 
 @media (max-width: 950px) {
     .insights .wrapper:last-child {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 }
 
 @media (min-width: 950px) {
     .insights {
         display: flex;
-        gap: 2em;
+        gap: 1em;
     }
 
     .insights .wrapper:not(:last-child) {
-        flex: 0 1 600px;
+        flex: 1 1 680px;
     }
 
     .insights .wrapper:last-child {
         display: flex;
-        flex: 0 1 300px;
+        flex: 1 1 300px;
         flex-direction: column;
     }
 
