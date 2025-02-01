@@ -221,7 +221,7 @@
     overflow: hidden;
     aspect-ratio: 1/1;
     opacity: 0.5;
-    border: 0.06 em solid var(--clr-white);
+    border: 0.06em solid var(--clr-white);
 }
 
 #previous:hover > i,
@@ -237,7 +237,9 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 21em;
-    background: var(--clr-light-violet);
+    overflow: hidden;
+    flex-shrink: 01
+    /* background: var(--clr-light-violet); */
 }
 
 details::details-content {
@@ -285,8 +287,10 @@ details[open]::details-content {
 }
 
 .details-container > details {
-    border-bottom: 0.15em solid var(--clr-white);
+    border-bottom: 0.5em solid var(--clr-white);
+    /* border-bottom: 0.15em solid var(--clr-white); */
     overflow: hidden;
+    background: var(--clr-light-violet);
 }
 
 .details-container > details > summary {
