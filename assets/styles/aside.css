@@ -1,15 +1,5 @@
-.insights {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.insights .wrapper {
-    flex: 0 1 700px;
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
+.insights article + article {
+    margin-top: 2em;
 }
 
 .insights .card {
@@ -51,29 +41,30 @@ div.avatar {
     display: flex;
 }
 
+@media (max-width: 950px) {
+    .insights .wrapper:last-child {
+        margin-top: 2em;
+    }
+}
+
 @media (min-width: 950px) {
-    .insights .wrapper:not(:last-child) {
-        flex: 1 1 600px;
-        gap: 1em;
+    .insights {
         display: flex;
-        flex-direction: column;
+        gap: 2em;
+    }
+
+    .insights .wrapper:not(:last-child) {
+        flex: 0 1 600px;
     }
 
     .insights .wrapper:last-child {
-        flex: 1 1 300px;
-        flex-direction: row;
-    }
-
-    .insights .wrapper:last-child .card {
+        display: flex;
+        flex: 0 1 300px;
         flex-direction: column;
     }
 
-    .insights .wrapper:last-child .content h5 {
-        order: 2;
-    }
-
-    .insights .wrapper:last-child .avatar {
-        align-self: center;
-        max-width: 10em;
+    .insights .wrapper:last-child article {
+        flex-grow: 1;
+        flex-direction: column;
     }
 }
