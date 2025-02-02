@@ -89,10 +89,12 @@
 
 .main-nav ul .purple a {
     background: var(--clr-purple);
+    transition: color 1s ease, background 1s ease;
 }
 
 .main-nav ul .blue a {
     background: var(--clr-magic-blue);
+    transition: color 1s ease, background 1s ease;
 }
 
 .main-nav ul ul li:hover > ul {
@@ -107,10 +109,10 @@
 
 .main-nav > ul .blue a:hover {
     color: var(--clr-black);
-    background: #0076c0b2;
+    background: #0076c0a7;
 }
 
 .main-nav > ul .purple a:hover {
     color: var(--clr-black);
-    background: #ee82ee91;
+    background: #ee82eea8;
 }
