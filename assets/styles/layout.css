@@ -14,6 +14,10 @@ header.layout-item {
     background: var(--clr-transparent-violet);
     border-bottom: 2px solid white;
     box-shadow: 0 0.1em 0 0 rgb(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 80;
 }
 
 .layout-item.main-content {
