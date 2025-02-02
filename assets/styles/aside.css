@@ -1,3 +1,7 @@
+.insights {
+    padding-bottom: 2em;
+}
+
 .insights article + article {
     margin-top: 1em;
 }
