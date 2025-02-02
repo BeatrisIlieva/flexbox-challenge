@@ -285,7 +285,7 @@ details[open]::details-content {
 }
 
 .details-container > details:not(:last-child) {
-    border-bottom: 0.25em solid var(--clr-white);
+    border-bottom: 0.2em solid var(--clr-white);
 }
 
 .details-container > details {

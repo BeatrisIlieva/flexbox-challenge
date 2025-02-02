@@ -1,6 +1,6 @@
 {% for property in site.data.parent_properties %}
 
-<section class="property-section">
+<section class="property-section" id="{{property.class-name}}">
     <h3>{{property.name}}</h3>
     <p>{{property.definition}}</p>
 
@@ -30,7 +30,7 @@
 
             {% for item in property.items %}
             <details>
-                <summary id="{{item.class-name}}">{{item.title}}</summary>
+                <summary>{{item.title}}</summary>
                 <pre>
                     <code class="language-css">{% highlight css %}{{item.code}}{% endhighlight %}</code>
                 </pre>
