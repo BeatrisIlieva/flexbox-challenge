@@ -22,6 +22,7 @@
     gap: 2em;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .carousel-wrapper {
@@ -32,7 +33,7 @@
     aspect-ratio: 1/1;
     background: var(--clr-yellow);
     box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     padding: 2.5em;
     align-self: center;
 }
@@ -80,7 +81,7 @@
     padding: 0.8em 1.6em;
     color: var(--clr-black);
     background: var(--clr-pink);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     overflow: hidden;
     box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.2), 0 0 0.5em 0 rgb(0, 0, 0, 0.2) inset;
     outline: 0.1em solid var(--clr-white);
@@ -232,14 +233,12 @@
 
 .details-container {
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 21em;
+    flex: 0 1 21em;
     overflow: hidden;
-    flex-shrink: 01
-    /* background: var(--clr-light-violet); */
 }
 
 details::details-content {
@@ -271,7 +270,6 @@ details[open]::details-content {
 ::-webkit-scrollbar {
     width: 0.75em;
     background: var(--clr-violet);
-    /* border-top-right-radius: 0.5em;   */
     border-bottom-right-radius: 0.5em;
 }
 
@@ -286,9 +284,11 @@ details[open]::details-content {
     border: 0.15em solid var(--clr-green);
 }
 
+.details-container > details:not(:last-child) {
+    border-bottom: 0.25em solid var(--clr-white);
+}
+
 .details-container > details {
-    border-bottom: 0.5em solid var(--clr-white);
-    /* border-bottom: 0.15em solid var(--clr-white); */
     overflow: hidden;
     background: var(--clr-light-violet);
 }
