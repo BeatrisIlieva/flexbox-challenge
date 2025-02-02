@@ -30,7 +30,7 @@
 
             {% for item in property.items %}
             <details>
-                <summary>{{item.title}}</summary>
+                <summary id="{{item.class-name}}">{{item.title}}</summary>
                 <pre>
                     <code class="language-css">{% highlight css %}{{item.code}}{% endhighlight %}</code>
                 </pre>
