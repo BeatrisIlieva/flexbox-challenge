@@ -291,6 +291,7 @@ details[open]::details-content {
 .details-container > details {
     overflow: hidden;
     background: var(--clr-light-violet);
+    transition: color 1s ease, background 1s ease;
 }
 
 .details-container > details > summary {
@@ -299,6 +300,15 @@ details[open]::details-content {
     padding-left: 1.5em;
     color: var(--clr-gray);
     font-weight: bold;
+    transition: color 1s ease, background 1s ease;
+}
+
+.details-container > details:hover {
+    background: var(--clr-violet);
+}
+
+.details-container > details:hover summary {
+    color: var(--clr-black);
 }
 
 .details-container > details > summary::before {
@@ -309,6 +319,11 @@ details[open]::details-content {
     font-size: 1.4em;
     color: var(--clr-gray);
     font-weight: bold;
+    transition: color 1s ease, background 1s ease;
+}
+
+.details-container > details:hover summary::before {
+    color: var(--clr-black);
 }
 
 .details-container > details > p {
