@@ -37,7 +37,7 @@
     );
     box-shadow: 0 0 0.8em 0 rgb(0, 0, 0, 0.5);
     border-bottom-left-radius: 1.5em 100%;
-    z-index: 100;
+    z-index: 70;
     border-top: none;
     border-right: none;
 }

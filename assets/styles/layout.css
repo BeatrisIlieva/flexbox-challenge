@@ -18,6 +18,16 @@ header.layout-item {
     top: 0;
     left: 0;
     z-index: 80;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.visible {
+    transform: translateY(0);
 }
 
 .layout-item.main-content {

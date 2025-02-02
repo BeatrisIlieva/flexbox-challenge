@@ -1,3 +1,20 @@
+let lastScrollY = 0;
+
+window.addEventListener('scroll', e => {
+    const currentScrollY = window.scrollY;
+    const headerElement = document.querySelector('header.layout-item');
+
+    if (currentScrollY > 160 && currentScrollY > lastScrollY) {
+        headerElement.classList.remove('visible');
+        headerElement.classList.add('hidden');
+    } else if (currentScrollY < lastScrollY) {
+        headerElement.classList.remove('hidden');
+        headerElement.classList.add('visible');
+    }
+
+    lastScrollY = currentScrollY;
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.property-container');
 
@@ -99,8 +116,6 @@ propertyContainerElements.forEach(propertyContainerElement => {
             displayDetailsFunctionMapper[buttonId](delta, lastClassName, currentTargetElement);
             displayNextBoxFunctionMapper[buttonId](carouselWrapperElements);
         }
-
-
     });
 });
 
