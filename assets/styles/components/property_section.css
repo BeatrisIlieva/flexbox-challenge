@@ -289,7 +289,7 @@ details[open]::details-content {
 }
 
 .details-container > details:hover {
-    background: var(--clr-violet);
+    /* background: var(--clr-violet); */
 }
 
 .details-container > details:hover summary {
