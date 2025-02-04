@@ -118,7 +118,7 @@ label[for='main-nav-toggle'] {
     }
 
     header.layout-item nav > ul {
-        gap: 0.25em;
+        gap: 0.5em;
         justify-content: center;
     }
 
