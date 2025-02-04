@@ -4,6 +4,11 @@ header.layout-item nav > ul {
     gap: 1em;
 }
 
+header.layout-item nav > ul li {
+    position: relative;
+    flex: 1 0 17ch;
+}
+
 header.layout-item nav ul ul {
     display: none;
     background: var(--clr-violet);
@@ -15,12 +20,6 @@ header.layout-item nav ul ul {
 header.layout-item nav ul li,
 header.layout-item nav ul li a {
     display: block;
-}
-
-header.layout-item nav ul li {
-    position: relative;
-    flex-grow: 1;
-    flex: 0 0 17ch;
 }
 
 header.layout-item nav ul li:hover > ul {
