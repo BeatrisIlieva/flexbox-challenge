@@ -12,17 +12,6 @@
 
     --heading-title-color: linear-gradient(229deg, #ee82ee -1%, #0077c0 64%);
 
-    /* --body-gradient: linear-gradient(
-        130deg in oklab,
-        #ffdbdb 0%,
-        #d1d1f9 25%,
-        #cff1fb 50%,
-        #d6fbe4 75%,
-        #fcfdcd 100%
-    );
-
-    --heading-title-color: linear-gradient(229deg in oklab, #ee82ee -1% -1%, #0077c0 64% 64%); */
-
     --clr-white: #fff;
     --clr-pink: #ffdbdb;
     --clr-blue: #cff1fb;
