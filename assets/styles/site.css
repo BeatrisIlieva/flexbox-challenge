@@ -1,0 +1,13 @@
+@import url('base/reset.css');
+@import url('base/typography.css');
+@import url('base/variables.css');
+
+@import url('general/layout.css');
+
+@import url('components/navigation.css');
+@import url('components/aside.css');
+@import url('components/property_section.css');
+@import url('components/parent_props.css');
+@import url('components/children_props.css');
+
+@import url('pages/home.css');
