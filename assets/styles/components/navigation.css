@@ -38,9 +38,6 @@ header.layout-item nav ul li > ul li {
 }
 
 header.layout-item nav ul li a {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     text-align: center;
     text-decoration: none;
     font-weight: bold;
