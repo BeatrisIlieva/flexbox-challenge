@@ -101,6 +101,18 @@ header.layout-item nav > ul .purple a:hover {
     background: #ee82eea8;
 }
 
+label[for='main-nav-toggle'] {
+    display: none;
+}
+
+input#main-nav-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 @media (hover: none) {
     header.layout-item nav {
         display: none;
@@ -111,11 +123,4 @@ header.layout-item nav > ul .purple a:hover {
     header.layout-item nav {
         display: block;
     }
-}
-
-input#main-nav-toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
 }
