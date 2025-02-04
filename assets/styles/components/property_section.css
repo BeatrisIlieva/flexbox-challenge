@@ -12,9 +12,11 @@
     text-align: center;
     opacity: 0.5;
     font-variant-caps: normal;
-    max-width: 46ch;
+    max-width: 56ch;
     justify-self: center;
     align-self: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 .property-container {
@@ -272,9 +274,15 @@ details[open]::details-content {
     border-bottom: 0.2em solid var(--clr-white);
 }
 
+.details-container > details > summary{
+    /* overflow: hidden; */
+    background: var(--clr-light-violet);
+    /* transition: color 1s ease, background 1s ease; */
+}
+
 .details-container > details {
     overflow: hidden;
-    background: var(--clr-light-violet);
+    /* background: var(--clr-light-violet); */
     transition: color 1s ease, background 1s ease;
 }
 
