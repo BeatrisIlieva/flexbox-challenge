@@ -251,11 +251,6 @@ details::details-content {
     background: var(--clr-white);
 }
 
-.details-container > details[open] > summary::before {
-    content: '-';
-    color: var(--clr-black);
-}
-
 .details-container > details[open] {
     cursor: auto;
 }
@@ -268,6 +263,7 @@ details::details-content {
 
 details[open]::details-content {
     block-size: auto;
+    background: var(--clr-white);
 }
 
 .details-container > details:not(:last-child) {
@@ -290,7 +286,6 @@ details[open]::details-content {
     color: var(--clr-gray);
     font-weight: bold;
     transition: color 1s ease, background 1s ease;
-    list-style: none;
 }
 
 .details-container > details:hover {
@@ -298,21 +293,6 @@ details[open]::details-content {
 }
 
 .details-container > details:hover summary {
-    color: var(--clr-black);
-}
-
-.details-container > details > summary::before {
-    content: '+';
-    position: absolute;
-    left: 0.3em;
-    top: 0.12em;
-    font-size: 1.4em;
-    color: var(--clr-gray);
-    font-weight: bold;
-    transition: color 1s ease, background 1s ease;
-}
-
-.details-container > details:hover summary::before {
     color: var(--clr-black);
 }
 
