@@ -106,3 +106,10 @@ header.layout-item nav > ul .purple a:hover {
         display: none;
     }
 }
+
+
+@media (hover: hover) {
+    header.layout-item nav{
+        display: block;
+    }
+}
