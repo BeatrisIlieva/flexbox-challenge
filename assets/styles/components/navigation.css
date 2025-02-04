@@ -1,12 +1,13 @@
 header.layout-item nav > ul {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1em;
 }
 
 header.layout-item nav > ul li {
     position: relative;
-    flex: 1 0 17ch;
+    flex: 1 1 400px;
+    word-break: keep-all;
 }
 
 header.layout-item nav ul ul {
