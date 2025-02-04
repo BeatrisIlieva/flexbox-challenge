@@ -19,24 +19,13 @@ const navButtons = document.querySelectorAll('header.layout-item nav > ul > li')
 
 navButtons.forEach(button => {
     button.addEventListener('mouseenter', e => {
-        const liElement = e.currentTarget;
         const dropdownMenu = button.querySelector('ul');
         dropdownMenu.classList.add('dropdown-active');
-
-        // if (dropdownMenu.classList.contains('dropdown-active')) {
-
-        //     dropdownMenu.classList.remove('dropdown-active');
-        // } else if (button.contains(e.target)) {
-        //     dropdownMenu.classList.add('dropdown-active');
-        // } else {
-        //     dropdownMenu.classList.remove('dropdown-active');
-        // }
     });
 });
 
 navButtons.forEach(button => {
     button.addEventListener('mouseleave', e => {
-        const liElement = e.currentTarget;
         const dropdownMenu = button.querySelector('ul');
         dropdownMenu.classList.remove('dropdown-active');
     });
@@ -44,7 +33,6 @@ navButtons.forEach(button => {
 
 navButtons.forEach(button => {
     button.addEventListener('touchstart', e => {
-        const liElement = e.currentTarget;
         const dropdownMenu = button.querySelector('ul');
         dropdownMenu.classList.remove('dropdown-active');
     });
@@ -52,7 +40,6 @@ navButtons.forEach(button => {
 
 navButtons.forEach(button => {
     button.addEventListener('touchend', e => {
-        const liElement = e.currentTarget;
         const dropdownMenu = button.querySelector('ul');
         dropdownMenu.classList.remove('dropdown-active');
     });
