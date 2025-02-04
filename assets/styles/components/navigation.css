@@ -118,8 +118,14 @@ label[for='main-nav-toggle'] {
     header.layout-item {
         justify-content: center;
     }
+
     header.layout-item nav {
         display: none;
+    }
+
+    header.layout-item nav li {
+        flex-basis: 100%;
+        justify-content: center;
     }
 
     #main-nav-toggle:checked ~ header.layout-item label[for='main-nav-toggle'] .open {
@@ -141,11 +147,6 @@ label[for='main-nav-toggle'] {
     #main-nav-toggle:checked ~ header.layout-item nav {
         display: block;
         flex-basis: 100%;
-    }
-
-    #main-nav-toggle:checked ~ header.layout-item nav li {
-        flex-basis: 100%;
-        justify-content: center;
     }
 }
 
