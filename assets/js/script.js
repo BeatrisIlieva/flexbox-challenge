@@ -17,32 +17,40 @@ window.addEventListener('scroll', e => {
 
 const navButtons = document.querySelectorAll('header.layout-item nav > ul > li');
 
-navButtons.forEach(button => {
-    button.addEventListener('mouseenter', e => {
-        const dropdownMenu = button.querySelector('ul');
-        dropdownMenu.classList.add('dropdown-active');
-    });
-});
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-navButtons.forEach(button => {
-    button.addEventListener('mouseleave', e => {
-        const dropdownMenu = button.querySelector('ul');
-        dropdownMenu.classList.remove('dropdown-active');
-    });
-});
+document.addEventListener('click', e => {
+    if (isMobile) {
+        navButtons.forEach(button => {
+            const liElement = e.currentTarget;
+            const dropdownMenu = button.querySelector('ul');
 
-navButtons.forEach(button => {
-    button.addEventListener('touchstart', e => {
-        const dropdownMenu = button.querySelector('ul');
-        dropdownMenu.classList.add('dropdown-active');
-    });
-});
+            if (dropdownMenu.classList.contains('dropdown-active')) {
+                e.stopPropagation();
+                dropdownMenu.classList.remove('dropdown-active');
+            } else if (button.contains(e.target)) {
+                dropdownMenu.classList.add('dropdown-active');
+            } else {
+                dropdownMenu.classList.remove('dropdown-active');
+            }
+            e.stopPropagation();
+            console.log(dropdownMenu);
+        });
+    } else {
+        navButtons.forEach(button => {
+            button.addEventListener('mouseenter', e => {
+                const dropdownMenu = button.querySelector('ul');
+                dropdownMenu.classList.add('dropdown-active');
+            });
+        });
 
-navButtons.forEach(button => {
-    button.addEventListener('touchend', e => {
-        const dropdownMenu = button.querySelector('ul');
-        dropdownMenu.classList.remove('dropdown-active');
-    });
+        navButtons.forEach(button => {
+            button.addEventListener('mouseleave', e => {
+                const dropdownMenu = button.querySelector('ul');
+                dropdownMenu.classList.remove('dropdown-active');
+            });
+        });
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
