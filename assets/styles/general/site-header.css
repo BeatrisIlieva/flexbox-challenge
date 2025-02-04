@@ -1,0 +1,30 @@
+header.layout-item {
+    background: var(--clr-transparent-violet);
+    border-bottom: 2px solid var(--clr-white);
+    box-shadow: 0 0.1em 0 0 rgb(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.layout-item h1 {
+    font-weight: bold;
+    background: linear-gradient(229deg in oklab, #ee82ee 40% 40%, #0077c0 67% 67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-stroke: 1px var(--clr-white);
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+.visible {
+    transform: translateY(0);
+}
