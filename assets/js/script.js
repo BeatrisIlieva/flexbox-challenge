@@ -34,7 +34,7 @@ navButtons.forEach(button => {
 navButtons.forEach(button => {
     button.addEventListener('touchstart', e => {
         const dropdownMenu = button.querySelector('ul');
-        dropdownMenu.classList.remove('dropdown-active');
+        dropdownMenu.classList.add('dropdown-active');
     });
 });
 
