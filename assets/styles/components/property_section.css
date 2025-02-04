@@ -243,8 +243,7 @@
     overflow: hidden;
 }
 
-.details-container > details::details-content,
-.details-container > details[open]::details-content {
+.details-container > details::details-content {
     font-size: 0.9em;
     block-size: 0;
     transition: content-visibility 1s, block-size 1s;
@@ -257,7 +256,7 @@
 }
 
 .details-container > details[open] > summary {
-    background: var(--clr-violet);
+    /* background: var(--clr-violet); */
     font-weight: bold;
     color: var(--clr-black);
 }
