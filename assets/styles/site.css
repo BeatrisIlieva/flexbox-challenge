@@ -4,6 +4,7 @@
 
 @import url('general/layout.css');
 @import url('general/site-header.css');
+@import url('general/site-footer.css');
 
 @import url('components/navigation.css');
 @import url('components/aside.css');

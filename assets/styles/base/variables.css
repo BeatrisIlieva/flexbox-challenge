@@ -10,6 +10,15 @@
         #fcfdcd 100%
     );
 
+    --scroll-gradient: linear-gradient(
+        230deg,
+        #ffdbdb 0%,
+        #d1d1f9 25%,
+        #cff1fb 50%,
+        #d6fbe4 75%,
+        #fcfdcd 100%
+    );
+
     --heading-title-color: linear-gradient(229deg, #ee82ee -1%, #0077c0 64%);
 
     --clr-white: #fff;

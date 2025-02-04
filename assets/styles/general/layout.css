@@ -19,8 +19,8 @@ body {
 
 ::-webkit-scrollbar {
     width: 0.75em;
-    background: var(--clr-violet);
     border-bottom-right-radius: 0.5em;
+    background: var(--scroll-gradient);
 }
 
 ::-webkit-scrollbar-track {
@@ -30,6 +30,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(var(--clr-blue), var(--clr-magic-blue));
+    background: var(--body-gradient);
     border-radius: 100vw;
     border: 0.15em solid var(--clr-green);
 }
