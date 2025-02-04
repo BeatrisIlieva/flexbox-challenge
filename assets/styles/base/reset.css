@@ -23,7 +23,7 @@ img,
 figure,
 details,
 details > summary {
-    display: block;
+    /* display: block; */
 }
 
 img {
