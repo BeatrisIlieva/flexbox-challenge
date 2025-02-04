@@ -31,6 +31,17 @@ header.layout-item nav ul li:hover > ul {
     width: 100%;
 }
 
+.dropdown-active {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    gap: 0.3em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
+}
+
 header.layout-item nav ul li > ul li {
     margin-top: 0.25em;
 }
