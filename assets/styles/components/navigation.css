@@ -1,24 +1,9 @@
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-nav > ul {
+header.layout-item nav > ul {
     display: flex;
     gap: 1em;
 }
 
-.main-nav > h1 {
-    font-weight: bold;
-    background: linear-gradient(229deg in oklab, #ee82ee 40% 40%, #0077c0 67% 67%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-stroke: 1px var(--clr-white);
-}
-
-.main-nav ul ul {
+header.layout-item nav ul ul {
     display: none;
     background: var(--clr-violet);
     padding-top: 0.3em;
@@ -27,16 +12,16 @@
     z-index: 100;
 }
 
-.main-nav ul li,
-.main-nav ul li a {
+header.layout-item nav ul li,
+header.layout-item nav ul li a {
     display: block;
 }
 
-.main-nav ul li {
+header.layout-item nav ul li {
     position: relative;
 }
 
-.main-nav ul li:hover > ul {
+header.layout-item nav ul li:hover > ul {
     min-width: 20ch;
     display: block;
     position: absolute;
@@ -51,7 +36,7 @@
     gap: 0.3em;
 }
 
-.main-nav ul li a {
+header.layout-item nav ul li a {
     width: 20ch;
     height: 4ch;
     display: flex;
@@ -68,7 +53,7 @@
     position: relative;
 }
 
-.main-nav ul li a::before {
+header.layout-item nav ul li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -83,37 +68,37 @@
     box-shadow: 0.05em 0.05em 0 rgb(0, 0, 0, 0.3);
 }
 
-.main-nav ul li a:hover::before {
+header.layout-item nav ul li a:hover::before {
     border-width: 14px;
     visibility: visible;
 }
 
-.main-nav ul .purple a {
+header.layout-item nav ul .purple a {
     background: var(--clr-purple);
     transition: color 1s ease, background 1s ease;
 }
 
-.main-nav ul .blue a {
+header.layout-item nav ul .blue a {
     background: var(--clr-magic-blue);
     transition: color 1s ease, background 1s ease;
 }
 
-.main-nav ul ul li:hover > ul {
+header.layout-item nav ul ul li:hover > ul {
     left: initial;
     right: 100%;
     top: 0;
 }
 
-.main-nav ul .purple ul li a {
+header.layout-item nav ul .purple ul li a {
     background: var(--clr-purple);
 }
 
-.main-nav > ul .blue a:hover {
+header.layout-item nav > ul .blue a:hover {
     color: var(--clr-black);
     background: #0076c0a7;
 }
 
-.main-nav > ul .purple a:hover {
+header.layout-item nav > ul .purple a:hover {
     color: var(--clr-black);
     background: #ee82eea8;
 }
