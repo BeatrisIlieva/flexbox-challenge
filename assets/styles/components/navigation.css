@@ -1,12 +1,12 @@
+
 header.layout-item nav > ul {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 1em;
 }
 
 header.layout-item nav > ul li {
     position: relative;
-    flex: 1 0 17ch;
 }
 
 header.layout-item nav ul ul {
@@ -19,7 +19,7 @@ header.layout-item nav ul ul {
 
 header.layout-item nav ul li,
 header.layout-item nav ul li a {
-    display: block;
+    display: flex;
 }
 
 header.layout-item nav ul li:hover > ul {
@@ -38,7 +38,10 @@ header.layout-item nav ul li > ul li {
 }
 
 header.layout-item nav ul li a {
-    text-align: center;
+    width: 18ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-weight: bold;
     padding: 0.4em 0.8em;
