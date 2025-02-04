@@ -243,7 +243,8 @@
     overflow: hidden;
 }
 
-details::details-content {
+.details-container > details::details-content,
+.details-container > details[open]::details-content {
     font-size: 0.9em;
     block-size: 0;
     transition: content-visibility 1s, block-size 1s;
