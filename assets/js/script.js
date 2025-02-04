@@ -19,8 +19,8 @@ const navButtons = document.querySelectorAll('header.layout-item nav > ul > li')
 
 const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-document.addEventListener('click', e => {
-    if (isMobile) {
+if (isMobile) {
+    document.addEventListener('click', e => {
         navButtons.forEach(button => {
             const liElement = e.currentTarget;
             const dropdownMenu = button.querySelector('ul');
@@ -36,22 +36,22 @@ document.addEventListener('click', e => {
             e.stopPropagation();
             console.log(dropdownMenu);
         });
-    } else {
-        navButtons.forEach(button => {
-            button.addEventListener('mouseenter', e => {
-                const dropdownMenu = button.querySelector('ul');
-                dropdownMenu.classList.add('dropdown-active');
-            });
+    });
+} else {
+    navButtons.forEach(button => {
+        button.addEventListener('mouseenter', e => {
+            const dropdownMenu = button.querySelector('ul');
+            dropdownMenu.classList.add('dropdown-active');
         });
+    });
 
-        navButtons.forEach(button => {
-            button.addEventListener('mouseleave', e => {
-                const dropdownMenu = button.querySelector('ul');
-                dropdownMenu.classList.remove('dropdown-active');
-            });
+    navButtons.forEach(button => {
+        button.addEventListener('mouseleave', e => {
+            const dropdownMenu = button.querySelector('ul');
+            dropdownMenu.classList.remove('dropdown-active');
         });
-    }
-});
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.property-container');
