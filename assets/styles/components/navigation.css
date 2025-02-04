@@ -7,7 +7,6 @@ header.layout-item nav > ul {
 header.layout-item nav ul ul {
     display: none;
     background: var(--clr-violet);
-    padding-top: 0.3em;
     font-variant-caps: normal;
     text-transform: lowercase;
     z-index: 100;
@@ -33,6 +32,10 @@ header.layout-item nav ul li:hover > ul {
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
     display: block;
     width: 100%;
+}
+
+header.layout-item nav ul li > ul li {
+    margin-top: 0.25em;
 }
 
 header.layout-item nav ul li a {
