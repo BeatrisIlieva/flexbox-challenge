@@ -21,28 +21,21 @@ header.layout-item nav ul li a {
 header.layout-item nav ul li {
     position: relative;
     flex-grow: 1;
-    /* flex-basis: 17ch; */
     flex: 0 0 17ch;
 }
 
 header.layout-item nav ul li:hover > ul {
-    /* min-width: 20ch; */
     position: absolute;
     top: 100%;
     right: 0;
-    /* display: flex;
-    flex-direction: column; */
     gap: 0.3em;
     border-radius: 0.3em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
     display: block;
     width: 100%;
-
 }
 
 header.layout-item nav ul li a {
-    /* width: 20ch;
-    height: 4ch; */
     display: flex;
     align-items: center;
     justify-content: center;
