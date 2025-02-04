@@ -20,17 +20,6 @@ header.layout-item nav ul li a {
     display: flex;
 }
 
-/* header.layout-item nav ul li:hover > ul {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    gap: 0.3em;
-    border-radius: 0.3em;
-    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
-    display: block;
-    width: 100%;
-} */
-
 header.layout-item nav ul li:hover > ul {
     position: absolute;
     top: 100%;
