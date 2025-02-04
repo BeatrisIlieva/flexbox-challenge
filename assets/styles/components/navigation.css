@@ -1,6 +1,7 @@
 header.layout-item nav > ul {
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 header.layout-item nav > ul li {
@@ -105,7 +106,7 @@ label[for='main-nav-toggle'] {
     display: none;
 }
 
-input#main-nav-toggle {
+#main-nav-toggle {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,8 +115,25 @@ input#main-nav-toggle {
 }
 
 @media (hover: none) {
+    header.layout-item {
+        justify-content: center;
+    }
     header.layout-item nav {
         display: none;
+    }
+
+    label[for='main-nav-toggle'] {
+        display: block;
+    }
+
+    #main-nav-toggle:checked ~ header.layout-item nav {
+        display: block;
+        flex-basis: 100%;
+    }
+
+    #main-nav-toggle:checked ~ header.layout-item nav li {
+        flex-basis: 100%;
+        justify-content: center;
     }
 }
 
