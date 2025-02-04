@@ -15,7 +15,7 @@ header.layout-item {
 
 header.layout-item h1 {
     font-weight: bold;
-    background: linear-gradient(229deg in oklab, #ee82ee 40% 40%, #0077c0 67% 67%);
+    background: linear-gradient(229deg, #ee82ee 40% 40%, #0077c0 67% 67%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
