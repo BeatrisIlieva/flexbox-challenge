@@ -1,11 +1,24 @@
 .property-section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
+    position: relative;
+}
+
+.property-section::after {
+    left: 5%;
+    bottom: -3em;
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 0.1em;
+    background: var(--clr-blue);
 }
 
 .property-section > h3 {
     text-align: center;
+    line-height: 0;
+    margin-bottom: 1.25em;
 }
 
 .property-section > p {
