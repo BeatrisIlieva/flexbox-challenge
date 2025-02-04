@@ -1,7 +1,5 @@
-
 header.layout-item nav > ul {
     display: flex;
-    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -38,7 +36,7 @@ header.layout-item nav ul li > ul li {
 }
 
 header.layout-item nav ul li a {
-    width: 18ch;
+    min-width: 18ch;
     display: flex;
     justify-content: center;
     align-items: center;
