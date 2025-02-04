@@ -288,8 +288,8 @@ details[open]::details-content {
     transition: color 1s ease, background 1s ease;
 }
 
-.details-container > details:hover {
-    /* background: var(--clr-violet); */
+.details-container > details:hover summary{
+    background: var(--clr-violet);
 }
 
 .details-container > details:hover summary {
