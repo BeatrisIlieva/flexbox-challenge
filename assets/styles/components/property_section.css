@@ -274,15 +274,12 @@ details[open]::details-content {
     border-bottom: 0.2em solid var(--clr-white);
 }
 
-.details-container > details > summary{
-    /* overflow: hidden; */
+.details-container > details > summary {
     background: var(--clr-light-violet);
-    /* transition: color 1s ease, background 1s ease; */
 }
 
 .details-container > details {
     overflow: hidden;
-    /* background: var(--clr-light-violet); */
     transition: color 1s ease, background 1s ease;
 }
 
