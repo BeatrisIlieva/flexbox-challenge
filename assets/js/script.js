@@ -15,28 +15,48 @@ window.addEventListener('scroll', e => {
     lastScrollY = currentScrollY;
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.querySelector(".dropdown-toggle");
-    const menu = document.querySelector(".dropdown-menu");
+const navButtons = document.querySelectorAll('header.layout-item nav > ul > li');
 
-    // Check if the device supports hover
-    const isHoverable = window.matchMedia("(hover: hover)").matches;
+navButtons.forEach(button => {
+    button.addEventListener('mouseenter', e => {
+        const liElement = e.currentTarget;
+        const dropdownMenu = button.querySelector('ul');
+        dropdownMenu.classList.add('dropdown-active');
 
-    if (!isHoverable) {
-        button.addEventListener("click", function (event) {
-            event.stopPropagation();
-            menu.classList.toggle("dropdown-active");
-        });
+        // if (dropdownMenu.classList.contains('dropdown-active')) {
 
-        // Close dropdown when clicking outside
-        document.addEventListener("click", function (event) {
-            if (!button.contains(event.target) && !menu.contains(event.target)) {
-                menu.classList.remove("dropdown-active");
-            }
-        });
-    }
+        //     dropdownMenu.classList.remove('dropdown-active');
+        // } else if (button.contains(e.target)) {
+        //     dropdownMenu.classList.add('dropdown-active');
+        // } else {
+        //     dropdownMenu.classList.remove('dropdown-active');
+        // }
+    });
 });
 
+navButtons.forEach(button => {
+    button.addEventListener('mouseleave', e => {
+        const liElement = e.currentTarget;
+        const dropdownMenu = button.querySelector('ul');
+        dropdownMenu.classList.remove('dropdown-active');
+    });
+});
+
+navButtons.forEach(button => {
+    button.addEventListener('touchstart', e => {
+        const liElement = e.currentTarget;
+        const dropdownMenu = button.querySelector('ul');
+        dropdownMenu.classList.remove('dropdown-active');
+    });
+});
+
+navButtons.forEach(button => {
+    button.addEventListener('touchend', e => {
+        const liElement = e.currentTarget;
+        const dropdownMenu = button.querySelector('ul');
+        dropdownMenu.classList.remove('dropdown-active');
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.property-container');
