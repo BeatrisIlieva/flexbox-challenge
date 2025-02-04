@@ -100,3 +100,9 @@ header.layout-item nav > ul .purple a:hover {
     color: var(--clr-black);
     background: #ee82eea8;
 }
+
+@media (hover: none) {
+    header.layout-item nav{
+        display: none;
+    }
+}
