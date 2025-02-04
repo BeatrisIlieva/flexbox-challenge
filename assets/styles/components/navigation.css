@@ -1,7 +1,6 @@
 header.layout-item nav > ul {
     display: flex;
     gap: 1em;
-    flex-wrap: wrap;
 }
 
 header.layout-item nav > ul li {
@@ -37,7 +36,7 @@ header.layout-item nav ul li > ul li {
 }
 
 header.layout-item nav ul li a {
-    min-width: 18ch;
+    min-width: 20ch;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,12 +81,6 @@ header.layout-item nav ul .blue a {
     transition: color 1s ease, background 1s ease;
 }
 
-header.layout-item nav ul ul li:hover > ul {
-    left: initial;
-    right: 100%;
-    top: 0;
-}
-
 header.layout-item nav ul .purple ul li a {
     background: var(--clr-purple);
 }
@@ -121,10 +114,15 @@ label[for='main-nav-toggle'] {
 
     header.layout-item nav {
         display: none;
+        flex-basis: 100%;
+    }
+
+    header.layout-item nav > ul {
+        gap: 0.25em;
+        justify-content: center;
     }
 
     header.layout-item nav li {
-        flex-basis: 100%;
         justify-content: center;
     }
 
@@ -146,7 +144,6 @@ label[for='main-nav-toggle'] {
 
     #main-nav-toggle:checked ~ header.layout-item nav {
         display: block;
-        flex-basis: 100%;
     }
 }
 
