@@ -122,8 +122,20 @@ label[for='main-nav-toggle'] {
         display: none;
     }
 
+    #main-nav-toggle:checked ~ header.layout-item label[for='main-nav-toggle'] .open {
+        display: none;
+    }
+
+    #main-nav-toggle:checked ~ header.layout-item label[for='main-nav-toggle'] .close {
+        display: block;
+    }
+
     label[for='main-nav-toggle'] {
         display: block;
+    }
+
+    label[for='main-nav-toggle'] .close {
+        display: none;
     }
 
     #main-nav-toggle:checked ~ header.layout-item nav {
