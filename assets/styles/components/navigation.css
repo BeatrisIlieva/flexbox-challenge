@@ -135,7 +135,6 @@ label[for='main-nav-toggle'] {
         margin-top: 1.75rem;
         margin-left: 0.15rem;
         display: block;
-        
     }
 
     #main-nav-toggle:checked ~ header.layout-item label[for='main-nav-toggle'] .open {
