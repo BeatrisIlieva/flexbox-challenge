@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.property-section::after {
+.property-section:not(:last-child):after {
     left: 5%;
     bottom: -3em;
     position: absolute;
