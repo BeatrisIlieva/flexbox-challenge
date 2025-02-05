@@ -19,10 +19,10 @@ A visual and interactive guide to CSS Flexbox. The project provides detailed exp
 - Fully optimized for all device sizes
 
 <p align="center">
-  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771040/flexbox-challenege/IMG_5789_mykgdy.png" alt="Image 3" width="114">
-  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5790_eequdd.png" alt="Image 4" width="114">
-  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5792_bkhuvk.png" alt="Image 8" width="114">
-  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5791_dib1aw.png" alt="Image 5" width="114">
+  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771040/flexbox-challenege/IMG_5789_mykgdy.png" alt="Image 3" width="180">
+  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5790_eequdd.png" alt="Image 4" width="180">
+  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5792_bkhuvk.png" alt="Image 8" width="180">
+  <img src="https://res.cloudinary.com/deztgvefu/image/upload/v1738771039/flexbox-challenege/IMG_5791_dib1aw.png" alt="Image 5" width="180">
 </p>
 
 
