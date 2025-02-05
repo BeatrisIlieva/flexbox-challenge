@@ -1,7 +1,7 @@
 # Flexbox Challenge
 
-#### A comprehensive guide to CSS Flexbox layout, covering all the essential properties for both the parent element (flex container) and its child elements (flex items).
+#### A visual and interactive guide to CSS Flexbox, built with HTML, CSS, and JavaScript. This project provides detailed explanations, code examples, and live visualizations for every Flexbox property (both parent and child).
 
 <h4 align="center" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-Visit our website at: https://www.youtube.com/watch?v=Pt87s7dPTAY
+Visit the website at: https://www.youtube.com/watch?v=Pt87s7dPTAY
 </h4>
