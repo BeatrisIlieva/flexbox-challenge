@@ -275,14 +275,6 @@
     color: var(--clr-black);
 }
 
-summary {
-    list-style: none;
-}
-
-summary::-webkit-details-marker {
-    display: none; 
-}
-
 details[open]::details-content {
     block-size: auto;
     background: var(--clr-white);
