@@ -275,6 +275,10 @@
     color: var(--clr-black);
 }
 
+.details-container > details > summary::marker {
+    color: transparent;
+}
+
 details[open]::details-content {
     block-size: auto;
     background: var(--clr-white);
