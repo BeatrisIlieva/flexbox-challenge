@@ -5,7 +5,7 @@ A visual and interactive guide to CSS Flexbox. The project provides detailed exp
 ##### Visit our website at: https://flexbox-challenge.pages.dev
 
 ### Demo video:
-[![Watch the video](https://img.youtube.com/vi/Pt87s7dPTAY/maxresdefault.jpg)](https://www.youtube.com/watch?v=Pt87s7dPTAY)
+[![Watch the video](https://img.youtube.com/vi/RDATsh-SHCE/maxresdefault.jpg)](https://www.youtube.com/watch?v=RDATsh-SHCE)
 
 ### Built with:
 - HTML
